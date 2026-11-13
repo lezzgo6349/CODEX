@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEX | HTML Final Quiz</title>
+    <link rel="stylesheet" href="../css/HCquiz.css">
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/navstyle.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="logo">
+                <h2>CODEX</h2>
+            </a>
+        </div>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../navhtml/tutorials.html">Tutorials</a></li>
+            <li><a href="../navhtml/quiz.html">Quiz</a></li>
+            <li><a href="../navhtml/contact.html">Contact Us</a></li>
+        </ul>
+        <!-- Searchbar -->
+        <div class="searchbar">
+            <input type="text" id="search" placeholder="Search...">
+            <button id="searchIcon" title="Search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="11" cy="11" r="7" stroke="#555" stroke-width="2" />
+                    <line x1="16" y1="16" x2="22" y2="22" stroke="#555" stroke-width="2" />
+                </svg>
+            </button>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+        <!-- Login Button -->
+        <div class="login" id="loginArea">
+            <a href="../navhtml/login.html"><b>Sign In</b></a>
+        </div>
+    </nav>
+    <br><br>
+    <div class="main-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul>
+                <!-- SECTION I -->
+                <li><strong><a href="HTML Basics.html" class="sub-link">I. HTML Basics</a></strong></li>
+                <li><a href="HTML Basics.html#Introduction" class="sub-link">HTML Introduction</a></li>
+                <li><a href="HTML Basics.html#HtmlEditors" class="sub-link">HTML Editors</a></li>
+                <li><a href="HTML Basics.html#BasicStructure" class="sub-link">HTML Basic Structure</a></li>
+                <li><a href="HTML Basics.html#Elements" class="sub-link">HTML Elements</a></li>
+                <li><a href="HTML Basics.html#Attributes" class="sub-link">HTML Attributes</a></li>
+                <!-- SECTION II -->
+                <li><strong><a href="HTML Intermediate.html">II. Intermediate</a></strong></li>
+                <li><a href="HTML Intermediate.html#Formatting" class="sub-link">HTML Formatting</a></li>
+                <li><a href="HTML Intermediate.html#Comments" class="sub-link">HTML Comments</a></li>
+                <li><a href="HTML Intermediate.html#Links" class="sub-link">HTML Links</a></li>
+                <li><a href="HTML Intermediate.html#Images" class="sub-link">HTML Images</a></li>
+                <li><a href="HTML Intermediate.html#Lists" class="sub-link">HTML Lists</a></li>
+                <!-- SECTION III -->
+                <li><strong><a href="HTML Advanced.html">III. Advanced</a></strong></li>
+                <li><a href="HTML Advanced.html#Tables" class="sub-link">HTML Tables</a></li>
+                <li><a href="HTML Advanced.html#Forms" class="sub-link">HTML Forms</a></li>
+                <li><a href="HTML Advanced.html#Media" class="sub-link">HTML Media</a></li>
+                <li><a href="HTML Advanced.html#Semantic" class="sub-link">HTML Semantic Elements</a></li>
+                <li><a href="HTML Advanced.html#BlockInline" class="sub-link">HTML Block & Inline</a></li>
+                <!-- SECTION IV -->
+                <li><strong><a href="HTML Final.html">IV. Final Topics</a></strong></li>
+                <li><a href="#Entities">HTML Entities</a></li>
+                <li><a href="#Symbols">HTML Symbols</a></li>
+                <li><a href="#Iframe">HTML iFrames</a></li>
+                <li><a href="#MetaTags">HTML Meta Tags</a></li>
+                <li><a href="#Accessibility">HTML Accessibility</a></li>
+            </ul>
+        </aside>
+        <div class="quiz-container">
+            <section>
+                <h1 id="Entities">HTML Final Quiz</h1>
+                <p>Test your knowledge of advanced HTML concepts! Each question is worth 1 point.</p>
+                <form id="quizForm">
+                    <!-- HTML Entities -->
+                    <h2>HTML Entities</h2>
+                    <div class="question">
+                        <p>1. Which HTML entity represents the less than symbol (&lt;)?</p>
+                        <label><input type="radio" name="q1" value="a"> &amp;lt;</label>
+                        <label><input type="radio" name="q1" value="b"> &amp;lessthan;</label>
+                        <label><input type="radio" name="q1" value="c"> &amp;leftangle;</label>
+                    </div>
+                    <div class="question">
+                        <p>2. Which HTML entity represents a non-breaking space?</p>
+                        <label><input type="radio" name="q2" value="a"> &amp;space;</label>
+                        <label><input type="radio" name="q2" value="b"> &amp;nbsp;</label>
+                        <label><input type="radio" name="q2" value="c"> &amp;sp;</label>
+                    </div>
+                    <div class="question">
+                        <p>3. Which HTML entity represents the copyright symbol (©)?</p>
+                        <label><input type="radio" name="q3" value="a"> &amp;copy;</label>
+                        <label><input type="radio" name="q3" value="b"> &amp;copyright;</label>
+                        <label><input type="radio" name="q3" value="c"> &amp;copyrt;</label>
+                    </div>
+                    <div class="question">
+                        <p>4. Which HTML entity represents the ampersand (&amp;) symbol?</p>
+                        <label><input type="radio" name="q4" value="a"> &amp;amp;</label>
+                        <label><input type="radio" name="q4" value="b"> &amp;and;</label>
+                        <label><input type="radio" name="q4" value="c"> &amp;ampersand;</label>
+                    </div>
+                    <div class="question">
+                        <p>5. Which HTML entity represents the greater than symbol (&gt;)?</p>
+                        <label><input type="radio" name="q5" value="a"> &amp;gt;</label>
+                        <label><input type="radio" name="q5" value="b"> &amp;greaterthan;</label>
+                        <label><input type="radio" name="q5" value="c"> &amp;rightangle;</label>
+                    </div>
+            </section>
+            <section>
+                <!-- HTML Symbols -->
+                <h2 id="Symbols">HTML Symbols</h2>
+                <div class="question">
+                    <p>6. Which HTML entity represents the euro (€) symbol?</p>
+                    <label><input type="radio" name="q6" value="a"> &amp;euro;</label>
+                    <label><input type="radio" name="q6" value="b"> &amp;eur;</label>
+                    <label><input type="radio" name="q6" value="c"> &amp;eu;</label>
+                </div>
+                <div class="question">
+                    <p>7. Which HTML entity represents the registered trademark (®) symbol?</p>
+                    <label><input type="radio" name="q7" value="a"> &amp;reg;</label>
+                    <label><input type="radio" name="q7" value="b"> &amp;registered;</label>
+                    <label><input type="radio" name="q7" value="c"> &amp;trademark;</label>
+                </div>
+                <div class="question">
+                    <p>8. Which HTML entity represents the degree (°) symbol?</p>
+                    <label><input type="radio" name="q8" value="a"> &amp;degree;</label>
+                    <label><input type="radio" name="q8" value="b"> &amp;deg;</label>
+                    <label><input type="radio" name="q8" value="c"> &amp;circle;</label>
+                </div>
+                <div class="question">
+                    <p>9. Which HTML entity represents the multiplication (×) symbol?</p>
+                    <label><input type="radio" name="q9" value="a"> &amp;times;</label>
+                    <label><input type="radio" name="q9" value="b"> &amp;multiply;</label>
+                    <label><input type="radio" name="q9" value="c"> &amp;multi;</label>
+                </div>
+                <div class="question">
+                    <p>10. Which HTML entity represents the pound (£) symbol?</p>
+                    <label><input type="radio" name="q10" value="a"> &amp;pound;</label>
+                    <label><input type="radio" name="q10" value="b"> &amp;lb;</label>
+                    <label><input type="radio" name="q10" value="c"> &amp;gbp;</label>
+                </div>
+            </section>
+            <section>
+                <!-- HTML iFrames -->
+                <h2 id="Iframe">HTML iFrames</h2>
+                <div class="question">
+                    <p>11. Which tag is used to create an inline frame?</p>
+                    <label><input type="radio" name="q11" value="a"> &lt;iframe&gt;</label>
+                    <label><input type="radio" name="q11" value="b"> &lt;frame&gt;</label>
+                    <label><input type="radio" name="q11" value="c"> &lt;inframe&gt;</label>
+                </div>
+                <div class="question">
+                    <p>12. Which attribute specifies the URL of the document to embed in an iframe?</p>
+                    <label><input type="radio" name="q12" value="a"> href</label>
+                    <label><input type="radio" name="q12" value="b"> src</label>
+                    <label><input type="radio" name="q12" value="c"> url</label>
+                </div>
+                <div class="question">
+                    <p>13. Which attribute is used to specify the name of an iframe?</p>
+                    <label><input type="radio" name="q13" value="a"> id</label>
+                    <label><input type="radio" name="q13" value="b"> title</label>
+                    <label><input type="radio" name="q13" value="c"> name</label>
+                </div>
+                <div class="question">
+                    <p>14. Which attribute is used to remove the border around an iframe?</p>
+                    <label><input type="radio" name="q14" value="a"> frameborder="0"</label>
+                    <label><input type="radio" name="q14" value="b"> border="0"</label>
+                    <label><input type="radio" name="q14" value="c"> noborder</label>
+                </div>
+                <div class="question">
+                    <p>15. Which attribute is used to specify the height of an iframe?</p>
+                    <label><input type="radio" name="q15" value="a"> size</label>
+                    <label><input type="radio" name="q15" value="b"> height</label>
+                    <label><input type="radio" name="q15" value="c"> length</label>
+                </div>
+            </section>
+            <section>
+                <!-- HTML Meta Tags -->
+                <h2 id="MetaTags">HTML Meta Tags</h2>
+                <div class="question">
+                    <p>16. Which meta tag is used to specify the character encoding for the HTML document?</p>
+                    <label><input type="radio" name="q16" value="a"> &lt;meta charset="UTF-8"&gt;</label>
+                    <label><input type="radio" name="q16" value="b"> &lt;meta encoding="UTF-8"&gt;</label>
+                    <label><input type="radio" name="q16" value="c"> &lt;meta type="UTF-8"&gt;</label>
+                </div>
+                <div class="question">
+                    <p>17. Which meta tag is used to define keywords for search engines?</p>
+                    <label><input type="radio" name="q17" value="a"> &lt;meta name="keywords" content="HTML, CSS, JavaScript"&gt;</label>
+                    <label><input type="radio" name="q17" value="b"> &lt;meta name="search" content="HTML, CSS, JavaScript"&gt;</label>
+                    <label><input type="radio" name="q17" value="c"> &lt;meta name="tags" content="HTML, CSS, JavaScript"&gt;</label>
+                </div>
+                <div class="question">
+                    <p>18. Which meta tag is used to define a description of your web page?</p>
+                    <label><input type="radio" name="q18" value="a"> &lt;meta name="about" content="Description"&gt;</label>
+                    <label><input type="radio" name="q18" value="b"> &lt;meta name="description" content="Description"&gt;</label>
+                    <label><input type="radio" name="q18" value="c"> &lt;meta name="summary" content="Description"&gt;</label>
+                </div>
+                <div class="question">
+                    <p>19. Which meta tag is used to define the author of a page?</p>
+                    <label><input type="radio" name="q19" value="a"> &lt;meta name="author" content="John Doe"&gt;</label>
+                    <label><input type="radio" name="q19" value="b"> &lt;meta name="creator" content="John Doe"&gt;</label>
+                    <label><input type="radio" name="q19" value="c"> &lt;meta name="owner" content="John Doe"&gt;</label>
+                </div>
+                <div class="question">
+                    <p>20. Which meta tag is used to control the viewport on mobile devices?</p>
+                    <label><input type="radio" name="q20" value="a"> &lt;meta name="mobile" content="width=device-width, initial-scale=1.0"&gt;</label>
+                    <label><input type="radio" name="q20" value="b"> &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</label>
+                    <label><input type="radio" name="q20" value="c"> &lt;meta name="screen" content="width=device-width, initial-scale=1.0"&gt;</label>
+                </div>
+            </section>
+            <section>
+                <h2 id="Accessibility">HTML Accessibility</h2>
+                <div class="question">
+                    <p>21. Which attribute is used to provide alternative text for images for screen readers?</p>
+                    <label><input type="radio" name="q21" value="a"> title</label>
+                    <label><input type="radio" name="q21" value="b"> alt</label>
+                    <label><input type="radio" name="q21" value="c"> description</label>
+                </div>
+                <div class="question">
+                    <p>22. Which attribute is used to define the relationship between a form element and its label?</p>
+                    <label><input type="radio" name="q22" value="a"> for</label>
+                    <label><input type="radio" name="q22" value="b"> label</label>
+                    <label><input type="radio" name="q22" value="c"> id</label>
+                </div>
+                <div class="question">
+                    <p>23. What does ARIA stand for in web accessibility?</p>
+                    <label><input type="radio" name="q23" value="a"> Accessible Rich Internet Applications</label>
+                    <label><input type="radio" name="q23" value="b"> Advanced Responsive Internet Access</label>
+                    <label><input type="radio" name="q23" value="c"> Automated Reader Interface Assistance</label>
+                </div>
+                <div class="question">
+                    <p>24. Which attribute is used to provide additional information about an element that is typically displayed as a tooltip?</p>
+                    <label><input type="radio" name="q24" value="a"> tooltip</label>
+                    <label><input type="radio" name="q24" value="b"> title</label>
+                    <label><input type="radio" name="q24" value="c"> info</label>
+                </div>
+                <div class="question">
+                    <p>25. Which HTML5 element is used to define a section that contains navigation links?</p>
+                    <label><input type="radio" name="q25" value="a"> &lt;navigation&gt;</label>
+                    <label><input type="radio" name="q25" value="b"> &lt;menu&gt;</label>
+                    <label><input type="radio" name="q25" value="c"> &lt;nav&gt;</label>
+                </div>
+            </section>
+            <button type="button" id="submitQuiz">Submit</button>
+            </form>
+            <div id="result"></div>
+        </div>
+        <script src="../scripts/main.js"></script>
+<script>// HTML QUIZ SCRIPT
+document.addEventListener("DOMContentLoaded", () => {
+  const submitBtn = document.getElementById("submitQuiz");
+  const resultDiv = document.getElementById("result");
+  const form = document.getElementById("quizForm");
+
+  submitBtn.addEventListener("click", () => {
+    // 🔁 Retry Mode
+    if (submitBtn.textContent === "Retry") {
+      form.reset();
+      resultDiv.innerHTML = "";
+      submitBtn.textContent = "Submit";
+      document.querySelectorAll("label").forEach(label => {
+        label.style.color = "";
+        label.style.fontWeight = "";
+      });
+      return;
+    }
+
+    // ✅ Correct Answers
+    const answers = {
+      q1: "a", q2: "b", q3: "a", q4: "a", q5: "a",
+      q6: "a", q7: "a", q8: "b", q9: "a", q10: "a",
+      q11: "a", q12: "b", q13: "c", q14: "a", q15: "b",
+      q16: "a", q17: "a", q18: "b", q19: "a", q20: "b",
+      q21: "b", q22: "a", q23: "a", q24: "b", q25: "c"
+    };
+
+    let score = 0;
+    const total = Object.keys(answers).length;
+
+    // Reset colors
+    document.querySelectorAll("label").forEach(label => {
+      label.style.color = "";
+      label.style.fontWeight = "";
+    });
+
+    // 🧮 Evaluate
+    for (let key in answers) {
+      const selected = document.querySelector(`input[name="${key}"]:checked`);
+      const correctValue = answers[key];
+      const correctLabel = document.querySelector(
+        `input[name="${key}"][value="${correctValue}"]`
+      )?.parentElement;
+
+      if (selected) {
+        if (selected.value === correctValue) {
+          score++;
+          selected.parentElement.style.color = "green";
+          selected.parentElement.style.fontWeight = "bold";
+        } else {
+          selected.parentElement.style.color = "red";
+          selected.parentElement.style.fontWeight = "bold";
+          if (correctLabel) {
+            correctLabel.style.color = "green";
+            correctLabel.style.fontWeight = "bold";
+          }
+        }
+      } else if (correctLabel) {
+        correctLabel.style.color = "green";
+        correctLabel.style.fontWeight = "bold";
+      }
+    }
+
+    const percentage = (score / total) * 100;
+    let feedback = "";
+    if (percentage === 100) feedback = "🏆 Perfect! You've mastered HTML!";
+    else if (percentage >= 80) feedback = "🔥 Great job!";
+    else if (percentage >= 60) feedback = "✅ Good effort, keep practicing!";
+    else feedback = "💡 Keep studying HTML — you'll improve soon!";
+
+    resultDiv.innerHTML = `
+      <h2>Your Score: ${score}/${total}</h2>
+      <p>${feedback}</p>
+    `;
+
+    submitBtn.textContent = "Retry";
+  });
+});
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEX | HTML Advanced Quiz</title>
+    <link rel="stylesheet" href="../css/HCquiz.css">
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/navstyle.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="logo">
+                <h2>CODEX</h2>
+            </a>
+        </div>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../navhtml/tutorials.html">Tutorials</a></li>
+            <li><a href="../navhtml/quiz.html">Quiz</a></li>
+            <li><a href="../navhtml/contact.html">Contact Us</a></li>
+        </ul>
+        <!-- Searchbar -->
+        <div class="searchbar">
+            <input type="text" id="search" placeholder="Search...">
+            <button id="searchIcon" title="Search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="11" cy="11" r="7" stroke="#555" stroke-width="2" />
+                    <line x1="16" y1="16" x2="22" y2="22" stroke="#555" stroke-width="2" />
+                </svg>
+            </button>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+        <div class="login" id="loginArea">
+            <a href="../navhtml/login.html"><b>Sign In</b></a>
+        </div>
+    </nav>
+    <br><br>
+    <div class="main-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul>
+                <!-- SECTION I -->
+                <li><strong><a href="HTML Basics.html" class="sub-link">I. HTML Basics</a></strong></li>
+                <li><a href="HTML Basics.html#Introduction" class="sub-link">HTML Introduction</a></li>
+                <li><a href="HTML Basics.html#HtmlEditors" class="sub-link">HTML Editors</a></li>
+                <li><a href="HTML Basics.html#BasicStructure" class="sub-link">HTML Basic Structure</a></li>
+                <li><a href="HTML Basics.html#Elements" class="sub-link">HTML Elements</a></li>
+                <li><a href="HTML Basics.html#Attributes" class="sub-link">HTML Attributes</a></li>
+                <!-- SECTION II -->
+                <li><strong><a href="HTML Intermediate.html">II. Intermediate</a></strong></li>
+                <li><a href="HTML Intermediate.html#Formatting" class="sub-link">HTML Formatting</a></li>
+                <li><a href="HTML Intermediate.html#Comments" class="sub-link">HTML Comments</a></li>
+                <li><a href="HTML Intermediate.html#Links" class="sub-link">HTML Links</a></li>
+                <li><a href="HTML Intermediate.html#Images" class="sub-link">HTML Images</a></li>
+                <li><a href="HTML Intermediate.html#Lists" class="sub-link">HTML Lists</a></li>
+                <!-- SECTION III -->
+                <li><strong><a href="HTML Advanced.html">III. Advanced</a></strong></li>
+                <li><a href="#Tables">HTML Tables</a></li>
+                <li><a href="#Forms">HTML Forms</a></li>
+                <li><a href="#Media">HTML Media</a></li>
+                <li><a href="#Semantic">HTML Semantic Elements</a></li>
+                <li><a href="#BlockInline">HTML Block & Inline</a></li>
+                <!-- SECTION IV -->
+                <li><strong><a href="HTML Final.html">IV. Final Topics</a></strong></li>
+                <li><a href="#Entities" class="sub-link">HTML Entities</a></li>
+                <li><a href="#Symbols" class="sub-link">HTML Symbols</a></li>
+                <li><a href="#Iframe" class="sub-link">HTML iFrames</a></li>
+                <li><a href="#MetaTags" class="sub-link">HTML Meta Tags</a></li>
+            </ul>
+        </aside>
+        <div class="quiz-container">
+            <section>
+                <h1 id="Tables">HTML Advanced Quiz</h1>
+                <p>Test your knowledge of advanced HTML concepts! Each question is worth 1 point.</p>
+                <form id="quizForm">
+                    <!-- HTML Tables -->
+                    <h2>HTML Tables</h2>
+                    <div class="question">
+                        <p>1. Which tag defines a table in HTML?</p>
+                        <label><input type="radio" name="q1" value="a"> &lt;table&gt;</label>
+                        <label><input type="radio" name="q1" value="b"> &lt;tab&gt;</label>
+                        <label><input type="radio" name="q1" value="c"> &lt;tbl&gt;</label>
+                    </div>
+                    <div class="question">
+                        <p>2. Which tag defines a table row?</p>
+                        <label><input type="radio" name="q2" value="a"> &lt;td&gt;</label>
+                        <label><input type="radio" name="q2" value="b"> &lt;tr&gt;</label>
+                        <label><input type="radio" name="q2" value="c"> &lt;row&gt;</label>
+                    </div>
+                    <div class="question">
+                        <p>3. Which tag defines a table header cell?</p>
+                        <label><input type="radio" name="q3" value="a"> &lt;th&gt;</label>
+                        <label><input type="radio" name="q3" value="b"> &lt;thead&gt;</label>
+                        <label><input type="radio" name="q3" value="c"> &lt;header&gt;</label>
+                    </div>
+                    <div class="question">
+                        <p>4. Which attribute is used to make a cell span multiple columns?</p>
+                        <label><input type="radio" name="q4" value="a"> span</label>
+                        <label><input type="radio" name="q4" value="b"> colspan</label>
+                        <label><input type="radio" name="q4" value="c"> colwidth</label>
+                    </div>
+                    <div class="question">
+                        <p>5. Which tag is used to group the header content in a table?</p>
+                        <label><input type="radio" name="q5" value="a"> &lt;thead&gt;</label>
+                        <label><input type="radio" name="q5" value="b"> &lt;header&gt;</label>
+                        <label><input type="radio" name="q5" value="c"> &lt;th-group&gt;</label>
+                    </div>
+            </section>
+            <section>
+                <!-- HTML Forms -->
+                <h2 id="Forms">HTML Forms</h2>
+                <div class="question">
+                    <p>6. Which tag creates a form in HTML?</p>
+                    <label><input type="radio" name="q6" value="a"> &lt;form&gt;</label>
+                    <label><input type="radio" name="q6" value="b"> &lt;input&gt;</label>
+                    <label><input type="radio" name="q6" value="c"> &lt;formfield&gt;</label>
+                </div>
+                <div class="question">
+                    <p>7. Which input type creates a checkbox?</p>
+                    <label><input type="radio" name="q7" value="a"> &lt;input type="check"&gt;</label>
+                    <label><input type="radio" name="q7" value="b"> &lt;input type="checkbox"&gt;</label>
+                    <label><input type="radio" name="q7" value="c"> &lt;input type="box"&gt;</label>
+                </div>
+                <div class="question">
+                    <p>8. Which attribute specifies where to send form data when submitted?</p>
+                    <label><input type="radio" name="q8" value="a"> method</label>
+                    <label><input type="radio" name="q8" value="b"> action</label>
+                    <label><input type="radio" name="q8" value="c"> submit</label>
+                </div>
+                <div class="question">
+                    <p>9. Which tag creates a dropdown list?</p>
+                    <label><input type="radio" name="q9" value="a"> &lt;dropdown&gt;</label>
+                    <label><input type="radio" name="q9" value="b"> &lt;list&gt;</label>
+                    <label><input type="radio" name="q9" value="c"> &lt;select&gt;</label>
+                </div>
+                <div class="question">
+                    <p>10. Which input type is used for submitting forms?</p>
+                    <label><input type="radio" name="q10" value="a"> &lt;input type="submit"&gt;</label>
+                    <label><input type="radio" name="q10" value="b"> &lt;input type="send"&gt;</label>
+                    <label><input type="radio" name="q10" value="c"> &lt;input type="form"&gt;</label>
+                </div>
+            </section>
+            <section>
+                <!-- HTML Media -->
+                <h2 id="Media">HTML Media</h2>
+                <div class="question">
+                    <p>11. Which tag is used to embed video in HTML5?</p>
+                    <label><input type="radio" name="q11" value="a"> &lt;video&gt;</label>
+                    <label><input type="radio" name="q11" value="b"> &lt;media&gt;</label>
+                    <label><input type="radio" name="q11" value="c"> &lt;movie&gt;</label>
+                </div>
+                <div class="question">
+                    <p>12. Which tag is used to embed audio in HTML5?</p>
+                    <label><input type="radio" name="q12" value="a"> &lt;sound&gt;</label>
+                    <label><input type="radio" name="q12" value="b"> &lt;audio&gt;</label>
+                    <label><input type="radio" name="q12" value="c"> &lt;music&gt;</label>
+                </div>
+                <div class="question">
+                    <p>13. Which attribute in the video tag makes the video play automatically?</p>
+                    <label><input type="radio" name="q13" value="a"> auto</label>
+                    <label><input type="radio" name="q13" value="b"> autoplay</label>
+                    <label><input type="radio" name="q13" value="c"> autostart</label>
+                </div>
+                <div class="question">
+                    <p>14. Which tag is used to specify alternative text for a video if it cannot be played?</p>
+                    <label><input type="radio" name="q14" value="a"> &lt;alt&gt;</label>
+                    <label><input type="radio" name="q14" value="b"> &lt;fallback&gt;</label>
+                    <label><input type="radio" name="q14" value="c"> Text between the opening and closing video tags</label>
+                </div>
+                <div class="question">
+                    <p>15. Which tag is used to add subtitles to a video?</p>
+                    <label><input type="radio" name="q15" value="a"> &lt;subtitle&gt;</label>
+                    <label><input type="radio" name="q15" value="b"> &lt;track&gt;</label>
+                    <label><input type="radio" name="q15" value="c"> &lt;caption&gt;</label>
+                </div>
+            </section>
+            <section>
+                <!-- HTML Semantic Elements -->
+                <h2 id="Semantic">HTML Semantic Elements</h2>
+                <div class="question">
+                    <p>16. Which semantic element defines a header section?</p>
+                    <label><input type="radio" name="q16" value="a"> &lt;header&gt;</label>
+                    <label><input type="radio" name="q16" value="b"> &lt;top&gt;</label>
+                    <label><input type="radio" name="q16" value="c"> &lt;heading&gt;</label>
+                </div>
+                <div class="question">
+                    <p>17. Which semantic element defines a footer section?</p>
+                    <label><input type="radio" name="q17" value="a"> &lt;bottom&gt;</label>
+                    <label><input type="radio" name="q17" value="b"> &lt;footer&gt;</label>
+                    <label><input type="radio" name="q17" value="c"> &lt;end&gt;</label>
+                </div>
+                <div class="question">
+                    <p>18. Which semantic element defines navigation links?</p>
+                    <label><input type="radio" name="q18" value="a"> &lt;links&gt;</label>
+                    <label><input type="radio" name="q18" value="b"> &lt;navigation&gt;</label>
+                    <label><input type="radio" name="q18" value="c"> &lt;nav&gt;</label>
+                </div>
+                <div class="question">
+                    <p>19. Which semantic element defines an article?</p>
+                    <label><input type="radio" name="q19" value="a"> &lt;article&gt;</label>
+                    <label><input type="radio" name="q19" value="b"> &lt;content&gt;</label>
+                    <label><input type="radio" name="q19" value="c"> &lt;text&gt;</label>
+                </div>
+                <div class="question">
+                    <p>20. Which semantic element defines a section that contains additional information?</p>
+                    <label><input type="radio" name="q20" value="a"> &lt;info&gt;</label>
+                    <label><input type="radio" name="q20" value="b"> &lt;aside&gt;</label>
+                    <label><input type="radio" name="q20" value="c"> &lt;extra&gt;</label>
+                </div>
+            </section>
+            <section>
+                <h2 id="BlockInline">HTML Block & Inline</h2>
+                <div class="question">
+                    <p>21. Which of the following is a block-level element?</p>
+                    <label><input type="radio" name="q21" value="a"> &lt;span&gt;</label>
+                    <label><input type="radio" name="q21" value="b"> &lt;div&gt;</label>
+                    <label><input type="radio" name="q21" value="c"> &lt;a&gt;</label>
+                </div>
+                <div class="question">
+                    <p>22. Which of the following is an inline element?</p>
+                    <label><input type="radio" name="q22" value="a"> &lt;p&gt;</label>
+                    <label><input type="radio" name="q22" value="b"> &lt;h1&gt;</label>
+                    <label><input type="radio" name="q22" value="c"> &lt;span&gt;</label>
+                </div>
+                <div class="question">
+                    <p>23. What is the default display property of a &lt;div&gt; element?</p>
+                    <label><input type="radio" name="q23" value="a"> inline</label>
+                    <label><input type="radio" name="q23" value="b"> block</label>
+                    <label><input type="radio" name="q23" value="c"> inline-block</label>
+                </div>
+                <div class="question">
+                    <p>24. Which CSS property can change an inline element to a block element?</p>
+                    <label><input type="radio" name="q24" value="a"> display: block;</label>
+                    <label><input type="radio" name="q24" value="b"> visibility: block;</label>
+                    <label><input type="radio" name="q24" value="c"> position: block;</label>
+                </div>
+                <div class="question">
+                    <p>25. Which of these elements is NOT a block-level element?</p>
+                    <label><input type="radio" name="q25" value="a"> &lt;p&gt;</label>
+                    <label><input type="radio" name="q25" value="b"> &lt;h1&gt;</label>
+                    <label><input type="radio" name="q25" value="c"> &lt;img&gt;</label>
+                </div>
+            </section>
+            <button type="button" id="submitQuiz">Submit</button>
+            </form>
+            <div id="result"></div>
+        </div>
+        <script src="../scripts/main.js"></script>
+<script>// HTML QUIZ SCRIPT
+document.addEventListener("DOMContentLoaded", () => {
+  const submitBtn = document.getElementById("submitQuiz");
+  const resultDiv = document.getElementById("result");
+  const form = document.getElementById("quizForm");
+
+  submitBtn.addEventListener("click", () => {
+    // 🔁 Retry Mode
+    if (submitBtn.textContent === "Retry") {
+      form.reset();
+      resultDiv.innerHTML = "";
+      submitBtn.textContent = "Submit";
+      document.querySelectorAll("label").forEach(label => {
+        label.style.color = "";
+        label.style.fontWeight = "";
+      });
+      return;
+    }
+
+    // ✅ Correct Answers
+    const answers = {
+      q1: "a", q2: "b", q3: "a", q4: "b", q5: "a",
+      q6: "a", q7: "b", q8: "b", q9: "c", q10: "a",
+      q11: "a", q12: "b", q13: "b", q14: "c", q15: "b",
+      q16: "a", q17: "b", q18: "c", q19: "a", q20: "b",
+      q21: "b", q22: "c", q23: "b", q24: "a", q25: "c"
+    };
+
+    let score = 0;
+    const total = Object.keys(answers).length;
+
+    // Reset colors
+    document.querySelectorAll("label").forEach(label => {
+      label.style.color = "";
+      label.style.fontWeight = "";
+    });
+
+    // 🧮 Evaluate
+    for (let key in answers) {
+      const selected = document.querySelector(`input[name="${key}"]:checked`);
+      const correctValue = answers[key];
+      const correctLabel = document.querySelector(
+        `input[name="${key}"][value="${correctValue}"]`
+      )?.parentElement;
+
+      if (selected) {
+        if (selected.value === correctValue) {
+          score++;
+          selected.parentElement.style.color = "green";
+          selected.parentElement.style.fontWeight = "bold";
+        } else {
+          selected.parentElement.style.color = "red";
+          selected.parentElement.style.fontWeight = "bold";
+          if (correctLabel) {
+            correctLabel.style.color = "green";
+            correctLabel.style.fontWeight = "bold";
+          }
+        }
+      } else if (correctLabel) {
+        correctLabel.style.color = "green";
+        correctLabel.style.fontWeight = "bold";
+      }
+    }
+
+    const percentage = (score / total) * 100;
+    let feedback = "";
+    if (percentage === 100) feedback = "🏆 Perfect! You're an HTML pro!";
+    else if (percentage >= 80) feedback = "🔥 Great job!";
+    else if (percentage >= 60) feedback = "✅ Good effort, keep practicing!";
+    else feedback = "💡 Keep studying HTML — you'll improve soon!";
+
+    resultDiv.innerHTML = `
+      <h2>Your Score: ${score}/${total}</h2>
+      <p>${feedback}</p>
+    `;
+
+    submitBtn.textContent = "Retry";
+  });
+});
+
+</script>
+</body>
+
+</html>

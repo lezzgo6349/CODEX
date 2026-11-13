@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CODEX | CSS Intermediate</title>
+    <link rel="stylesheet" href="../css/HCquiz.css">
+    <link rel="icon" type="image/x-icon" href="../images/logo.png" />
+    <link rel="stylesheet" href="../css/navstyle.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="logo" />
+                <h2>CODEX</h2>
+            </a>
+        </div>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../navhtml/tutorials.html">Tutorials</a></li>
+            <li><a href="../navhtml/quiz.html">Quiz</a></li>
+            <li><a href="../navhtml/contact.html">Contact Us</a></li>
+        </ul>
+        <!-- Searchbar -->   
+        <div class="searchbar">
+            <input type="text" id="search" placeholder="Search...">
+            <button id="searchIcon" title="Search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="11" cy="11" r="7" stroke="#555" stroke-width="2" />
+                    <line x1="16" y1="16" x2="22" y2="22" stroke="#555" stroke-width="2" />
+                </svg>
+            </button>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+        <!-- LogIn Area -->
+        <div class="login" id="loginArea">
+            <a href="../navhtml/login.html"><b>Sign In</b></a>
+        </div>
+    </nav>
+    <br /><br />
+    <div class="main-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul>
+                <!-- SECTION I -->
+                <li><strong><a href="CSS Basics.html">I. CSS Basics</a></strong></li>
+                <li><a href="#Introduction" class="sub-link">CSS Introduction</a></li>
+                <li><a href="#Syntax" class="sub-link">CSS Syntax</a></li>
+                <li><a href="#Selectors" class="sub-link">CSS Selectors</a></li>
+                <li><a href="#Colors" class="sub-link">CSS Colors</a></li>
+                <li><a href="#Backgrounds" class="sub-link">CSS Backgrounds</a></li>
+                <!-- SECTION II -->
+                <li><strong><a href="CSS Intermediate.html">II. Intermediate</a></strong></li>
+                <li><a href="#Borders">CSS Borders</a></li>
+                <li><a href="#Margins">CSS Margins</a></li>
+                <li><a href="#Padding">CSS Padding</a></li>
+                <li><a href="#Text">CSS Text</a></li>
+                <li><a href="#Fonts">CSS Fonts</a></li>
+                <!-- SECTION III -->
+                <li><strong><a href="CSS Advanced.html">III. Advanced</a></strong></li>
+                <li><a href="#Links" class="sub-link">CSS Links</a></li>
+                <li><a href="#Lists" class="sub-link">CSS Lists</a></li>
+                <li><a href="#Tables" class="sub-link">CSS Tables</a></li>
+                <li><a href="#Display" class="sub-link">CSS Display</a></li>
+                <li><a href="#Position" class="sub-link">CSS Position</a></li>
+                <!-- SECTION IV -->
+                <li><strong><a href="CSS Final.html">IV. Final Topics</a></strong></li>
+                <li><a href="#Flexbox" class="sub-link">CSS Flexbox</a></li>
+                <li><a href="#Grid" class="sub-link">CSS Grid</a></li>
+                <li><a href="#Animations" class="sub-link">CSS Animations</a></li>
+                <li><a href="#Transitions" class="sub-link">CSS Transitions</a></li>
+                <li><a href="#Responsive" class="sub-link">CSS Responsive Design</a></li>
+            </ul>
+        </aside>
+        <!-- Quiz -->
+        <div class="quiz-container">
+            <h1>CSS Intermediate Quiz</h1>
+            <p>Test your knowledge of CSS fundamentals! Each question is worth 1 point.</p>
+            <form id="quizForm">
+                <!-- Borders -->
+                <h2 id="Borders">CSS Borders</h2>
+                <div class="question">
+                    <p>1. Which property sets the thickness of a border?</p>
+                    <label><input type="radio" name="q1" value="a"> border</label>
+                    <label><input type="radio" name="q1" value="b"> border-width</label>
+                    <label><input type="radio" name="q1" value="c"> border-size</label>
+                </div>
+                <div class="question">
+                    <p>2. Which value creates a fully rounded element when width equals height?</p>
+                    <label><input type="radio" name="q2" value="a"> border-radius: 50%;</label>
+                    <label><input type="radio" name="q2" value="b"> border-radius: 10px;</label>
+                    <label><input type="radio" name="q2" value="c"> border: round;</label>
+                </div>
+                <div class="question">
+                    <p>3. Which property sets the style of a border (e.g., solid, dashed)?</p>
+                    <label><input type="radio" name="q3" value="a"> border-style</label>
+                    <label><input type="radio" name="q3" value="b"> border-type</label>
+                    <label><input type="radio" name="q3" value="c"> border-decoration</label>
+                </div>
+                <div class="question">
+                    <p>4. Which is a valid border shorthand?</p>
+                    <label><input type="radio" name="q4" value="a"> border: 1px blue solid;</label>
+                    <label><input type="radio" name="q4" value="b"> border: solid blue 1;</label>
+                    <label><input type="radio" name="q4" value="c"> border: width style color;</label>
+                </div>
+                <div class="question">
+                    <p>5. Which property lets you set different colors for each border side?</p>
+                    <label><input type="radio" name="q5" value="a"> border-mix</label>
+                    <label><input type="radio" name="q5" value="b"> border-color</label>
+                    <label><input type="radio" name="q5" value="c"> border-palette</label>
+                </div>
+                <!-- Margins -->
+                <h2 id="Margins">CSS Margins</h2>
+                <div class="question">
+                    <p>6. Which statement about margin collapsing is true?</p>
+                    <label><input type="radio" name="q6" value="a"> Adjacent vertical margins may combine into a single margin</label>
+                    <label><input type="radio" name="q6" value="b"> Horizontal margins always collapse</label>
+                    <label><input type="radio" name="q6" value="c"> Margins never collapse</label>
+                </div>
+                <div class="question">
+                    <p>7. What is the shorthand to set top/right/bottom/left margins?</p>
+                    <label><input type="radio" name="q7" value="a"> margin: top, right, bottom, left;</label>
+                    <label><input type="radio" name="q7" value="b"> margin: top right bottom left;</label>
+                    <label><input type="radio" name="q7" value="c"> margins: t r b l;</label>
+                </div>
+                <div class="question">
+                    <p>8. How do you center a block element horizontally?</p>
+                    <label><input type="radio" name="q8" value="a"> margin: auto;</label>
+                    <label><input type="radio" name="q8" value="b"> margin-left: auto; margin-right: auto;</label>
+                    <label><input type="radio" name="q8" value="c"> text-align: center;</label>
+                </div>
+                <div class="question">
+                    <p>9. Which margin value removes all external spacing?</p>
+                    <label><input type="radio" name="q9" value="a"> 0</label>
+                    <label><input type="radio" name="q9" value="b"> none</label>
+                    <label><input type="radio" name="q9" value="c"> auto</label>
+                </div>
+                <div class="question">
+                    <p>10. Which property sets only the top margin?</p>
+                    <label><input type="radio" name="q10" value="a"> margin-block-start</label>
+                    <label><input type="radio" name="q10" value="b"> margin-top</label>
+                    <label><input type="radio" name="q10" value="c"> padding-top</label>
+                </div>
+                <!-- Padding -->
+                <h2 id="Padding">CSS Padding</h2>
+                <div class="question">
+                    <p>11. Which property sets the inner spacing of an element?</p>
+                    <label><input type="radio" name="q11" value="a"> spacing</label>
+                    <label><input type="radio" name="q11" value="b"> padding</label>
+                    <label><input type="radio" name="q11" value="c"> margin</label>
+                </div>
+                <div class="question">
+                    <p>12. What does <code>box-sizing: border-box;</code> do?</p>
+                    <label><input type="radio" name="q12" value="a"> Excludes padding and border from element width/height</label>
+                    <label><input type="radio" name="q12" value="b"> Includes padding and border in element width/height</label>
+                    <label><input type="radio" name="q12" value="c"> Only affects borders</label>
+                </div>
+                <div class="question">
+                    <p>13. Which is valid padding shorthand?</p>
+                    <label><input type="radio" name="q13" value="a"> padding: 10px 5px 10px 5px;</label>
+                    <label><input type="radio" name="q13" value="b"> padding: 10 5 10 5;</label>
+                    <label><input type="radio" name="q13" value="c"> paddings: 10 5 10 5;</label>
+                </div>
+                <div class="question">
+                    <p>14. Which property sets padding on the inline start in logical flow?</p>
+                    <label><input type="radio" name="q14" value="a"> padding-inline-start</label>
+                    <label><input type="radio" name="q14" value="b"> padding-left</label>
+                    <label><input type="radio" name="q14" value="c"> padding-begin</label>
+                </div>
+                <div class="question">
+                    <p>15. Which unit best scales padding relative to font size?</p>
+                    <label><input type="radio" name="q15" value="a"> px</label>
+                    <label><input type="radio" name="q15" value="b"> em</label>
+                    <label><input type="radio" name="q15" value="c"> deg</label>
+                </div>
+                <!-- Text -->
+                <h2 id="Text">CSS Text</h2>
+                <div class="question">
+                    <p>16. Which property controls spacing between lines of text?</p>
+                    <label><input type="radio" name="q16" value="a"> line-height</label>
+                    <label><input type="radio" name="q16" value="b"> letter-spacing</label>
+                    <label><input type="radio" name="q16" value="c"> word-spacing</label>
+                </div>
+                <div class="question">
+                    <p>17. Which property transforms text to uppercase?</p>
+                    <label><input type="radio" name="q17" value="a"> text-transform: uppercase;</label>
+                    <label><input type="radio" name="q17" value="b"> text-case: upper;</label>
+                    <label><input type="radio" name="q17" value="c"> transform-text: uppercase;</label>
+                </div>
+                <div class="question">
+                    <p>18. Which property adds a line under text?</p>
+                    <label><input type="radio" name="q18" value="a"> text-decoration: underline;</label>
+                    <label><input type="radio" name="q18" value="b"> text-underline: on;</label>
+                    <label><input type="radio" name="q18" value="c"> decoration: underline;</label>
+                </div>
+                <div class="question">
+                    <p>19. Which property controls spacing between characters?</p>
+                    <label><input type="radio" name="q19" value="a"> word-spacing</label>
+                    <label><input type="radio" name="q19" value="b"> white-space</label>
+                    <label><input type="radio" name="q19" value="c"> letter-spacing</label>
+                </div>
+                <div class="question">
+                    <p>20. Which property aligns inline text horizontally within its element?</p>
+                    <label><input type="radio" name="q20" value="a"> text-align</label>
+                    <label><input type="radio" name="q20" value="b"> align-items</label>
+                    <label><input type="radio" name="q20" value="c"> justify-content</label>
+                </div>
+                <!-- Fonts -->
+                <h2 id="Fonts">CSS Fonts</h2>
+                <div class="question">
+                    <p>21. Which property sets the font family?</p>
+                    <label><input type="radio" name="q21" value="a"> font-style</label>
+                    <label><input type="radio" name="q21" value="b"> font-family</label>
+                    <label><input type="radio" name="q21" value="c"> font-variant</label>
+                </div>
+                <div class="question">
+                    <p>22. Which declaration loads a custom font?</p>
+                    <label><input type="radio" name="q22" value="a"> @font-face</label>
+                    <label><input type="radio" name="q22" value="b"> @font</label>
+                    <label><input type="radio" name="q22" value="c"> font-load:</label>
+                </div>
+                <div class="question">
+                    <p>23. Which property controls the thickness of text?</p>
+                    <label><input type="radio" name="q23" value="a"> font-weight</label>
+                    <label><input type="radio" name="q23" value="b"> font-thickness</label>
+                    <label><input type="radio" name="q23" value="c"> text-weight</label>
+                </div>
+                <div class="question">
+                    <p>24. What’s a good generic fallback in a font-family list?</p>
+                    <label><input type="radio" name="q24" value="a"> serif</label>
+                    <label><input type="radio" name="q24" value="b"> emoji</label>
+                    <label><input type="radio" name="q24" value="c"> cursive-only</label>
+                </div>
+                <div class="question">
+                    <p>25. Which property adjusts the size of the font?</p>
+                    <label><input type="radio" name="q25" value="a"> font-size</label>
+                    <label><input type="radio" name="q25" value="b"> text-size</label>
+                    <label><input type="radio" name="q25" value="c"> type-size</label>
+                </div>
+                <button id="submitQuiz" type="button">Submit</button>
+                <div id="result"></div>
+            </form>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="../scripts/main.js"></script>
+    <!-- Quiz Grader -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const submitBtn = document.getElementById("submitQuiz");
+      const resultDiv = document.getElementById("result");
+      const form = document.getElementById("quizForm");
+
+      // Answer key (25)
+      const answers = {
+        q1: "b", q2: "a", q3: "a", q4: "a", q5: "b", // Borders
+        q6: "a", q7: "b", q8: "b", q9: "a", q10: "b", // Margins
+        q11: "b", q12: "b", q13: "a", q14: "a", q15: "b", // Padding
+        q16: "a", q17: "a", q18: "a", q19: "c", q20: "a", // Text
+        q21: "b", q22: "a", q23: "a", q24: "a", q25: "a"  // Fonts
+      };
+
+      submitBtn.addEventListener("click", () => {
+        if (submitBtn.textContent === "Retry") {
+          form.reset();
+          resultDiv.innerHTML = "";
+          submitBtn.textContent = "Submit";
+          document.querySelectorAll("label").forEach(l => { l.style.color = ""; l.style.fontWeight = ""; });
+          return;
+        }
+
+        let score = 0;
+        const total = Object.keys(answers).length;
+
+        document.querySelectorAll("label").forEach(l => { l.style.color = ""; l.style.fontWeight = ""; });
+
+        for (let key in answers) {
+          const selected = document.querySelector(`input[name="${key}"]:checked`);
+          const correctValue = answers[key];
+          const correctLabel = document.querySelector(`input[name="${key}"][value="${correctValue}"]`)?.parentElement;
+
+          if (selected) {
+            if (selected.value === correctValue) {
+              score++;
+              selected.parentElement.style.color = "green";
+              selected.parentElement.style.fontWeight = "bold";
+            } else {
+              selected.parentElement.style.color = "red";
+              selected.parentElement.style.fontWeight = "bold";
+              if (correctLabel) { correctLabel.style.color = "green"; correctLabel.style.fontWeight = "bold"; }
+            }
+          } else if (correctLabel) {
+            correctLabel.style.color = "green";
+            correctLabel.style.fontWeight = "bold";
+          }
+        }
+
+        const percentage = (score / total) * 100;
+        let feedback = "";
+        if (percentage === 100) feedback = "🏆 Perfect! You’re a CSS pro!";
+        else if (percentage >= 80) feedback = "🔥 Excellent work!";
+        else if (percentage >= 60) feedback = "✅ Good effort, keep practicing!";
+        else feedback = "💡 Keep studying CSS — you’ll get it soon!";
+
+        resultDiv.innerHTML = `<h2>Your Score: ${score}/${total}</h2><p>${feedback}</p>`;
+        submitBtn.textContent = "Retry";
+      });
+    });
+  </script>
+</body>
+
+</html>

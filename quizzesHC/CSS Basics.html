@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CODEX | CSS Quiz</title>
+    <link rel="stylesheet" href="../css/HCquiz.css">
+    <link rel="icon" type="image/x-icon" href="../images/logo.png" />
+    <link rel="stylesheet" href="../css/navstyle.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="logo" />
+                <h2>CODEX</h2>
+            </a>
+        </div>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../navhtml/tutorials.html">Tutorials</a></li>
+            <li><a href="../navhtml/quiz.html">Quiz</a></li>
+            <li><a href="../navhtml/contact.html">Contact Us</a></li>
+        </ul>
+        <!-- Searchbar -->
+        <div class="searchbar">
+            <input type="text" id="search" placeholder="Search...">
+            <button id="searchIcon" title="Search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="11" cy="11" r="7" stroke="#555" stroke-width="2" />
+                    <line x1="16" y1="16" x2="22" y2="22" stroke="#555" stroke-width="2" />
+                </svg>
+            </button>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+        <!-- LogIn Area -->
+        <div class="login" id="loginArea">
+            <a href="../navhtml/login.html"><b>Sign In</b></a>
+        </div>
+    </nav>
+    <br /><br />
+    <div class="main-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul>
+                <!-- SECTION I -->
+                <li><strong><a href="CSS Basics.html">I. CSS Basics</a></strong></li>
+                <li><a href="#Introduction">CSS Introduction</a></li>
+                <li><a href="#Syntax">CSS Syntax</a></li>
+                <li><a href="#Selectors">CSS Selectors</a></li>
+                <li><a href="#Colors">CSS Colors</a></li>
+                <li><a href="#Backgrounds">CSS Backgrounds</a></li>
+                <!-- SECTION II -->
+                <li><strong><a href="CSS Intermediate.html">II. Intermediate</a></strong></li>
+                <li><a href="#Borders" class="sub-link">CSS Borders</a></li>
+                <li><a href="#Margins" class="sub-link">CSS Margins</a></li>
+                <li><a href="#Padding" class="sub-link">CSS Padding</a></li>
+                <li><a href="#Text" class="sub-link">CSS Text</a></li>
+                <li><a href="#Fonts" class="sub-link">CSS Fonts</a></li>
+                <!-- SECTION III -->
+                <li><strong><a href="CSS Advanced.html">III. Advanced</a></strong></li>
+                <li><a href="#Links" class="sub-link">CSS Links</a></li>
+                <li><a href="#Lists" class="sub-link">CSS Lists</a></li>
+                <li><a href="#Tables" class="sub-link">CSS Tables</a></li>
+                <li><a href="#Display" class="sub-link">CSS Display</a></li>
+                <li><a href="#Position" class="sub-link">CSS Position</a></li>
+                <!-- SECTION IV -->
+                <li><strong><a href="CSS Final.html">IV. Final Topics</a></strong></li>
+                <li><a href="#Flexbox" class="sub-link">CSS Flexbox</a></li>
+                <li><a href="#Grid" class="sub-link">CSS Grid</a></li>
+                <li><a href="#Animations" class="sub-link">CSS Animations</a></li>
+                <li><a href="#Transitions" class="sub-link">CSS Transitions</a></li>
+                <li><a href="#Responsive" class="sub-link">CSS Responsive Design</a></li>
+        </aside>
+        <div class="quiz-container">
+            <h1>CSS Basics Quiz</h1>
+            <p>Test your knowledge of CSS fundamentals! Each question is worth 1 point.</p>
+            <form id="quizForm">
+                <!-- CSS Introduction -->
+                <h2 id="Introduction">CSS Introduction</h2>
+                <div class="question">
+                    <p>1. What does CSS stand for?</p>
+                    <label><input type="radio" name="q1" value="a"> Creative Style Sheets</label>
+                    <label><input type="radio" name="q1" value="b"> Cascading Style Sheets</label>
+                    <label><input type="radio" name="q1" value="c"> Colorful Style Sheets</label>
+                </div>
+                <div class="question">
+                    <p>2. Where do you link a CSS file in an HTML document?</p>
+                    <label><input type="radio" name="q2" value="a"> At the end of the body</label>
+                    <label><input type="radio" name="q2" value="b"> In the head section</label>
+                    <label><input type="radio" name="q2" value="c"> Inside a div</label>
+                </div>
+                <div class="question">
+                    <p>3. What symbol is used to target a class in CSS?</p>
+                    <label><input type="radio" name="q3" value="a"> #</label>
+                    <label><input type="radio" name="q3" value="b"> .</label>
+                    <label><input type="radio" name="q3" value="c"> *</label>
+                </div>
+                <div class="question">
+                    <p>4. What is the correct CSS syntax to change the text color to blue?</p>
+                    <label><input type="radio" name="q4" value="a"> color = blue;</label>
+                    <label><input type="radio" name="q4" value="b"> text-color: blue;</label>
+                    <label><input type="radio" name="q4" value="c"> color: blue;</label>
+                </div>
+                <div class="question">
+                    <p>5. How do you insert a comment in a CSS file?</p>
+                    <label><input type="radio" name="q5" value="a"> //comment</label>
+                    <label><input type="radio" name="q5" value="b"> &lt;!--comment--&gt;</label>
+                    <label><input type="radio" name="q5" value="c"> /* comment */</label>
+                </div>
+                <!-- CSS Syntax -->
+                <h2 id="Syntax">CSS Syntax</h2>
+                <div class="question">
+                    <p>6. Which selector is used to select an element with id “header”?</p>
+                    <label><input type="radio" name="q6" value="a"> .header</label>
+                    <label><input type="radio" name="q6" value="b"> header</label>
+                    <label><input type="radio" name="q6" value="c"> #header</label>
+                </div>
+                <div class="question">
+                    <p>7. What does the universal selector (*) do?</p>
+                    <label><input type="radio" name="q7" value="a"> Selects all elements</label>
+                    <label><input type="radio" name="q7" value="b"> Selects only div elements</label>
+                    <label><input type="radio" name="q7" value="c"> Selects all IDs</label>
+                </div>
+                <div class="question">
+                    <p>8. How can you select all p elements inside a div?</p>
+                    <label><input type="radio" name="q8" value="a"> div p</label>
+                    <label><input type="radio" name="q8" value="b"> div.p</label>
+                    <label><input type="radio" name="q8" value="c"> p div</label>
+                </div>
+                <div class="question">
+                    <p>9. What selector targets elements with a specific attribute?</p>
+                    <label><input type="radio" name="q9" value="a"> [attribute]</label>
+                    <label><input type="radio" name="q9" value="b"> (attribute)</label>
+                    <label><input type="radio" name="q9" value="c"> {attribute}</label>
+                </div>
+                <div class="question">
+                    <p>10. How do you select all elements with class “btn” and id “submit”?</p>
+                    <label><input type="radio" name="q10" value="a"> .btn, #submit</label>
+                    <label><input type="radio" name="q10" value="b"> .btn #submit</label>
+                    <label><input type="radio" name="q10" value="c"> #btn.submit</label>
+                </div>
+                <!-- CSS Selectors -->
+                <h2 id="Selectors">CSS Selectors</h2>
+                <div class="question">
+                    <p>11. What is the default text color for most browsers?</p>
+                    <label><input type="radio" name="q11" value="a"> Black</label>
+                    <label><input type="radio" name="q11" value="b"> White</label>
+                    <label><input type="radio" name="q11" value="c"> Gray</label>
+                </div>
+                <div class="question">
+                    <p>12. Which of the following is a valid RGB value?</p>
+                    <label><input type="radio" name="q12" value="a"> rgb(255,0,0)</label>
+                    <label><input type="radio" name="q12" value="b"> rgb(255,255)</label>
+                    <label><input type="radio" name="q12" value="c"> rgb(255)</label>
+                </div>
+                <div class="question">
+                    <p>13. What is the hexadecimal value for white color?</p>
+                    <label><input type="radio" name="q13" value="a"> #ffffff</label>
+                    <label><input type="radio" name="q13" value="b"> #000000</label>
+                    <label><input type="radio" name="q13" value="c"> #ff0000</label>
+                </div>
+                <div class="question">
+                    <p>14. How can you make a background color semi-transparent?</p>
+                    <label><input type="radio" name="q14" value="a"> Use rgba()</label>
+                    <label><input type="radio" name="q14" value="b"> Use rgb()</label>
+                    <label><input type="radio" name="q14" value="c"> Use opacity property only</label>
+                </div>
+                <div class="question">
+                    <p>15. What is the shortcut property to set all color properties in one declaration?</p>
+                    <label><input type="radio" name="q15" value="a"> background</label>
+                    <label><input type="radio" name="q15" value="b"> color</label>
+                    <label><input type="radio" name="q15" value="c"> border</label>
+                </div>
+                <!-- CSS Colors -->
+                <h2 id="Colors">CSS Colors</h2>
+                <div class="question">
+                    <p>16. Which property is used to set a background image?</p>
+                    <label><input type="radio" name="q16" value="a"> background-image</label>
+                    <label><input type="radio" name="q16" value="b"> image</label>
+                    <label><input type="radio" name="q16" value="c"> bg-image</label>
+                </div>
+                <div class="question">
+                    <p>17. How do you make a background image repeat horizontally?</p>
+                    <label><input type="radio" name="q17" value="a"> background-repeat: repeat-x;</label>
+                    <label><input type="radio" name="q17" value="b"> background-repeat: repeat-y;</label>
+                    <label><input type="radio" name="q17" value="c"> background-repeat: none;</label>
+                </div>
+                <div class="question">
+                    <p>18. Which property controls the position of a background image?</p>
+                    <label><input type="radio" name="q18" value="a"> background-position</label>
+                    <label><input type="radio" name="q18" value="b"> image-position</label>
+                    <label><input type="radio" name="q18" value="c"> bg-align</label>
+                </div>
+                <div class="question">
+                    <p>19. How do you make the background image cover the entire element?</p>
+                    <label><input type="radio" name="q19" value="a"> background-size: cover;</label>
+                    <label><input type="radio" name="q19" value="b"> background-repeat: full;</label>
+                    <label><input type="radio" name="q19" value="c"> background-fit: full;</label>
+                </div>
+                <div class="question">
+                    <p>20. Which property allows you to set multiple background images?</p>
+                    <label><input type="radio" name="q20" value="a"> background</label>
+                    <label><input type="radio" name="q20" value="b"> multi-background</label>
+                    <label><input type="radio" name="q20" value="c"> background-multiple</label>
+                </div>
+                <h2 id="Backgrounds">CSS Backgrounds</h2>
+                <div class="question">
+                    <p>21. Which CSS property is used to fix the background image so it doesn’t scroll with the page?</p>
+                    <label><input type="radio" name="q21" value="a"> background-attachment: fixed;</label>
+                    <label><input type="radio" name="q21" value="b"> background-scroll: none;</label>
+                    <label><input type="radio" name="q21" value="c"> background-position: static;</label>
+                </div>
+                <div class="question">
+                    <p>22. How do you make a background image not repeat at all?</p>
+                    <label><input type="radio" name="q22" value="a"> background-repeat: no-repeat;</label>
+                    <label><input type="radio" name="q22" value="b"> background-repeat: stop;</label>
+                    <label><input type="radio" name="q22" value="c"> background: none;</label>
+                </div>
+                <div class="question">
+                    <p>23. What is the default value of the <code>background-repeat</code> property?</p>
+                    <label><input type="radio" name="q23" value="a"> repeat</label>
+                    <label><input type="radio" name="q23" value="b"> no-repeat</label>
+                    <label><input type="radio" name="q23" value="c"> repeat-x</label>
+                </div>
+                <div class="question">
+                    <p>24. How can you set both background color and background image in one declaration?</p>
+                    <label><input type="radio" name="q24" value="a"> background: color url("image.jpg");</label>
+                    <label><input type="radio" name="q24" value="b"> background: url("image.jpg"), color;</label>
+                    <label><input type="radio" name="q24" value="c"> background-combo: color image;</label>
+                </div>
+                <div class="question">
+                    <p>25. What does the <code>background</code> shorthand property allow you to set?</p>
+                    <label><input type="radio" name="q25" value="a"> Color, image, repeat, position, and attachment</label>
+                    <label><input type="radio" name="q25" value="b"> Only background color</label>
+                    <label><input type="radio" name="q25" value="c"> Only background image</label>
+                </div>
+                <button id="submitQuiz" type="button">Submit</button>
+                <div id="result"></div>
+            </form>
+        </div>
+<script src="../scripts/main.js"></script>
+    <!-- Quiz Grader -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const submitBtn = document.getElementById("submitQuiz");
+  const resultDiv = document.getElementById("result");
+  const form = document.getElementById("quizForm");
+
+  submitBtn.addEventListener("click", () => {
+    if (submitBtn.textContent === "Retry") {
+      form.reset();
+      resultDiv.innerHTML = "";
+
+      submitBtn.textContent = "Submit";
+      document.querySelectorAll("label").forEach(label => {
+        label.style.color = "";
+        label.style.fontWeight = "";
+      });
+      return;
+    }
+
+    const answers = {
+      q1: "b", q2: "b", q3: "b", q4: "c", q5: "c",
+      q6: "c", q7: "a", q8: "a", q9: "a", q10: "a",
+      q11: "a", q12: "a", q13: "a", q14: "a", q15: "a",
+      q16: "a", q17: "a", q18: "a", q19: "a", q20: "a",
+      q21: "a", q22: "a", q23: "a", q24: "a", q25: "a"
+    };
+
+    let score = 0;
+    const total = Object.keys(answers).length;
+
+    document.querySelectorAll("label").forEach(label => {
+      label.style.color = "";
+      label.style.fontWeight = "";
+    });
+
+    for (let key in answers) {
+      const selected = document.querySelector(`input[name="${key}"]:checked`);
+      const correctValue = answers[key];
+      const correctLabel = document.querySelector(
+        `input[name="${key}"][value="${correctValue}"]`
+      )?.parentElement;
+
+      if (selected) {
+        if (selected.value === correctValue) {
+          score++;
+          selected.parentElement.style.color = "green";
+          selected.parentElement.style.fontWeight = "bold";
+        } else {
+          selected.parentElement.style.color = "red";
+          selected.parentElement.style.fontWeight = "bold";
+          if (correctLabel) {
+            correctLabel.style.color = "green";
+            correctLabel.style.fontWeight = "bold";
+          }
+        }
+      } else if (correctLabel) {
+        correctLabel.style.color = "green";
+        correctLabel.style.fontWeight = "bold";
+      }
+    }
+
+    const percentage = (score / total) * 100;
+    let feedback = "";
+    if (percentage === 100) feedback = "🏆 Perfect! You’re a CSS master!";
+    else if (percentage >= 80) feedback = "🔥 Excellent work!";
+    else if (percentage >= 60) feedback = "✅ Good effort, keep practicing!";
+    else feedback = "💡 Keep studying CSS — you’ll get it soon!";
+
+    resultDiv.innerHTML = `
+      <h2>Your Score: ${score}/${total}</h2>
+      <p>${feedback}</p>
+    `;
+
+    submitBtn.textContent = "Retry";
+  });
+});</script>
+</body>
+
+</html>
