@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CODEX | CSS Text</title>
+    <link rel="stylesheet" href="../css/navstyle.css" />
+    <link rel="stylesheet" href="../css/content.css" />
+    <link rel="icon" type="image/x-icon" href="../images/logo.PNG" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo"><a href="../index.html"><img src="../images/logo.PNG" alt="logo" />
+                <h2>CODEX</h2>
+            </a></div>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../navhtml/tutorials.html">Tutorials</a></li>
+            <li><a href="../navhtml/quiz.html">Quiz</a></li>
+            <li><a href="../navhtml/contact.html">Contact Us</a></li>
+        </ul>
+        <a href="../Editor/EditCode.html" target="_blank" class="Editors"><b>Open Editor</b></a>
+        <button id="openEditorBtn" class="Editors" data-url="../Editor/PopUp.html"><b>Pop Up Editor</b></button>
+        <!-- Searchbar -->
+        <div class="searchbar">
+            <input type="text" id="search" placeholder="Search...">
+            <button id="searchIcon" title="search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="11" cy="11" r="7" stroke="#555" stroke-width="2" />
+                    <line x1="16" y1="16" x2="22" y2="22" stroke="#555" stroke-width="2" />
+                </svg>
+            </button>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+        <div class="login" id="loginArea"><a href="../navhtml/login.html"><b>Sign In</b></a></div>
+    </nav>
+    <div class="div">
+        <ul>
+            <li>
+                <h3><b>CSS Tutorial</b></h3>
+            </li>
+            <br />
+            <li><a href="CSS Introduction.html">CSS Introduction</a></li>
+            <li><a href="CSS Syntax.html">CSS Syntax</a></li>
+            <li><a href="CSS Selectors.html">CSS Selectors</a></li>
+            <li><a href="CSS Colors.html">CSS Colors</a></li>
+            <li><a href="CSS Backgrounds.html">CSS Backgrounds</a></li>
+            <li><a href="CSS Borders.html">CSS Borders</a></li>
+            <li><a href="CSS Margins.html">CSS Margins</a></li>
+            <li><a href="CSS Padding.html">CSS Padding</a></li>
+            <li><a href="CSS Text.html">CSS Text</a></li>
+            <li><a href="CSS Fonts.html">CSS Fonts</a></li>
+            <li><a href="CSS Links.html">CSS Links</a></li>
+            <li><a href="CSS Lists.html">CSS Lists</a></li>
+            <li><a href="CSS Tables.html">CSS Tables</a></li>
+            <li><a href="CSS Display.html">CSS Display</a></li>
+            <li><a href="CSS Position.html">CSS Position</a></li>
+            <li><a href="CSS Flexbox.html">CSS Flexbox</a></li>
+            <li><a href="CSS Grid.html">CSS Grid</a></li>
+            <li><a href="CSS Animations.html">CSS Animations</a></li>
+            <li><a href="CSS Transitions.html">CSS Transitions</a></li>
+            <li><a href="CSS Responsive.html">CSS Responsive Design</a></li>
+            <br>
+            <li><b>Taglists</b></li><br>
+            <li><a href="CSS Alphabetical.html">Alphabetical</a></li>
+            <li><a href="CSS Category.html">By Category</a></li>
+        </ul>
+    </div>
+    <center>
+        <h1 id="title">CSS <span class="codex">Text</span></h1>
+        <table>
+            <tr>
+                <td>
+                    <h2>Text Properties</h2>
+                    <code style="font-size:130%;">
+                        <p>
+                            • <code>color</code> - text color<br>
+                            • <code>text-align</code> - horizontal alignment<br>
+                            • <code>text-decoration</code> - underline, overline, line-through<br>
+                            • <code>text-transform</code> - uppercase, lowercase, capitalize<br>
+                            • <code>text-indent</code> - first line indent<br>
+                            • <code>letter-spacing</code> - space between letters<br>
+                            • <code>word-spacing</code> - space between words<br>
+                            • <code>line-height</code> - vertical spacing between lines<br>
+                            • <code>text-shadow</code> - adds shadow effect</p>
+                        <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Text Alignment</h2>
+                    <code style="font-size:150%;">
+                        <pre>
+p { text-align: left; }
+h1 { text-align: center; }
+h2 { text-align: right; }
+</pre>
+                    </code>
+                    <hr>
+                    <img src="../images/css_textalign_example.png">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Text Decoration</h2>
+                    <code style="font-size:150%;">
+                        <pre>
+p { text-decoration: underline; }
+h1 { text-decoration: overline; }
+del { text-decoration: line-through; }
+a { text-decoration: none; }
+</pre>
+                    </code>
+                    <hr>
+                    <img src="../images/css_textdecoration_example.png">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Text Transform</h2>
+                    <code style="font-size:150%;">
+                        <pre>
+h1 { text-transform: uppercase; }
+p { text-transform: lowercase; }
+h2 { text-transform: capitalize; }
+</pre>
+                    </code>
+                    <hr>
+                    <img src="../images/css_texttransform_example.png">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Text Shadow</h2>
+                    <code style="font-size:150%;">
+                        <pre>
+h1 {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+</pre>
+                    </code>
+                    <p>Format: horizontal vertical blur color</p>
+                    <hr>
+                    <img src="../images/css_textshadow_example.png">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Letter & Word Spacing</h2>
+                    <code style="font-size:150%;">
+                        <pre>
+p { letter-spacing: 2px; }
+h1 { word-spacing: 5px; }
+</pre>
+                    </code>
+                    <hr>
+                    <img src="../images/css_text_letterandwordspacing_example.png">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Line Height</h2>
+                    <code style="font-size:150%;">
+                        <pre>
+p { line-height: 1.5; }
+h2 { line-height: 200%; }
+          </pre>
+                    </code>
+                    <hr>
+                    <img src="../images/css_textlineheight_example.png">
+                    <hr>
+                </td>
+            </tr>
+        </table>
+        <button class="np"><a href="CSS Padding.html">Previous</a></button>
+        <button class="np"><a href="CSS Fonts.html">Next</a></button>
+    </center>
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>

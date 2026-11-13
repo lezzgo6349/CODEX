@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CODEX | CSS Margins</title>
+    <link rel="stylesheet" href="../css/navstyle.css" />
+    <link rel="stylesheet" href="../css/content.css" />
+    <link rel="icon" type="image/x-icon" href="../images/logo.PNG" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo"><a href="../index.html"><img src="../images/logo.PNG" alt="logo" />
+                <h2>CODEX</h2>
+            </a></div>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../navhtml/tutorials.html">Tutorials</a></li>
+            <li><a href="../navhtml/quiz.html">Quiz</a></li>
+            <li><a href="../navhtml/contact.html">Contact Us</a></li>
+        </ul>
+        <a href="../Editor/EditCode.html" target="_blank" class="Editors"><b>Open Editor</b></a>
+        <button id="openEditorBtn" class="Editors" data-url="../Editor/PopUp.html"><b>Pop Up Editor</b></button>
+        <!-- Searchbar -->
+        <div class="searchbar">
+            <input type="text" id="search" placeholder="Search...">
+            <button id="searchIcon" title="search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="11" cy="11" r="7" stroke="#555" stroke-width="2" />
+                    <line x1="16" y1="16" x2="22" y2="22" stroke="#555" stroke-width="2" />
+                </svg>
+            </button>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+        <div class="login" id="loginArea"><a href="../navhtml/login.html"><b>Sign In</b></a></div>
+    </nav>
+    <div class="div">
+        <ul>
+            <li>
+                <h3><b>CSS Tutorial</b></h3>
+            </li>
+            <br />
+            <li><a href="CSS Introduction.html">CSS Introduction</a></li>
+            <li><a href="CSS Syntax.html">CSS Syntax</a></li>
+            <li><a href="CSS Selectors.html">CSS Selectors</a></li>
+            <li><a href="CSS Colors.html">CSS Colors</a></li>
+            <li><a href="CSS Backgrounds.html">CSS Backgrounds</a></li>
+            <li><a href="CSS Borders.html">CSS Borders</a></li>
+            <li><a href="CSS Margins.html">CSS Margins</a></li>
+            <li><a href="CSS Padding.html">CSS Padding</a></li>
+            <li><a href="CSS Text.html">CSS Text</a></li>
+            <li><a href="CSS Fonts.html">CSS Fonts</a></li>
+            <li><a href="CSS Links.html">CSS Links</a></li>
+            <li><a href="CSS Lists.html">CSS Lists</a></li>
+            <li><a href="CSS Tables.html">CSS Tables</a></li>
+            <li><a href="CSS Display.html">CSS Display</a></li>
+            <li><a href="CSS Position.html">CSS Position</a></li>
+            <li><a href="CSS Flexbox.html">CSS Flexbox</a></li>
+            <li><a href="CSS Grid.html">CSS Grid</a></li>
+            <li><a href="CSS Animations.html">CSS Animations</a></li>
+            <li><a href="CSS Transitions.html">CSS Transitions</a></li>
+            <li><a href="CSS Responsive.html">CSS Responsive Design</a></li>
+            <br>
+            <li><b>Taglists</b></li><br>
+            <li><a href="CSS Alphabetical.html">Alphabetical</a></li>
+            <li><a href="CSS Category.html">By Category</a></li>
+        </ul>
+    </div>
+    <center>
+        <h1 id="title">CSS <span class="codex">Margins</span></h1>
+        <table>
+            <tr>
+                <td>
+                    <h2>What are Margins?</h2>
+                    <p>
+                        <code style="font-size:130%;">
+                            • Margins create space outside an element's border.<br>
+                            • They push elements away from each other.<br>
+                            • Used for spacing between elements.
+                        </code>
+                    </p>
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Individual Sides</h2>
+                    <code style="font-size:150%;">
+                        <pre>
+div {
+  margin-top: 20px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+</pre>
+                    </code>
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Shorthand Property</h2>
+                    <code style="font-size:150%;">
+                        <pre>
+/* All sides */
+div { margin: 20px; }
+
+/* Top/Bottom, Left/Right */
+div { margin: 20px 30px; }
+
+/* Top, Left/Right, Bottom */
+div { margin: 10px 20px 30px; }
+
+/* Top, Right, Bottom, Left */
+div { margin: 10px 20px 30px 40px; }
+          </pre>
+                    </code>
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Auto Value</h2>
+                    <code style="font-size:150%;">
+                        <pre>
+div {
+  width: 300px;
+  margin: auto; /* Centers the element */
+}
+</pre>
+                    </code>
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Negative Margins</h2>
+                    <code style="font-size:150%;">
+                        <pre>
+  div { margin: -10px; }
+</pre>
+                    </code>
+                    <p>Can pull elements closer together.</p>
+                    <hr>
+                </td>
+            </tr>
+        </table>
+        <button class="np"><a href="CSS Borders.html">Previous</a></button>
+        <button class="np"><a href="CSS Padding.html">Next</a></button>
+    </center>
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>

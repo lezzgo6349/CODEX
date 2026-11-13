@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CODEX | CSS Selectors</title>
+    <link rel="stylesheet" href="../css/navstyle.css" />
+    <link rel="stylesheet" href="../css/content.css" />
+    <link rel="icon" type="image/x-icon" href="../images/logo.PNG" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo"><a href="../index.html"><img src="../images/logo.PNG" alt="logo" />
+                <h2>CODEX</h2>
+            </a></div>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../navhtml/tutorials.html">Tutorials</a></li>
+            <li><a href="../navhtml/quiz.html">Quiz</a></li>
+            <li><a href="../navhtml/contact.html">Contact Us</a></li>
+        </ul>
+        <a href="../Editor/EditCode.html" target="_blank" class="Editors"><b>Open Editor</b></a>
+        <button id="openEditorBtn" class="Editors" data-url="../Editor/PopUp.html"><b>Pop Up Editor</b></button>
+        <!-- Searchbar -->
+        <div class="searchbar">
+            <input type="text" id="search" placeholder="Search...">
+            <button id="searchIcon" title="search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="11" cy="11" r="7" stroke="#555" stroke-width="2" />
+                    <line x1="16" y1="16" x2="22" y2="22" stroke="#555" stroke-width="2" />
+                </svg>
+            </button>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+        <div class="login" id="loginArea"><a href="../navhtml/login.html"><b>Sign In</b></a></div>
+    </nav>
+    <div class="div">
+        <ul>
+            <li>
+                <h3><b>CSS Tutorial</b></h3>
+            </li>
+            <br>
+            <li><a href="CSS Introduction.html">CSS Introduction</a></li>
+            <li><a href="CSS Syntax.html">CSS Syntax</a></li>
+            <li><a href="CSS Selectors.html">CSS Selectors</a></li>
+            <li><a href="CSS Colors.html">CSS Colors</a></li>
+            <li><a href="CSS Backgrounds.html">CSS Backgrounds</a></li>
+            <li><a href="CSS Borders.html">CSS Borders</a></li>
+            <li><a href="CSS Margins.html">CSS Margins</a></li>
+            <li><a href="CSS Padding.html">CSS Padding</a></li>
+            <li><a href="CSS Text.html">CSS Text</a></li>
+            <li><a href="CSS Fonts.html">CSS Fonts</a></li>
+            <li><a href="CSS Links.html">CSS Links</a></li>
+            <li><a href="CSS Lists.html">CSS Lists</a></li>
+            <li><a href="CSS Tables.html">CSS Tables</a></li>
+            <li><a href="CSS Display.html">CSS Display</a></li>
+            <li><a href="CSS Position.html">CSS Position</a></li>
+            <li><a href="CSS Flexbox.html">CSS Flexbox</a></li>
+            <li><a href="CSS Grid.html">CSS Grid</a></li>
+            <li><a href="CSS Animations.html">CSS Animations</a></li>
+            <li><a href="CSS Transitions.html">CSS Transitions</a></li>
+            <li><a href="CSS Responsive.html">CSS Responsive Design</a></li>
+            <br>
+            <li><b>Taglists</b></li><br>
+            <li><a href="CSS Alphabetical.html">Alphabetical</a></li>
+            <li><a href="CSS Category.html">By Category</a></li>
+        </ul>
+    </div>
+    <center>
+        <h1 id="title">CSS <span class="codex">Selectors</span></h1>
+        <table>
+            <tr>
+                <td>
+                    <h2>What are CSS Selectors?</h2>
+                    <p>• CSS selectors are patterns used to select and style HTML elements.<br />
+                        • Selectors are used to target specific elements on a webpage.<br />
+                        • Different types of selectors allow precise control over styling.</p>
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Element Selector</h2>
+                    <p>Selects all elements of a specific type.</p>
+                    <code style="font-size:150%;">
+                        <pre>
+p {
+  color: blue;
+}
+</pre>
+                    </code>
+                    <p>This targets all <code>&lt;p&gt;</code> elements and makes them blue.</p>
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>ID Selector</h2>
+                    <p>Selects an element with a specific ID attribute.</p>
+                    <code style="font-size:150%;">
+                        <pre>
+#header {
+  background-color: gray;
+}
+</pre>
+                    </code>
+                    <p>Targets the element with <code>id="header"</code>. Use <code>#</code> followed by the ID name.</p>
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Class Selector</h2>
+                    <p>Selects all elements with a specific class attribute.</p>
+                    <code style="font-size:150%;">
+                        <pre>
+.highlight {
+  color: yellow;
+}
+</pre>
+                    </code>
+                    <p>Targets all elements with <code>class="highlight"</code>. Use <code>.</code> followed by the class name.</p>
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Descendant Selector</h2>
+                    <p>Selects elements that are descendants of another element.</p>
+                    <code style="font-size:150%;">
+                        <pre>
+div p {
+  margin: 10px;
+}
+</pre>
+                    </code>
+                    <p>Targets all <code>&lt;p&gt;</code> elements inside <code>&lt;div&gt;</code> elements.</p>
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Child Selector</h2>
+                    <p>Selects direct children of an element.</p>
+                    <code style="font-size:150%;">
+                        <pre>div > p {
+  color: red;
+}</pre>
+                    </code>
+                    <p>Targets only direct child <code>&lt;p&gt;</code> elements of <code>&lt;div&gt;</code>.</p>
+                    <hr />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Attribute Selector</h2>
+                    <p>Selects elements based on attributes.</p>
+                    <code style="font-size:150%;">
+                        <pre>input[type="text"] {
+  border: 1px solid blue;
+}</pre>
+                    </code>
+                    <p>Targets all text inputs.</p>
+                    <hr />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Pseudo-class Selectors</h2>
+                    <p>Select elements in a specific state.</p>
+                    <code style="font-size:150%;">
+                        <pre>a:hover {
+  color: green;
+}
+button:active {
+  background: darkblue;
+}</pre>
+                    </code>
+                    <p>Common pseudo-classes:
+                        <code style="font-size:120%;">
+                            <code>:hover</code>, <code>:active</code>, <code>:focus</code>, <code>:first-child</code>, <code>:nth-child()</code>.</p>
+                    <hr>
+                </td>
+            </tr>
+            </code>
+        </table>
+        <button class="np"><a href="CSS Syntax.html">Previous</a></button>
+        <button class="np"><a href="CSS Colors.html">Next</a></button>
+    </center>
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>
