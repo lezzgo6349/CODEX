@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEX | HTML Meta</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/navstyle.css" />
+    <link rel="stylesheet" href="../css/content.css" />
+    <link rel="icon" type="image/x-icon" href="../images/logo.png" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="logo" />
+                <h2>CODEX</h2>
+            </a>
+        </div>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../navhtml/tutorials.html">Tutorials</a></li>
+            <li><a href="../navhtml/quiz.html">Quiz</a></li>
+            <li><a href="../navhtml/contact.html">Contact Us</a></li>
+        </ul>
+        <a href="../Editor/EditCode.html" target="_blank" class="Editors"><b>Open Editor</b></a>
+        <button id="openEditorBtn" class="Editors" data-url="../Editor/PopUp.html"><b>Pop Up Editor</b></button>
+        <!-- Searchbar -->
+        <div class="searchbar">
+            <input type="text" id="search" placeholder="Search...">
+            <button id="searchIcon" title="search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="11" cy="11" r="7" stroke="#555" stroke-width="2" />
+                    <line x1="16" y1="16" x2="22" y2="22" stroke="#555" stroke-width="2" />
+                </svg>
+            </button>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+        <div class="login" id="loginArea">
+            <a href="../navhtml/login.html"><b>Sign In</b></a>
+        </div>
+    </nav>
+    <!--Content-->
+    <div class="div">
+        <ul>
+            <li>
+                <h3><b>HTML Tutorial</b></h3>
+            </li>
+            <br>
+            <li><a href="Html Introduction.html">HTML Introduction</a></li>
+            <li><a href="Html Editors.html">HTML Editors</a></li>
+            <li><a href="Basic Structure.html">HTML Basic Structure</a></li>
+            <li><a href="Elements.html">HTML Elements</a></li>
+            <li><a href="Attributes.html">HTML Attributes</a></li>
+            <li><a href="Headings.html">HTML Headings</a></li>
+            <li><a href="Paragraphs.html">HTML Paragraphs</a></li>
+            <li><a href="Text Formatting.html">HTML Text Formatting</a></li>
+            <li><a href="Quotations.html">HTML Quotations</a></li>
+            <li><a href="Comment.html">HTML Comment</a></li>
+            <li><a href="Links and Images.html">HTML Links and Images</a></li>
+            <li><a href="Html Lists.html">HTML Lists</a></li>
+            <li><a href="Html Tables.html">HTML Tables</a></li>
+            <li><a href="Html Forms.html">HTML Forms</a></li>
+            <li><a href="Html Media.html">HTML Media</a></li>
+            <li><a href="Html Styles.html">HTML Styles</a></li>
+            <li><a href="Html CSS.html">HTML CSS</a></li>
+            <li><a href="Html Div.html">HTML Div</a></li>
+            <li><a href="Classes Id.html">HTML Classes & Id</a></li>
+            <li><a href="Semantics.html">HTML Semantics</a></li>
+            <li><a href="Iframe.html">HTML Iframe</a></li>
+            <li><a href="Meta.html">HTML Meta</a></li>
+            <li><a href="Entities.html">HTML Entities</a></li>
+            <li><a href="Symbols.html">HTML Symbols</a></li>
+            <li><a href="Chharsets.html">HTML Charsets</a></li>
+            <li><a href="HvX.html">HTML vs XHTML</a></li>
+            <br>
+            <li><b>Taglists</b></li><br>
+            <li>
+            <li><a href="Html Alphabetical.html">Alphabetical</a></li>
+            </li>
+            <li>
+            <li><a href="Html Category.html">By Category</a></li>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- Content -->
+    <center>
+        <h1 id="title">Learning Web Structure with <span class="codex">HTML</span> </h1>
+        <table>
+            <tr>
+                <td>
+                    <h2> HTML Meta Tags </h2>
+                    <p>
+                        • The HTML <span class="colortext">&lt;meta&gt;</span> tag defines metadata about an HTML document. <br>
+                        • Metadata is data (information) about data. <br><br>
+                        • <span class="colortext">&lt;meta&gt;</span> tags always go inside the <span class="colortext">&lt;head&gt;</span> element. <br>
+                        • Meta tags are used to specify character set, page description, keywords, author of the document, and viewport settings.
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2> Meta Tags Syntax</h2>
+                    <p>
+                        • The HTML <span class="colortext">&lt;meta&gt;</span> tag is an empty element and contains only attributes. <br>
+                        • Metadata is not displayed on the page, but is machine parsable. <br>
+                        • Meta tags are used by browsers, search engines, and other web services:
+                        <hr>
+                        <code style="font-size:150%;">
+                            &lt;meta charset&equals;&quot;UTF-8&quot;&gt;<br>
+                            &lt;meta name&equals;&quot;description&quot; content&equals;&quot;Free HTML tutorials&quot;&gt;<br>
+                            &lt;meta name&equals;&quot;keywords&quot; content&equals;&quot;HTML, CSS, JavaScript&quot;&gt;<br>
+                            &lt;meta name&equals;&quot;author&quot; content&equals;&quot;John Doe&quot;&gt;<br>
+                            &lt;meta name&equals;&quot;viewport&quot; content&equals;&quot;width&equals;device&lowbar;width, initial&lowbar;scale&equals;1.0&quot;&gt;
+                            <!-- to be designed-->
+                        </code>
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2> Specify Character Set</h2>
+                    <p>
+                        • The <span class="colortext">charset</span> attribute specifies the character encoding for the HTML document. <br>
+                        • UTF-8 character set covers almost all characters and symbols in the world. <br>
+                        • If not specified, the default character set for HTML5 is UTF-8:
+                        <hr>
+                        <code style="font-size:150%;">
+                            &lt;meta charset&equals;&quot;UTF-8&quot;&gt;
+                            <!--to be designed-->
+                        </code>
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2> Define a Description of Your Web Page</h2>
+                    <p>
+                        • The <span class="colortext">name</span> attribute with the value <span class="colortext">description</span> defines the description of your web page. <br>
+                        • This description is often used by search engines to display a snippet of your page in search results:
+                        <hr>
+                        <code style="font-size:150%;">
+                            &lt;meta name&equals;&quot;description&quot; content&equals;&quot;Free web tutorials on HTML and CSS&quot;&gt;
+                            <!--to be designed-->
+                        </code>
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2> Define Keywords for Search Engines</h2>
+                    <p>
+                        • The <span class="colortext">name</span> attribute with the value <span class="colortext">keywords</span> defines keywords for search engines. <br>
+                        • Note: Some search engines no longer use this meta tag:
+                        <hr>
+                        <code style="font-size:150%;">
+                            &lt;meta name&equals;&quot;keywords&quot; content&equals;&quot;HTML, CSS, JavaScript, Web Development&quot;&gt;
+                            <!--to be designed-->
+                        </code>
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2> Define the Author of a Page</h2>
+                    <p>
+                        • The <span class="colortext">name</span> attribute with the value <span class="colortext">author</span> defines the author of the web page:
+                        <hr>
+                        <code style="font-size:150%;">
+                            &lt;meta name&equals;&quot;author&quot; content&equals;&quot;John Doe&quot;&gt;
+                            <!--to be designed-->
+                        </code>
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2> Refresh Document Every 30 Seconds</h2>
+                    <p>
+                        • The <span class="colortext">http-equiv</span> attribute with the value <span class="colortext">refresh</span> defines a time interval for the document to refresh itself. <br>
+                        • The <span class="colortext">content</span> attribute must contain the number of seconds:
+                        <hr>
+                        <code style="font-size:150%;">
+                            &lt;meta http&lowbar;equiv&equals;&quot;refresh&quot; content&equals;&quot;30&quot;&gt;
+                            <!--to be designed-->
+                        </code>
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2> Setting the Viewport</h2>
+                    <p>
+                        • The viewport is the user's visible area of a web page. <br>
+                        • It varies with the device - it will be smaller on a mobile phone than on a computer screen. <br>
+                        • You should include the following <span class="colortext">&lt;meta&gt;</span> viewport element in all your web pages:
+                        <hr>
+                        <code style="font-size:150%;">
+                            &lt;meta name&equals;&quot;viewport&quot; content&equals;&quot;width&equals;device&lowbar;width, initial&lowbar;scale&equals;1.0&quot;&gt;
+                            <!--to be designed-->
+                        </code>
+                        <hr>
+                        • This gives the browser instructions on how to control the page's dimensions and scaling. <br><br>
+                        • <b>width=device-width:</b> Sets the width of the page to follow the screen-width of the device. <br>
+                        • <b>initial-scale=1.0:</b> Sets the initial zoom level when the page is first loaded by the browser.
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2> Common Meta Tags</h2>
+                    <p>
+                        • <b>charset:</b> Specifies the character encoding for the document. <br><br>
+                        • <b>description:</b> Provides a brief description of the web page. <br><br>
+                        • <b>keywords:</b> Specifies keywords for search engines (less important now). <br><br>
+                        • <b>author:</b> Defines the author of the document. <br><br>
+                        • <b>viewport:</b> Controls the page's dimensions and scaling on different devices. <br><br>
+                        • <b>robots:</b> Tells search engines which pages to index and follow. <br><br>
+                        • <b>theme-color:</b> Sets the theme color for the browser UI.
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2> Importance of Meta Tags</h2>
+                    <p>
+                        • <b>SEO:</b> Help search engines understand and rank your website better. <br><br>
+                        • <b>Social Media:</b> Control how your pages appear when shared on social platforms (using Open Graph tags). <br><br>
+                        • <b>Mobile Responsiveness:</b> The viewport meta tag is essential for responsive web design. <br><br>
+                        • <b>Character Encoding:</b> Ensures your content displays correctly in all browsers. <br><br>
+                        • <b>Browser Behavior:</b> Can control caching, refresh rates, and other browser behaviors.
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2> Chapter Summary </h2>
+                    <p>
+                        • The HTML <span class="colortext">&lt;meta&gt;</span> tag defines metadata about an HTML document<br>
+                        • Metadata will not be displayed on the page, but is machine parsable<br>
+                        • Meta tags are always placed inside the <span class="colortext">&lt;head&gt;</span> element<br>
+                        • Use <span class="colortext">charset</span> to specify the character encoding (UTF-8 is recommended)<br>
+                        • Use <span class="colortext">name</span> and <span class="colortext">content</span> attributes to define metadata<br>
+                        • The <span class="colortext">viewport</span> meta tag is essential for responsive web design<br>
+                        • Meta tags are important for SEO, social media sharing, and browser behavior
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <button class="np"><a href="Iframe.html">Previous</a></button>
+        <button class="np"><a href="Entities.html">Next</a></button>
+    </center>
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEX | HTML Entities</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/navstyle.css" />
+    <link rel="stylesheet" href="../css/content.css" />
+    <link rel="icon" type="image/x-icon" href="../images/logo.png" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="logo" />
+                <h2>CODEX</h2>
+            </a>
+        </div>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../navhtml/tutorials.html">Tutorials</a></li>
+            <li><a href="../navhtml/quiz.html">Quiz</a></li>
+            <li><a href="../navhtml/contact.html">Contact Us</a></li>
+        </ul>
+        <a href="../Editor/EditCode.html" target="_blank" class="Editors"><b>Open Editor</b></a>
+        <button id="openEditorBtn" class="Editors" data-url="../Editor/PopUp.html"><b>Pop Up Editor</b></button>
+        <!-- Searchbar -->
+        <div class="searchbar">
+            <input type="text" id="search" placeholder="Search...">
+            <button id="searchIcon" title="search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="11" cy="11" r="7" stroke="#555" stroke-width="2" />
+                    <line x1="16" y1="16" x2="22" y2="22" stroke="#555" stroke-width="2" />
+                </svg>
+            </button>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+        <div class="login" id="loginArea">
+            <a href="../navhtml/login.html"><b>Sign In</b></a>
+        </div>
+    </nav>
+    <!--Content-->
+    <div class="div">
+        <ul>
+            <li>
+                <h3><b>HTML Tutorial</b></h3>
+            </li>
+            <br>
+            <li><a href="Html Introduction.html">HTML Introduction</a></li>
+            <li><a href="Html Editors.html">HTML Editors</a></li>
+            <li><a href="Basic Structure.html">HTML Basic Structure</a></li>
+            <li><a href="Elements.html">HTML Elements</a></li>
+            <li><a href="Attributes.html">HTML Attributes</a></li>
+            <li><a href="Headings.html">HTML Headings</a></li>
+            <li><a href="Paragraphs.html">HTML Paragraphs</a></li>
+            <li><a href="Text Formatting.html">HTML Text Formatting</a></li>
+            <li><a href="Quotations.html">HTML Quotations</a></li>
+            <li><a href="Comment.html">HTML Comment</a></li>
+            <li><a href="Links and Images.html">HTML Links and Images</a></li>
+            <li><a href="Html Lists.html">HTML Lists</a></li>
+            <li><a href="Html Tables.html">HTML Tables</a></li>
+            <li><a href="Html Forms.html">HTML Forms</a></li>
+            <li><a href="Html Media.html">HTML Media</a></li>
+            <li><a href="Html Styles.html">HTML Styles</a></li>
+            <li><a href="Html CSS.html">HTML CSS</a></li>
+            <li><a href="Html Div.html">HTML Div</a></li>
+            <li><a href="Classes Id.html">HTML Classes & Id</a></li>
+            <li><a href="Semantics.html">HTML Semantics</a></li>
+            <li><a href="Iframe.html">HTML Iframe</a></li>
+            <li><a href="Meta.html">HTML Meta</a></li>
+            <li><a href="Entities.html">HTML Entities</a></li>
+            <li><a href="Symbols.html">HTML Symbols</a></li>
+            <li><a href="Chharsets.html">HTML Charsets</a></li>
+            <li><a href="HvX.html">HTML vs XHTML</a></li>
+            <br>
+            <li><b>Taglists</b></li><br>
+            <li>
+            <li><a href="Html Alphabetical.html">Alphabetical</a></li>
+            </li>
+            <li>
+            <li><a href="Html Category.html">By Category</a></li>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- Content -->
+    <center>
+        <h1 id="title">Learning Web Structure with <span class="codex">HTML</span> </h1>
+        <table>
+            <tr>
+                <td>
+                    <h2>
+                        HTML Entities
+                    </h2>
+                    <hr>
+                    <p>
+                        HTML entities are characters used to display reserved characters or characters that don't appear on your keyboard. <br><br>
+                        They start with an ampersand (<span class="colortext">&amp;</span>) and end with a semicolon (<span class="colortext">;</span>). <br><br>
+                        HTML entities ensure your special characters display correctly in browsers.
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Why Use HTML Entities?</b>
+                        <ul>
+                            <li>Display reserved characters like <span class="colortext">&lt;</span>, <span class="colortext">&gt;</span>, and <span class="colortext">&amp;</span> that have special meaning in HTML</li>
+                            <li>Show characters not available on your keyboard (e.g., copyright symbol <span class="colortext">&copy;</span>, trademark <span class="colortext">&trade;</span>)</li>
+                            <li>Prevent browsers from interpreting characters as HTML code</li>
+                            <li>Ensure consistent display across different browsers and character encodings</li>
+                        </ul>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Common HTML Entities:</b>
+                        <ul>
+                            <li><span class="colortext">&amp;lt;</span> or <span class="colortext">&amp;#60;</span> - Less than sign (<span class="colortext">&lt;</span>)</li>
+                            <li><span class="colortext">&amp;gt;</span> or <span class="colortext">&amp;#62;</span> - Greater than sign (<span class="colortext">&gt;</span>)</li>
+                            <li><span class="colortext">&amp;amp;</span> or <span class="colortext">&amp;#38;</span> - Ampersand (<span class="colortext">&amp;</span>)</li>
+                            <li><span class="colortext">&amp;quot;</span> or <span class="colortext">&amp;#34;</span> - Double quotation mark (<span class="colortext">"</span>)</li>
+                            <li><span class="colortext">&amp;apos;</span> or <span class="colortext">&amp;#39;</span> - Single quotation mark (<span class="colortext">'</span>)</li>
+                            <li><span class="colortext">&amp;nbsp;</span> or <span class="colortext">&amp;#160;</span> - Non-breaking space</li>
+                            <li><span class="colortext">&amp;copy;</span> or <span class="colortext">&amp;#169;</span> - Copyright symbol (<span class="colortext">&copy;</span>)</li>
+                            <li><span class="colortext">&amp;reg;</span> or <span class="colortext">&amp;#174;</span> - Registered trademark (<span class="colortext">&reg;</span>)</li>
+                            <li><span class="colortext">&amp;trade;</span> or <span class="colortext">&amp;#8482;</span> - Trademark symbol (<span class="colortext">&trade;</span>)</li>
+                            <li><span class="colortext">&amp;euro;</span> or <span class="colortext">&amp;#8364;</span> - Euro symbol (<span class="colortext">&euro;</span>)</li>
+                        </ul>
+                    </p>
+                    <hr>
+                    <p><b>Example - Reserved Characters:</b></p>
+                    <pre>
+      <code style="font-size:140%;">
+&lt;p&gt;To display &lt;div&gt; in HTML, use &amp;lt;div&amp;gt;&lt;/p&gt;
+&lt;p&gt;The company name is Smith &amp;amp; Co.&lt;/p&gt;
+&lt;p&gt;She said, &amp;quot;Hello, World!&amp;quot;&lt;/p&gt;
+&lt;p&gt;Price: $10 &amp;lt; $20&lt;/p&gt;
+      </code>
+    </pre>
+                    <hr>
+                    <img src="../images/entities_reserved_output.png" alt="Reserved Characters Example Output">
+                    <hr>
+                    <p><b>Example - Special Characters and Symbols:</b></p>
+                    <pre>
+      <code style="font-size:140%;">
+&lt;p&gt;Copyright &amp;copy; 2024 My Company&lt;/p&gt;
+&lt;p&gt;Registered trademark&amp;reg; and Trademark&amp;trade;&lt;/p&gt;
+&lt;p&gt;Price: &amp;euro;50 or &amp;pound;40&lt;/p&gt;
+&lt;p&gt;Mathematical: 5 &amp;times; 3 = 15, 10 &amp;divide; 2 = 5&lt;/p&gt;
+&lt;p&gt;Arrows: &amp;larr; &amp;uarr; &amp;rarr; &amp;darr;&lt;/p&gt;
+      </code>
+    </pre>
+                    <hr>
+                    <img src="../images/entities_symbols_output.png" alt="Special Characters Example Output">
+                    <hr>
+                    <p><b>Example - Using Non-Breaking Space:</b></p>
+                    <pre>
+      <code style="font-size:140%;">
+&lt;p&gt;First Name&nbsp;&nbsp;&nbsp;&nbsp;Last Name&lt;/p&gt;
+&lt;p&gt;Dr.&nbsp;Smith&lt;/p&gt;
+&lt;p&gt;Line&nbsp;with&nbsp;spaces&lt;/p&gt;
+      </code>
+    </pre>
+                    <hr>
+                    <img src="../images/entities_space_output.png" alt="Non-Breaking Space Example Output">
+                    <hr>
+                    <p>
+                        <b>Named Entities vs Numeric Entities:</b>
+                        <ul>
+                            <li><b>Named Entities:</b> Easy to remember (e.g., <span class="colortext">&amp;copy;</span>, <span class="colortext">&amp;nbsp;</span>)</li>
+                            <li><b>Numeric Entities:</b> Use numbers (e.g., <span class="colortext">&amp;#169;</span> for copyright, <span class="colortext">&amp;#160;</span> for non-breaking space)</li>
+                            <li>Numeric entities can use decimal (<span class="colortext">&amp;#169;</span>) or hexadecimal (<span class="colortext">&amp;#xA9;</span>) format</li>
+                            <li>Both work the same way, but named entities are generally more readable</li>
+                        </ul>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Important Reserved Characters:</b>
+                        <ul>
+                            <li>Always use <span class="colortext">&amp;lt;</span> for <span class="colortext">&lt;</span> in HTML code examples</li>
+                            <li>Always use <span class="colortext">&amp;gt;</span> for <span class="colortext">&gt;</span> in HTML code examples</li>
+                            <li>Always use <span class="colortext">&amp;amp;</span> when you want to display an actual ampersand</li>
+                            <li>Use <span class="colortext">&amp;quot;</span> or <span class="colortext">&amp;apos;</span> inside attribute values if needed</li>
+                        </ul>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Best Practices:</b>
+                        <ul>
+                            <li>Use entities for reserved characters (<span class="colortext">&lt;</span>, <span class="colortext">&gt;</span>, <span class="colortext">&amp;</span>) to avoid HTML parsing issues</li>
+                            <li>Use <span class="colortext">&amp;nbsp;</span> sparingly - prefer CSS for spacing when possible</li>
+                            <li>Prefer named entities over numeric ones for better code readability</li>
+                            <li>Ensure proper encoding (<span class="colortext">UTF-8</span>) in your HTML document to support all characters</li>
+                            <li>Test special characters across different browsers to ensure compatibility</li>
+                            <li>Use semantic HTML5 entities for common symbols and currency signs</li>
+                        </ul>
+                    </p>
+                    <hr>
+                </td>
+            </tr>
+        </table>
+        <button class="np"><a href="Semantics.html">Previous</a></button>
+        <button class="np"><a href="Symbols.html">Next</a></button>
+    </center>
+    <!-- JavaScript -->
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>

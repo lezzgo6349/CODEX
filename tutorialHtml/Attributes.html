@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEX | HTML Attributes</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/navstyle.css" />
+    <link rel="stylesheet" href="../css/content.css" />
+    <link rel="icon" type="image/x-icon" href="../images/logo.png" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="logo" />
+                <h2>CODEX</h2>
+            </a>
+        </div>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../navhtml/tutorials.html">Tutorials</a></li>
+            <li><a href="../navhtml/quiz.html">Quiz</a></li>
+            <li><a href="../navhtml/contact.html">Contact Us</a></li>
+        </ul>
+        <a href="../Editor/EditCode.html" target="_blank" class="Editors"><b>Open Editor</b></a>
+        <button id="openEditorBtn" class="Editors" data-url="../Editor/PopUp.html"><b>Pop Up Editor</b></button>
+        <!-- Searchbar -->
+        <div class="searchbar">
+            <input type="text" id="search" placeholder="Search...">
+            <button id="searchIcon" title="search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="11" cy="11" r="7" stroke="#555" stroke-width="2" />
+                    <line x1="16" y1="16" x2="22" y2="22" stroke="#555" stroke-width="2" />
+                </svg>
+            </button>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+        <div class="login" id="loginArea">
+            <a href="../navhtml/login.html"><b>Sign In</b></a>
+        </div>
+    </nav>
+    <!--Content-->
+    <div class="div">
+        <ul>
+            <li>
+                <h3><b>HTML Tutorial</b></h3>
+            </li>
+            <br>
+            <li><a href="Html Introduction.html">HTML Introduction</a></li>
+            <li><a href="Html Editors.html">HTML Editors</a></li>
+            <li><a href="Basic Structure.html">HTML Basic Structure</a></li>
+            <li><a href="Elements.html">HTML Elements</a></li>
+            <li><a href="Attributes.html">HTML Attributes</a></li>
+            <li><a href="Headings.html">HTML Headings</a></li>
+            <li><a href="Paragraphs.html">HTML Paragraphs</a></li>
+            <li><a href="Text Formatting.html">HTML Text Formatting</a></li>
+            <li><a href="Quotations.html">HTML Quotations</a></li>
+            <li><a href="Comment.html">HTML Comment</a></li>
+            <li><a href="Links and Images.html">HTML Links and Images</a></li>
+            <li><a href="Html Lists.html">HTML Lists</a></li>
+            <li><a href="Html Tables.html">HTML Tables</a></li>
+            <li><a href="Html Forms.html">HTML Forms</a></li>
+            <li><a href="Html Media.html">HTML Media</a></li>
+            <li><a href="Html Styles.html">HTML Styles</a></li>
+            <li><a href="Html CSS.html">HTML CSS</a></li>
+            <li><a href="Html Div.html">HTML Div</a></li>
+            <li><a href="Classes Id.html">HTML Classes & Id</a></li>
+            <li><a href="Semantics.html">HTML Semantics</a></li>
+            <li><a href="Iframe.html">HTML Iframe</a></li>
+            <li><a href="Meta.html">HTML Meta</a></li>
+            <li><a href="Entities.html">HTML Entities</a></li>
+            <li><a href="Symbols.html">HTML Symbols</a></li>
+            <li><a href="Chharsets.html">HTML Charsets</a></li>
+            <li><a href="HvX.html">HTML vs XHTML</a></li>
+            <br>
+            <li><b>Taglists</b></li><br>
+            <li>
+            <li><a href="Html Alphabetical.html">Alphabetical</a></li>
+            </li>
+            <li>
+            <li><a href="Html Category.html">By Category</a></li>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- Content -->
+    <center>
+        <h1 id="title">Learning Web Structure with <span class="codex">HTML</span> </h1>
+        <table>
+            <tr>
+                <td>
+                    <h2> HTML Attributes </h2>
+                    <p>
+                        • All HTML elements can have attributes. <br>
+                        • Attributes provide additional information about elements. <br><br>
+                        • Attributes are always specified in the opening tag. <br>
+                        • Attributes typically consist of a name and value pair, formatted as name="value".
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2> The src Attribute</h2>
+                    <p>
+                        • The <span class="colortext">&lt;img&gt;</span> tag is used to embed an image in an HTML page. <br>
+                        • The src attribute specifies the path to the image to be displayed:
+                        <hr>
+                        <code style="font-size:150%;">
+                            &lt;img&nbsp;src&equals;&quot;home.png&quot;&nbsp;alt&equals;&quot;home&quot;&gt;
+                            <!-- to be designed-->
+                        </code>
+                        <hr>
+                        •There are two ways to specify the URL in the src attribute: <br><br>
+                        • <b>Absolute URL: </b> to an external image hosted on another website. <br>
+                        Example: src="<u>https://www.w3schools.com/images/img_girl.jpg</u>".<br> <br>
+                        &nbsp;&nbsp;Notes: External images may be copyrighted, and using them without permission could violate copyright laws. <br><br>
+                        &nbsp;&nbsp;Additionally, external images are outside your control and may be removed or altered unexpectedly. <br> <br>
+                        • <b>Relative URL: </b> Points to an image hosted within the same website, omitting the domain name. <br><br>
+                        &nbsp;&nbsp;&ndash; If the URL starts without a slash, it’s relative to the current page (e.g., src="../images/img_girl.jpg").<br>
+                        &nbsp;&nbsp;&ndash; If it starts with a slash, it’s relative to the domain (e.g., src="/images/img_girl.jpg"). <br><br>
+                        <b>Tip:</b> It is almost always best to use relative URLs. They will not break if you change domain.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2> The href Attribute </h2>
+                    <p>
+                        • The <span class="colortext">&lt;a&gt;</span> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to:
+                        <hr>
+                        <code style="font-size:150%;">
+                            &lt;a href&equals;&quot;https://www.facebook.com&quot;&gt;&nbsp; Go to Facebook &nbsp;&lt;&sol;a&gt;
+                            <!--to be designed-->
+                            <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2> The width and height Attributes</h2>
+                    <p>
+                        • The <span class="colortext">&lt;img&gt;</span> tag should also contain the width and height attributes, <br>
+                        &nbsp; &nbsp;which specify the width and height of the image (in pixels):
+                        <hr>
+                        <code style="font-size:150%;">
+                            &lt;img src&equals;&quot;img&lowbar;girl.jpg&quot; &nbsp;width&equals;&quot;200px&quot; &nbsp;height&equals;&quot;400px&quot;&gt;
+                            <!--to be designed-->
+                        </code>
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2> The alt Attribute</h2>
+                    <p>
+                        • The required alt attribute for the <img> tag specifies an alternate text for an image, <br>
+                        &nbsp;&nbsp; if the image for some reason cannot be displayed. <br><br>
+                        • This can be due to a slow connection, or an error in the src attribute, or if the user uses a screen reader.
+                        <hr>
+                        <code style="font-size:150%;">
+                            &lt;img src&equals;&quot;hoodie&lowbar;girl.jpg&quot; &nbsp;alt&equals;&quot;Girl with a Hoodie&quot;&gt;
+                            <!--to be designed-->
+                        </code>
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2> The style Attribute</h2>
+                    <p>
+                        • The style attribute is used to add styles to an element, such as color, font, size, and more.
+                        <hr>
+                        <code style="font-size:150%;">
+                            &lt;p style&equals;&quot;color: yellow; &quot; &gt; This is a yellow paragraph. &lt;&sol;p&gt;
+                            <!--to be designed-->
+                        </code>
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2> Always use Lowercase Attributes</h2>
+                    <p>
+                        • The HTML standard does not require lowercase attribute names.<br><br>
+                        • The body attribute (and all other attributes) can be written with uppercase or lowercase like <b>body</b> or <b>BODY</b>.<br><br>
+                        • However, Codex recommends lowercase attributes in HTML in order to avoid jumbled and messy structure.
+                        <hr>
+                    </p>
+                    <h2> Always Quote Attribute Values </h2>
+                    <p>
+                        • The HTML standard does not require quotes around attribute values.<br><br>
+                        • However, Codex recommends quotes in HTML, XHTML is strict and quoting is required.
+                        <hr>
+                        <img src="../images/quotesatt.png">
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2> Chapter Summary </h2>
+                    <p>
+                        • All HTML elements can have attributes<br>
+                        • The href attribute of <span class="colortext">&lt;a&gt;</span> specifies the URL of the page the link goes to<br>
+                        • The src attribute of <span class="colortext">&lt;img&gt;</span> specifies the path to the image to be displayed<br>
+                        • The width and height attributes of <span class="colortext">&lt;img&gt;</span> provide size information for images<br>
+                        • The alt attribute of <span class="colortext">&lt;img&gt;</span> provides an alternate text for an image<br>
+                        • The style attribute is used to add styles to an element, such as color, font, size, and more<br>
+                        • The lang attribute of the <span class="colortext">&lt;html&gt;</span> tag declares the language of the Web page<br>
+                        • The title attribute defines some extra information about an element
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <button class="np"><a href="Elements.html">Previous</a></button>
+        <button class="np"><a href="Headings.html">Next</a></button>
+    </center>
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEX | HTML CSS</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/navstyle.css" />
+    <link rel="stylesheet" href="../css/content.css" />
+    <link rel="icon" type="image/x-icon" href="../images/logo.png" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="logo" />
+                <h2>CODEX</h2>
+            </a>
+        </div>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../navhtml/tutorials.html">Tutorials</a></li>
+            <li><a href="../navhtml/quiz.html">Quiz</a></li>
+            <li><a href="../navhtml/contact.html">Contact Us</a></li>
+        </ul>
+        <a href="../Editor/EditCode.html" target="_blank" class="Editors"><b>Open Editor</b></a>
+        <button id="openEditorBtn" class="Editors" data-url="../Editor/PopUp.html"><b>Pop Up Editor</b></button>
+        <!-- Searchbar -->
+        <div class="searchbar">
+            <input type="text" id="search" placeholder="Search...">
+            <button id="searchIcon" title="search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="11" cy="11" r="7" stroke="#555" stroke-width="2" />
+                    <line x1="16" y1="16" x2="22" y2="22" stroke="#555" stroke-width="2" />
+                </svg>
+            </button>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+        <div class="login" id="loginArea">
+            <a href="../navhtml/login.html"><b>Sign In</b></a>
+        </div>
+    </nav>
+    <!--Content-->
+    <div class="div">
+        <ul>
+            <li>
+                <h3><b>HTML Tutorial</b></h3>
+            </li>
+            <br>
+            <li><a href="Html Introduction.html">HTML Introduction</a></li>
+            <li><a href="Html Editors.html">HTML Editors</a></li>
+            <li><a href="Basic Structure.html">HTML Basic Structure</a></li>
+            <li><a href="Elements.html">HTML Elements</a></li>
+            <li><a href="Attributes.html">HTML Attributes</a></li>
+            <li><a href="Headings.html">HTML Headings</a></li>
+            <li><a href="Paragraphs.html">HTML Paragraphs</a></li>
+            <li><a href="Text Formatting.html">HTML Text Formatting</a></li>
+            <li><a href="Quotations.html">HTML Quotations</a></li>
+            <li><a href="Comment.html">HTML Comment</a></li>
+            <li><a href="Links and Images.html">HTML Links and Images</a></li>
+            <li><a href="Html Lists.html">HTML Lists</a></li>
+            <li><a href="Html Tables.html">HTML Tables</a></li>
+            <li><a href="Html Forms.html">HTML Forms</a></li>
+            <li><a href="Html Media.html">HTML Media</a></li>
+            <li><a href="Html Styles.html">HTML Styles</a></li>
+            <li><a href="Html CSS.html">HTML CSS</a></li>
+            <li><a href="Html Div.html">HTML Div</a></li>
+            <li><a href="Classes Id.html">HTML Classes & Id</a></li>
+            <li><a href="Semantics.html">HTML Semantics</a></li>
+            <li><a href="Iframe.html">HTML Iframe</a></li>
+            <li><a href="Meta.html">HTML Meta</a></li>
+            <li><a href="Entities.html">HTML Entities</a></li>
+            <li><a href="Symbols.html">HTML Symbols</a></li>
+            <li><a href="Chharsets.html">HTML Charsets</a></li>
+            <li><a href="HvX.html">HTML vs XHTML</a></li>
+            <br>
+            <li><b>Taglists</b></li><br>
+            <li>
+            <li><a href="Html Alphabetical.html">Alphabetical</a></li>
+            </li>
+            <li>
+            <li><a href="Html Category.html">By Category</a></li>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- Content -->
+    <center>
+        <h1 id="title">Learning Web Structure with <span class="codex">HTML</span> </h1>
+        <table>
+            <tr>
+                <td>
+                    <h2>
+                        HTML CSS
+                    </h2>
+                    <hr>
+                    <p>
+                        <span class="colortext">CSS</span> stands for <b>Cascading Style Sheets</b> and is the language used to describe the style and layout of HTML documents. <br><br>CSS controls how HTML elements look on the screen (color, size, position, fonts, spacing, and much more).
+                    </p>
+                    <hr>
+                    <p>
+                        <b>CSS Syntax:</b>
+                    </p>
+                    <pre>
+      <code style="font-size:150%;">
+selector {
+  property: value;
+  property2: value2;
+}
+      </code>
+    </pre>
+                    <p>
+                        <b>Parts of CSS:</b>
+                        <ul>
+                            <li><span class="colortext">Selector</span> - the HTML element you want to style (e.g. <span class="colortext">p</span>, <span class="colortext">.classname</span>, <span class="colortext">#id</span>)</li>
+                            <li><span class="colortext">Property</span> - the style you want to change (e.g. <span class="colortext">color</span>, <span class="colortext">font-size</span>)</li>
+                            <li><span class="colortext">Value</span> - what you want the property set to (e.g. <span class="colortext">blue</span>, <span class="colortext">18px</span>)</li>
+                        </ul>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Popular CSS Properties:</b>
+                        <ul>
+                            <li><span class="colortext">color</span> - text color</li>
+                            <li><span class="colortext">background-color</span> - background color</li>
+                            <li><span class="colortext">font-size</span> - sets the size of the font</li>
+                            <li><span class="colortext">font-family</span> - sets the font of the text</li>
+                            <li><span class="colortext">margin</span> - adds space outside the element</li>
+                            <li><span class="colortext">padding</span> - adds space inside the element</li>
+                            <li><span class="colortext">border</span> - adds a border around the element</li>
+                            <li><span class="colortext">width</span>, <span class="colortext">height</span> - sets the width and height of the element</li>
+                        </ul>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Three Ways to Include CSS in HTML:</b>
+                        <ul>
+                            <li><b>Inline CSS</b>: Use the <span class="colortext">style</span> attribute directly in HTML elements.</li>
+                            <li><b>Internal CSS</b>: Place CSS rules inside a <span class="colortext">&lt;style&gt;</span> block in the <span class="colortext">&lt;head&gt;</span> section.</li>
+                            <li><b>External CSS</b>: Link to an external .css file using the <span class="colortext">&lt;link&gt;</span> tag.</li>
+                        </ul>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Examples:</b>
+                    </p>
+                    <b>Inline CSS</b>
+                    <pre>
+      <code style="font-size:150%;">
+&lt;h1 style="color: orange;"&gt;Inline CSS Example&lt;/h1&gt;
+      </code>
+    </pre>
+                    <hr>
+                    <b>Internal CSS</b>
+                    <pre>
+      <code style="font-size:150%;">
+&lt;head&gt;
+  &lt;style&gt;
+     h1 {
+       color: green;
+     }
+  &lt;/style&gt;
+&lt;/head&gt;
+      </code>
+    </pre>
+                    <hr>
+                    <b>External CSS</b>
+                    <pre>
+      <code style="font-size:150%;">
+&lt;head&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+      </code>
+    </pre>
+                    <hr>
+                    <img src="../images/css_example.png" alt="CSS Examples">
+                    <hr>
+                    <p>
+                        <b>Best Practices:</b>
+                        <ul>
+                            <li>Use external CSS for large projects to separate design from structure.</li>
+                            <li>Organize your styles using class and id selectors.</li>
+                            <li>Keep CSS clean and readable.</li>
+                        </ul>
+                    </p>
+                    <hr>
+                </td>
+            </tr>
+        </table>
+        <button class="np"><a href="HTML Styles.html">Previous</a></button>
+        <button class="np"><a href="Html Div.html">Next</a></button>
+    </center>
+    <!-- JavaScript -->
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>

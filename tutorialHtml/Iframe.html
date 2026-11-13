@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEX | HTML Iframe</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/navstyle.css" />
+    <link rel="stylesheet" href="../css/content.css" />
+    <link rel="icon" type="image/x-icon" href="../images/logo.png" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="logo" />
+                <h2>CODEX</h2>
+            </a>
+        </div>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../navhtml/tutorials.html">Tutorials</a></li>
+            <li><a href="../navhtml/quiz.html">Quiz</a></li>
+            <li><a href="../navhtml/contact.html">Contact Us</a></li>
+        </ul>
+        <a href="../Editor/EditCode.html" target="_blank" class="Editors"><b>Open Editor</b></a>
+        <button id="openEditorBtn" class="Editors" data-url="../Editor/PopUp.html"><b>Pop Up Editor</b></button>
+        <!-- Searchbar -->
+        <div class="searchbar">
+            <input type="text" id="search" placeholder="Search...">
+            <button id="searchIcon" title="search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="11" cy="11" r="7" stroke="#555" stroke-width="2" />
+                    <line x1="16" y1="16" x2="22" y2="22" stroke="#555" stroke-width="2" />
+                </svg>
+            </button>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+        <div class="login" id="loginArea">
+            <a href="../navhtml/login.html"><b>Sign In</b></a>
+        </div>
+    </nav>
+    <!--Content-->
+    <div class="div">
+        <ul>
+            <li>
+                <h3><b>HTML Tutorial</b></h3>
+            </li>
+            <br>
+            <li><a href="Html Introduction.html">HTML Introduction</a></li>
+            <li><a href="Html Editors.html">HTML Editors</a></li>
+            <li><a href="Basic Structure.html">HTML Basic Structure</a></li>
+            <li><a href="Elements.html">HTML Elements</a></li>
+            <li><a href="Attributes.html">HTML Attributes</a></li>
+            <li><a href="Headings.html">HTML Headings</a></li>
+            <li><a href="Paragraphs.html">HTML Paragraphs</a></li>
+            <li><a href="Text Formatting.html">HTML Text Formatting</a></li>
+            <li><a href="Quotations.html">HTML Quotations</a></li>
+            <li><a href="Comment.html">HTML Comment</a></li>
+            <li><a href="Links and Images.html">HTML Links and Images</a></li>
+            <li><a href="Html Lists.html">HTML Lists</a></li>
+            <li><a href="Html Tables.html">HTML Tables</a></li>
+            <li><a href="Html Forms.html">HTML Forms</a></li>
+            <li><a href="Html Media.html">HTML Media</a></li>
+            <li><a href="Html Styles.html">HTML Styles</a></li>
+            <li><a href="Html CSS.html">HTML CSS</a></li>
+            <li><a href="Html Div.html">HTML Div</a></li>
+            <li><a href="Classes Id.html">HTML Classes & Id</a></li>
+            <li><a href="Semantics.html">HTML Semantics</a></li>
+            <li><a href="Iframe.html">HTML Iframe</a></li>
+            <li><a href="Meta.html">HTML Meta</a></li>
+            <li><a href="Entities.html">HTML Entities</a></li>
+            <li><a href="Symbols.html">HTML Symbols</a></li>
+            <li><a href="Chharsets.html">HTML Charsets</a></li>
+            <li><a href="HvX.html">HTML vs XHTML</a></li>
+            <br>
+            <li><b>Taglists</b></li><br>
+            <li>
+            <li><a href="Html Alphabetical.html">Alphabetical</a></li>
+            </li>
+            <li>
+            <li><a href="Html Category.html">By Category</a></li>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- Content -->
+    <center>
+        <h1 id="title">Learning Web Structure with <span class="codex">HTML</span> </h1>
+        <table>
+            <tr>
+                <td>
+                    <h2> HTML Iframe </h2>
+                    <p>
+                        • An HTML iframe is used to display a web page within a web page. <br>
+                        • The HTML <span class="colortext">&lt;iframe&gt;</span> tag specifies an inline frame. <br><br>
+                        • An inline frame is used to embed another document within the current HTML document. <br>
+                        • Iframes are commonly used to embed maps, videos, or other external content.
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2> Iframe Syntax</h2>
+                    <p>
+                        • The HTML <span class="colortext">&lt;iframe&gt;</span> tag defines an inline frame. <br>
+                        • The src attribute specifies the URL of the page to embed:
+                        <hr>
+                        <code style="font-size:150%;">
+                            &lt;iframe&nbsp;src&equals;&quot;URL&quot;&gt;&lt;&sol;iframe&gt;
+                            <!-- to be designed-->
+                        </code>
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2> Iframe - Set Height and Width</h2>
+                    <p>
+                        • Use the <span class="colortext">height</span> and <span class="colortext">width</span> attributes to specify the size of the iframe. <br>
+                        • The height and width are specified in pixels by default:
+                        <hr>
+                        <code style="font-size:150%;">
+                            &lt;iframe src&equals;&quot;demo&lowbar;iframe.html&quot; height&equals;&quot;200&quot; width&equals;&quot;300&quot;&gt;&lt;&sol;iframe&gt;
+                            <!--to be designed-->
+                            <hr>
+                            <img src="../images/iframe_height_width_output.png">
+                            <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2> Iframe - Remove the Border</h2>
+                    <p>
+                        • By default, an iframe has a border around it. <br>
+                        • To remove the border, add the <span class="colortext">style</span> attribute and use the CSS <span class="colortext">border</span> property:
+                        <hr>
+                        <code style="font-size:150%;">
+                            &lt;iframe src&equals;&quot;demo&lowbar;iframe.html&quot; style&equals;&quot;border: none;&quot;&gt;&lt;&sol;iframe&gt;
+                            <!--to be designed-->
+                        </code>
+                        <hr>
+                        • You can also use CSS to change the size, style, and color of the iframe's border:
+                        <hr>
+                        <code style="font-size:150%;">
+                            &lt;iframe src&equals;&quot;demo&lowbar;iframe.html&quot; style&equals;&quot;border: 2px solid red;&quot;&gt;&lt;&sol;iframe&gt;
+                            <!--to be designed-->
+                        </code>
+                        <hr>
+                        <img src="../images/iframe_border_output.png">
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2> Iframe - Target for a Link</h2>
+                    <p>
+                        • An iframe can be used as the target frame for a link. <br>
+                        • The <span class="colortext">target</span> attribute of the link must refer to the <span class="colortext">name</span> attribute of the iframe:
+                        <hr>
+                        <code style="font-size:150%;">
+                            &lt;iframe src&equals;&quot;demo&lowbar;iframe.html&quot; name&equals;&quot;iframe&lowbar;a&quot;&gt;&lt;&sol;iframe&gt;<br>
+                            &lt;p&gt;&lt;a href&equals;&quot;https://www.example.com&quot; target&equals;&quot;iframe&lowbar;a&quot;&gt;Example.com&lt;&sol;a&gt;&lt;&sol;p&gt;
+                            <!--to be designed-->
+                        </code>
+                        <hr>
+                        <img src="../images/iframe_targetlink_output.png">
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2> Iframe Attributes</h2>
+                    <p>
+                        • <b>src:</b> Specifies the URL of the page to embed in the iframe. <br><br>
+                        • <b>width:</b> Specifies the width of the iframe in pixels or percentage. <br><br>
+                        • <b>height:</b> Specifies the height of the iframe in pixels or percentage. <br><br>
+                        • <b>name:</b> Specifies a name for the iframe (useful for targeting). <br><br>
+                        • <b>title:</b> Specifies extra information about the iframe (useful for accessibility). <br><br>
+                        • <b>sandbox:</b> Enables an extra set of restrictions for the content in the iframe. <br><br>
+                        • <b>loading:</b> Specifies whether a browser should load an iframe immediately or defer loading until certain conditions are met.
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2> Common Uses of Iframes</h2>
+                    <p>
+                        • <b>Embedding Maps:</b> Display Google Maps or other mapping services on your website. <br><br>
+                        • <b>Embedding Videos:</b> Include YouTube, Vimeo, or other video content. <br><br>
+                        • <b>Embedding Social Media:</b> Show Twitter feeds, Facebook posts, or Instagram embeds. <br><br>
+                        • <b>Embedding Documents:</b> Display PDFs or other documents within your page. <br><br>
+                        • <b>Creating Widgets:</b> Embed third-party widgets or calculators.
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2> Chapter Summary </h2>
+                    <p>
+                        • The HTML <span class="colortext">&lt;iframe&gt;</span> tag specifies an inline frame<br>
+                        • The <span class="colortext">src</span> attribute defines the URL of the page to embed<br>
+                        • Always include a <span class="colortext">title</span> attribute (for screen readers)<br>
+                        • The <span class="colortext">height</span> and <span class="colortext">width</span> attributes are used to specify the size of the iframe<br>
+                        • Use CSS <span class="colortext">border</span> property to remove the iframe border or style it<br>
+                        • The <span class="colortext">name</span> attribute allows the iframe to be used as a target for a link<br>
+                        • Iframes are useful for embedding external content like maps, videos, and documents
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <button class="np"><a href="Semantics.html">Previous</a></button>
+        <button class="np"><a href="Meta.html">Next</a></button>
+    </center>
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>

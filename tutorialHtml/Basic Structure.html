@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEX | HTML Basic Structure</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/navstyle.css" />
+    <link rel="stylesheet" href="../css/content.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="logo" />
+                <h2>CODEX</h2>
+            </a>
+        </div>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../navhtml/tutorials.html">Tutorials</a></li>
+            <li><a href="../navhtml/quiz.html">Quiz</a></li>
+            <li><a href="../navhtml/contact.html">Contact Us</a></li>
+        </ul>
+        <a href="../Editor/EditCode.html" target="_blank" class="Editors"><b>Open Editor</b></a>
+        <button id="openEditorBtn" class="Editors" data-url="../Editor/PopUp.html"><b>Pop Up Editor</b></button>
+        <!-- Searchbar -->
+        <div class="searchbar">
+            <input type="text" id="search" placeholder="Search...">
+            <button id="searchIcon" title="search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="11" cy="11" r="7" stroke="#555" stroke-width="2" />
+                    <line x1="16" y1="16" x2="22" y2="22" stroke="#555" stroke-width="2" />
+                </svg>
+            </button>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+        <div class="login" id="loginArea">
+            <a href="../navhtml/login.html"><b>Sign In</b></a>
+        </div>
+    </nav>
+    <!--Content-->
+    <div class="div">
+        <ul>
+            <li>
+                <h3><b>HTML Tutorial</b></h3>
+            </li>
+            <br>
+            <li><a href="Html Introduction.html">HTML Introduction</a></li>
+            <li><a href="Html Editors.html">HTML Editors</a></li>
+            <li><a href="Basic Structure.html">HTML Basic Structure</a></li>
+            <li><a href="Elements.html">HTML Elements</a></li>
+            <li><a href="Attributes.html">HTML Attributes</a></li>
+            <li><a href="Headings.html">HTML Headings</a></li>
+            <li><a href="Paragraphs.html">HTML Paragraphs</a></li>
+            <li><a href="Text Formatting.html">HTML Text Formatting</a></li>
+            <li><a href="Quotations.html">HTML Quotations</a></li>
+            <li><a href="Comment.html">HTML Comment</a></li>
+            <li><a href="Links and Images.html">HTML Links and Images</a></li>
+            <li><a href="Html Lists.html">HTML Lists</a></li>
+            <li><a href="Html Tables.html">HTML Tables</a></li>
+            <li><a href="Html Forms.html">HTML Forms</a></li>
+            <li><a href="Html Media.html">HTML Media</a></li>
+            <li><a href="Html Styles.html">HTML Styles</a></li>
+            <li><a href="Html CSS.html">HTML CSS</a></li>
+            <li><a href="Html Div.html">HTML Div</a></li>
+            <li><a href="Classes Id.html">HTML Classes & Id</a></li>
+            <li><a href="Semantics.html">HTML Semantics</a></li>
+            <li><a href="Iframe.html">HTML Iframe</a></li>
+            <li><a href="Meta.html">HTML Meta</a></li>
+            <li><a href="Entities.html">HTML Entities</a></li>
+            <li><a href="Symbols.html">HTML Symbols</a></li>
+            <li><a href="Chharsets.html">HTML Charsets</a></li>
+            <li><a href="HvX.html">HTML vs XHTML</a></li>
+            <br>
+            <li><b>Taglists</b></li><br>
+            <li>
+            <li><a href="Html Alphabetical.html">Alphabetical</a></li>
+            </li>
+            <li>
+            <li><a href="Html Category.html">By Category</a></li>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- Content -->
+    <center>
+        <h1 id="title">Learning Web Structure with <span class="codex">HTML</span> </h1>
+        <table>
+            <tr>
+                <td>
+                    <h2> HTML Documents </h2>
+                    <hr>
+                    <p>• All HTML documents must start with a document type declaration: &lt;!DOCTYPE html&gt;.<br><br>
+                        • The HTML document itself begins with &lt;html&gt; and ends with &lt;&sol;html&gt;. <br><br>
+                        • The visible part of the HTML document is between &lt;body&gt; and &lt;&sol;body&gt;.</p>
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2> Example </h2>
+                    <img src="../images/Simple Document Example.png">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2> The &lt;!DOCTYPE&gt; Declaration </h2>
+                    <p>• The <span class="colortext">&lt;!DOCTYPE&gt;</span> represents the document type on which it helps
+                        browsers display web pages correctly. <br>
+                        &nbsp; &nbsp; Must appear only once, always at the top of the page.<br><br>
+                        • The <span class="colortext">&lt;!DOCTYPE&gt;</span> declaration is not case sensitive. <br>
+                        • The <span class="colortext">&lt;!DOCTYPE&gt;</span> declaration is presented as:
+                        <hr>
+                        <code style="font-size:150%;">
+                            &lt;!DOCTYPE html&gt;</p> <!-- to be designed -->
+                    </code>
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2> The &lt;html&gt; tag</h2>
+                    <p> • The <span class="colortext">&lt;html&gt;</span> tag is found after the <span class="colortext">&lt;!DOCTYPE&gt;</span> declaration. <br>
+                        • It is the root element of an HTML Document. It contains all other elements, like <span class="colortext">&lt;head&gt;</span> and <span class="colortext">&lt;body&gt;</span>, <br>
+                        &nbsp; &nbsp; and defines the document as HTML</p>
+                    <p><b>Example:</b></p>
+                    <img src="../images/htmltag.png">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>The &lt;head&gt; tag</h2>
+                    <p>• The <span class="colortext">&lt;head&gt;</span> tag isused to contain metadata and other non-visible
+                        elements <br>
+                        that provide information about the document or link to resources needed for the page. It sits inside <br>
+                        the <span class="colortext">&lt;html&gt;</span> tag and typically comes before the <span class="colortext">
+                            &lt;body&gt;</span> tag. <br> <br>
+                        • The <span class="colortext">&lt;head&gt;</span> tag includes:
+                        <hr>
+                        <span class="colortext">&lt;meta charset="UTF-8"&gt;</span>: Sets character encoding. <br>
+                        <span class="colortext">&lt;meta name="viewport"&gt;</span>: Ensures responsive design.<br>
+                        <span class="colortext">&lt;meta name="description"&gt;</span>: Provides a page description for SEO.<br>
+                        <span class="colortext">&lt;title&gt;</span>: Sets the browser tab title.<br>
+                        <span class="colortext">&lt;link&gt;</span>&lt;link&gt;: Links an external CSS file.<br>
+                        <span class="colortext">&lt;script&gt;</span>&lt;script&gt;: Links an external JavaScript file.
+                        <hr>
+                        <img src="../images/headtag.png">
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>The &lt;body&gt; tag</h2>
+                    <p> • The <span class="colortext">&lt;body&gt;</span> tag in HTML defines the main content
+                        of a webpage that is visible to users in the browser. <br><br>
+                        • It contains all the elements that make up the page’s structure and content, such as text, images,
+                        headings, <br>
+                        &nbsp; &nbsp;paragraphs, links, forms, and more.<br> <br>
+                        • The <span class="colortext">&lt;body&gt;</span> tag contains the visible content of a webpage, including:
+                        <hr>
+                        <b>Text:</b> Headings (&lt;h1&gt; ⟶ &lt;h6&gt;), paragraphs (&lt;p&gt;), etc. <br>
+                        <b>Media :</b> Images (&lt;img&gt;), videos (&lt;video&gt;), audio (&lt;audio&gt;). <br>
+                        <b>Links:</b> Hyperlinks (&lt;a&gt;). <br>
+                        <b>Structure:</b> Containers like &lt;div&gt;, &lt;section&gt;, &lt;header&gt;, &lt;footer&gt;. <br>
+                        <b>Other:</b> Lists (&lt;ul&gt;, &lt;ol&gt;), tables (&lt;table&gt;), etc. <br>
+                        <hr>
+                        <img src="../images/bodytag.png">
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <tr>
+            <td>
+                <h2>Try It Yourself!</h2>
+                <p>Edit the HTML code below and see your "Hello World" in action:</p>
+                <hr>
+                <!-- Code Playground -->
+                <div class="code-playground">
+                    <div class="code-section">
+                        <label><strong>HTML Code:</strong></label>
+                        <textarea id="htmlCode" class="code-editor">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;This is my first HTML page using CODEX!&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</textarea>
+                    </div>
+                    <div class="preview-section">
+                        <label><strong>Preview:</strong></label>
+                        <iframe id="preview" class="preview-frame"></iframe>
+                    </div>
+                    <button id="runBtn" class="run-btn">▶ Run Code</button>
+                </div>
+                <hr>
+            </td>
+        </tr>
+        <button class="np"><a href="Html Editors.html">Previous</a></button>
+        <button class="np"><a href=" Elements.html">Next</a></button>
+    </center>
+    <script src="../scripts/main.js"></script>
+    <script>
+    // Code Playground Functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const htmlCode = document.getElementById('htmlCode');
+        const preview = document.getElementById('preview');
+        const runBtn = document.getElementById('runBtn');
+
+        if (htmlCode && preview && runBtn) {
+            // Function to update preview
+            function updatePreview() {
+                const code = htmlCode.value;
+                preview.srcdoc = code;
+            }
+
+            // Update preview when "Run Code" is clicked
+            runBtn.addEventListener('click', updatePreview);
+
+            // Initialize with default content
+            updatePreview();
+        }
+    });
+    </script>
+</body>
+
+</html>

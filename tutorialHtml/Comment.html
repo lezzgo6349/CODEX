@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEX | HTML Comment</title>
+    <link rel="stylesheet" href="../css/navstyle.css" />
+    <link rel="stylesheet" href="../css/content.css" />
+    <link rel="icon" type="image/x-icon" href="../images/logo.png" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="logo" />
+                <h2>CODEX</h2>
+            </a>
+        </div>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../navhtml/tutorials.html">Tutorials</a></li>
+            <li><a href="../navhtml/quiz.html">Quiz</a></li>
+            <li><a href="../navhtml/contact.html">Contact Us</a></li>
+        </ul>
+        <a href="../Editor/EditCode.html" target="_blank" class="Editors"><b>Open Editor</b></a>
+        <button id="openEditorBtn" class="Editors" data-url="../Editor/PopUp.html"><b>Pop Up Editor</b></button>
+        <!-- Searchbar -->
+        <div class="searchbar">
+            <input type="text" id="search" placeholder="Search...">
+            <button id="searchIcon" title="search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="11" cy="11" r="7" stroke="#555" stroke-width="2" />
+                    <line x1="16" y1="16" x2="22" y2="22" stroke="#555" stroke-width="2" />
+                </svg>
+            </button>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+        <div class="login" id="loginArea">
+            <a href="../navhtml/login.html"><b>Sign In</b></a>
+        </div>
+    </nav>
+    <!--Content-->
+    <div class="div">
+        <ul>
+            <li>
+                <h3><b>HTML Tutorial</b></h3>
+            </li>
+            <br>
+            <li><a href="Html Introduction.html">HTML Introduction</a></li>
+            <li><a href="Html Editors.html">HTML Editors</a></li>
+            <li><a href="Basic Structure.html">HTML Basic Structure</a></li>
+            <li><a href="Elements.html">HTML Elements</a></li>
+            <li><a href="Attributes.html">HTML Attributes</a></li>
+            <li><a href="Headings.html">HTML Headings</a></li>
+            <li><a href="Paragraphs.html">HTML Paragraphs</a></li>
+            <li><a href="Text Formatting.html">HTML Text Formatting</a></li>
+            <li><a href="Quotations.html">HTML Quotations</a></li>
+            <li><a href="Comment.html">HTML Comment</a></li>
+            <li><a href="Links and Images.html">HTML Links and Images</a></li>
+            <li><a href="Html Lists.html">HTML Lists</a></li>
+            <li><a href="Html Tables.html">HTML Tables</a></li>
+            <li><a href="Html Forms.html">HTML Forms</a></li>
+            <li><a href="Html Media.html">HTML Media</a></li>
+            <li><a href="Html Styles.html">HTML Styles</a></li>
+            <li><a href="Html CSS.html">HTML CSS</a></li>
+            <li><a href="Html Div.html">HTML Div</a></li>
+            <li><a href="Classes Id.html">HTML Classes & Id</a></li>
+            <li><a href="Semantics.html">HTML Semantics</a></li>
+            <li><a href="Iframe.html">HTML Iframe</a></li>
+            <li><a href="Meta.html">HTML Meta</a></li>
+            <li><a href="Entities.html">HTML Entities</a></li>
+            <li><a href="Symbols.html">HTML Symbols</a></li>
+            <li><a href="Chharsets.html">HTML Charsets</a></li>
+            <li><a href="HvX.html">HTML vs XHTML</a></li>
+            <br>
+            <li><b>Taglists</b></li><br>
+            <li>
+            <li><a href="Html Alphabetical.html">Alphabetical</a></li>
+            </li>
+            <li>
+            <li><a href="Html Category.html">By Category</a></li>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- Content -->
+    <center>
+        <h1>Learning Web Structure with <span class="codex">HTML</span> </h1>
+        <table>
+            <tr>
+                <td>
+                    <h2>
+                        HTML Comments
+                    </h2>
+                    <hr>
+                    <p>
+                        • HTML comments are not displayed in the browser, but they can help document your HTML source code.
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>
+                        HTML Comment Tag
+                    </h2>
+                    <p>
+                        You can add comments to your HTML source by using the following syntax: <br>
+                        &lt;!-- Write your comments here --&gt; <br><br>
+                        Notice that there is an exclamation point (!) in the start tag, but not in the end tag.
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>
+                        Add Comments
+                    </h2>
+                    <p>
+                        With comments you can place notifications and reminders in your HTML code:
+                        <hr>
+                        <code style="font-size:150%;">
+                            <span class="colorcomment">&lt;!-- This is a comment --&gt;</span><br><br>
+                            <span class="colortext">&lt;p&gt;</span>
+                            This is a paragraph.
+                            <span class="colortext">&lt;&sol;p&gt;</span><br><br>
+                            <span class="colorcomment">&lt;!-- Remember to add more information here --&gt;</span>
+                        </code>
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>
+                        Hide Content
+                    </h2>
+                    <p>
+                        Comments can be used to hide content. <br>
+                        This can be helpful if you hide content temporarily:
+                        <hr>
+                        <code style="font-size:150%;">
+                            <span class="colortext">&lt;p&gt;</span>
+                            This is a paragraph.
+                            <span class="colortext">&lt;&sol;p&gt;</span><br><br>
+                            <span class="colorcomment">
+                                &lt;!-- &lt;p&gt;
+                                This is another paragraph.
+                                &lt;&sol;p&gt; --&gt;<br><br>
+                            </span>
+                            <span class="colortext">&lt;p&gt;</span>
+                            This is a paragraph too.
+                            <span class="colortext">&lt;&sol;p&gt;</span><br>
+                        </code>
+                        <hr>
+                        You can also hide more than one line. Everything between the &lt;!-- and the --&gt; will be hidden from the display.
+                        <hr>
+                        <code style="font-size:150%;">
+                            <span class="colortext">&lt;p&gt;</span>
+                            This is a paragraph.
+                            <span class="colortext">&lt;&sol;p&gt;</span><br><br>
+                            <span class="colorcomment">
+                                &lt;!--<br> &lt;p&gt;
+                                This is a great picture.
+                                &lt;&sol;p&gt; <br>
+                                &lt;img src="../images/cool.png" alt="cool"&gt;<br>
+                                --&gt;<br><br>
+                            </span>
+                            <span class="colortext">&lt;p&gt;</span>
+                            This is a paragraph too.
+                            <span class="colortext">&lt;&sol;p&gt;</span><br>
+                        </code>
+                        <hr>
+                        Comments are also great for debugging HTML, because you can comment out HTML lines of code, one at a time <br>
+                        to search for errors.
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>
+                        Hide Inline Content
+                    </h2>
+                    <p>
+                        Comments can be used to hide parts in the middle of the HTML code.
+                        <hr>
+                        <code style="font-size:150%;">
+                            <span class="colortext">&lt;p&gt;</span>
+                            This is <span class="colorcomment">&lt;!-- crazy text --&gt;</span> a paragraph.
+                            <span class="colortext">&lt;&sol;p&gt;</span><br>
+                        </code>
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <button class="np"><a href="Quotations.html">Previous</button>
+        <button class="np"><a href="Links and Images.html">Next</button>
+    </center>
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEX | HTML Charsets</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/navstyle.css" />
+    <link rel="stylesheet" href="../css/content.css" />
+    <link rel="icon" type="image/x-icon" href="../images/logo.png" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="logo" />
+                <h2>CODEX</h2>
+            </a>
+        </div>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../navhtml/tutorials.html">Tutorials</a></li>
+            <li><a href="../navhtml/quiz.html">Quiz</a></li>
+            <li><a href="../navhtml/contact.html">Contact Us</a></li>
+        </ul>
+        <a href="../Editor/EditCode.html" target="_blank" class="Editors"><b>Open Editor</b></a>
+        <button id="openEditorBtn" class="Editors" data-url="../Editor/PopUp.html"><b>Pop Up Editor</b></button>
+        <!-- Searchbar -->
+        <div class="searchbar">
+            <input type="text" id="search" placeholder="Search...">
+            <button id="searchIcon" title="search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="11" cy="11" r="7" stroke="#555" stroke-width="2" />
+                    <line x1="16" y1="16" x2="22" y2="22" stroke="#555" stroke-width="2" />
+                </svg>
+            </button>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+        <div class="login" id="loginArea">
+            <a href="../navhtml/login.html"><b>Sign In</b></a>
+        </div>
+    </nav>
+    <!--Content-->
+    <div class="div">
+        <ul>
+            <li>
+                <h3><b>HTML Tutorial</b></h3>
+            </li>
+            <br>
+            <li><a href="Html Introduction.html">HTML Introduction</a></li>
+            <li><a href="Html Editors.html">HTML Editors</a></li>
+            <li><a href="Basic Structure.html">HTML Basic Structure</a></li>
+            <li><a href="Elements.html">HTML Elements</a></li>
+            <li><a href="Attributes.html">HTML Attributes</a></li>
+            <li><a href="Headings.html">HTML Headings</a></li>
+            <li><a href="Paragraphs.html">HTML Paragraphs</a></li>
+            <li><a href="Text Formatting.html">HTML Text Formatting</a></li>
+            <li><a href="Quotations.html">HTML Quotations</a></li>
+            <li><a href="Comment.html">HTML Comment</a></li>
+            <li><a href="Links and Images.html">HTML Links and Images</a></li>
+            <li><a href="Html Lists.html">HTML Lists</a></li>
+            <li><a href="Html Tables.html">HTML Tables</a></li>
+            <li><a href="Html Forms.html">HTML Forms</a></li>
+            <li><a href="Html Media.html">HTML Media</a></li>
+            <li><a href="Html Styles.html">HTML Styles</a></li>
+            <li><a href="Html CSS.html">HTML CSS</a></li>
+            <li><a href="Html Div.html">HTML Div</a></li>
+            <li><a href="Classes Id.html">HTML Classes & Id</a></li>
+            <li><a href="Semantics.html">HTML Semantics</a></li>
+            <li><a href="Iframe.html">HTML Iframe</a></li>
+            <li><a href="Meta.html">HTML Meta</a></li>
+            <li><a href="Entities.html">HTML Entities</a></li>
+            <li><a href="Symbols.html">HTML Symbols</a></li>
+            <li><a href="Chharsets.html">HTML Charsets</a></li>
+            <li><a href="HvX.html">HTML vs XHTML</a></li>
+            <li><b>Taglists</b></li><br>
+            <li>
+            <li><a href="Html Alphabetical.html">Alphabetical</a></li>
+            </li>
+            <li>
+            <li><a href="Html Category.html">By Category</a></li>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- Content -->
+    <center>
+        <h1 id="title">Learning Web Structure with <span class="codex">HTML</span> </h1>
+        <table>
+            <tr>
+                <td>
+                    <h2>
+                        HTML Charsets
+                    </h2>
+                    <hr>
+                    <p>
+                        A character encoding (charset) tells the browser how to interpret and display characters in your HTML document. <br><br>
+                        It specifies which character set is being used, ensuring that text, symbols, and special characters display correctly <br>
+                        across different browsers and languages.
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Why Use Character Encoding?</b>
+                        <ul>
+                            <li>Ensures proper display of characters across all browsers and devices</li>
+                            <li>Supports international characters and multiple languages</li>
+                            <li>Prevents garbled or corrupted text display</li>
+                            <li>Essential for displaying symbols, emojis, and special characters correctly</li>
+                            <li>Required by HTML5 standards and improves SEO</li>
+                        </ul>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Common Character Encodings:</b>
+                        <ul>
+                            <li><b>UTF-8:</b> The most widely used encoding (recommended by HTML5). Supports all Unicode characters and languages worldwide.</li>
+                            <li><b>ISO-8859-1:</b> Western European character set (legacy, largely replaced by UTF-8)</li>
+                            <li><b>Windows-1252:</b> Windows-specific encoding (legacy)</li>
+                            <li><b>ASCII:</b> Basic 128-character set (very limited, mostly historical)</li>
+                            <li><b>UTF-16:</b> Alternative Unicode encoding (less common for web pages)</li>
+                        </ul>
+                    </p>
+                    <hr>
+                    <p><b>Example - Declaring UTF-8 Charset (HTML5):</b></p>
+                    <pre>
+      <code style="font-size:140%;">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;My Web Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+  &lt;p&gt;This page supports multiple languages:&lt;/p&gt;
+  &lt;p&gt;English: Hello, World!&lt;/p&gt;
+  &lt;p&gt;Spanish: ¡Hola, Mundo!&lt;/p&gt;
+  &lt;p&gt;French: Bonjour, le monde!&lt;/p&gt;
+  &lt;p&gt;Chinese: 你好，世界！&lt;/p&gt;
+  &lt;p&gt;Japanese: こんにちは、世界！&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+      </code>
+    </pre>
+                    <hr>
+                    <img src="../images/charset_utf8_output.png" alt="UTF-8 Charset Example Output">
+                    <hr>
+                    <p><b>Example - Displaying Special Characters with UTF-8:</b></p>
+                    <pre>
+      <code style="font-size:140%;">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Special Characters&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;p&gt;Currency: € £ ¥ $ ¢&lt;/p&gt;
+  &lt;p&gt;Mathematical: ∑ ∞ π ± × ÷&lt;/p&gt;
+  &lt;p&gt;Arrows: ← → ↑ ↓ ↔&lt;/p&gt;
+  &lt;p&gt;Emojis: 😀 🎉 💻 🌟 ❤️&lt;/p&gt;
+  &lt;p&gt;Symbols: © ® ™ ° ½ ¼ ¾&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+      </code>
+    </pre>
+                    <hr>
+                    <img src="../images/charset_special_output.png" alt="Special Characters Example Output">
+                    <hr>
+                    <p><b>Example - Legacy Encoding (Not Recommended):</b></p>
+                    <pre>
+      <code style="font-size:140%;">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="ISO-8859-1"&gt;
+  &lt;title&gt;Legacy Encoding&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;p&gt;Note: ISO-8859-1 only supports Western European characters.&lt;/p&gt;
+  &lt;p&gt;Special characters may not display correctly.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+      </code>
+    </pre>
+                    <hr>
+                    <img src="../images/charset_legacy_output.png" alt="Legacy Encoding Example Output">
+                    <hr>
+                    <p>
+                        <b>How to Declare Charset in HTML:</b>
+                        <ul>
+                            <li><b>HTML5 (Recommended):</b> <span class="colortext">&lt;meta charset="UTF-8"&gt;</span> in the <span class="colortext">&lt;head&gt;</span> section</li>
+                            <li><b>HTML4/XHTML:</b> <span class="colortext">&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;</span></li>
+                            <li>The charset declaration should appear within the first 1024 bytes of your HTML document</li>
+                            <li>Place it immediately after the opening <span class="colortext">&lt;head&gt;</span> tag for best results</li>
+                        </ul>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>UTF-8 Advantages:</b>
+                        <ul>
+                            <li>Supports all Unicode characters (over 1 million characters)</li>
+                            <li>Backward compatible with ASCII</li>
+                            <li>Works with all modern browsers and devices</li>
+                            <li>Required for international websites and multi-language content</li>
+                            <li>Efficient encoding - uses variable-length encoding (1-4 bytes per character)</li>
+                            <li>Standard for modern web development</li>
+                        </ul>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Best Practices:</b>
+                        <ul>
+                            <li>Always use <span class="colortext">UTF-8</span> for new HTML documents</li>
+                            <li>Declare charset in the <span class="colortext">&lt;head&gt;</span> section as early as possible</li>
+                            <li>Ensure your text editor saves files with UTF-8 encoding</li>
+                            <li>Test your pages with special characters and emojis to verify encoding</li>
+                            <li>Use <span class="colortext">lang</span> attribute in <span class="colortext">&lt;html&gt;</span> tag along with charset for better accessibility</li>
+                            <li>When converting legacy sites, ensure all files use UTF-8 encoding</li>
+                            <li>Verify charset matches your actual file encoding when editing</li>
+                        </ul>
+                    </p>
+                    <hr>
+                </td>
+            </tr>
+        </table>
+        <button class="np"><a href="Symbols.html">Previous</a></button>
+        <button class="np"><a href="HvX.html">Next</a></button>
+    </center>
+    <!-- JavaScript -->
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>

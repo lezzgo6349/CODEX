@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEX | HTML vs XHTML</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/navstyle.css" />
+    <link rel="stylesheet" href="../css/content.css" />
+    <link rel="icon" type="image/x-icon" href="../images/logo.png" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="logo" />
+                <h2>CODEX</h2>
+            </a>
+        </div>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../navhtml/tutorials.html">Tutorials</a></li>
+            <li><a href="../navhtml/quiz.html">Quiz</a></li>
+            <li><a href="../navhtml/contact.html">Contact Us</a></li>
+        </ul>
+        <a href="../Editor/EditCode.html" target="_blank" class="Editors"><b>Open Editor</b></a>
+        <button id="openEditorBtn" class="Editors" data-url="../Editor/PopUp.html"><b>Pop Up Editor</b></button>
+        <!-- Searchbar -->
+        <div class="searchbar">
+            <input type="text" id="search" placeholder="Search...">
+            <button id="searchIcon" title="search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="11" cy="11" r="7" stroke="#555" stroke-width="2" />
+                    <line x1="16" y1="16" x2="22" y2="22" stroke="#555" stroke-width="2" />
+                </svg>
+            </button>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+        <div class="login" id="loginArea">
+            <a href="../navhtml/login.html"><b>Sign In</b></a>
+        </div>
+    </nav>
+    <!--Content-->
+    <div class="div">
+        <ul>
+            <li>
+                <h3><b>HTML Tutorial</b></h3>
+            </li>
+            <br>
+            <li><a href="Html Introduction.html">HTML Introduction</a></li>
+            <li><a href="Html Editors.html">HTML Editors</a></li>
+            <li><a href="Basic Structure.html">HTML Basic Structure</a></li>
+            <li><a href="Elements.html">HTML Elements</a></li>
+            <li><a href="Attributes.html">HTML Attributes</a></li>
+            <li><a href="Headings.html">HTML Headings</a></li>
+            <li><a href="Paragraphs.html">HTML Paragraphs</a></li>
+            <li><a href="Text Formatting.html">HTML Text Formatting</a></li>
+            <li><a href="Quotations.html">HTML Quotations</a></li>
+            <li><a href="Comment.html">HTML Comment</a></li>
+            <li><a href="Links and Images.html">HTML Links and Images</a></li>
+            <li><a href="Html Lists.html">HTML Lists</a></li>
+            <li><a href="Html Tables.html">HTML Tables</a></li>
+            <li><a href="Html Forms.html">HTML Forms</a></li>
+            <li><a href="Html Media.html">HTML Media</a></li>
+            <li><a href="Html Styles.html">HTML Styles</a></li>
+            <li><a href="Html CSS.html">HTML CSS</a></li>
+            <li><a href="Html Div.html">HTML Div</a></li>
+            <li><a href="Classes Id.html">HTML Classes & Id</a></li>
+            <li><a href="Semantics.html">HTML Semantics</a></li>
+            <li><a href="Iframe.html">HTML Iframe</a></li>
+            <li><a href="Meta.html">HTML Meta</a></li>
+            <li><a href="Entities.html">HTML Entities</a></li>
+            <li><a href="Symbols.html">HTML Symbols</a></li>
+            <li><a href="Chharsets.html">HTML Charsets</a></li>
+            <li><a href="HvX.html">HTML vs XHTML</a></li>
+            <br>
+            <li><b>Taglists</b></li><br>
+            <li>
+            <li><a href="Html Alphabetical.html">Alphabetical</a></li>
+            </li>
+            <li>
+            <li><a href="Html Category.html">By Category</a></li>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- Content -->
+    <center>
+        <h1 id="title">Learning Web Structure with <span class="codex">HTML</span> </h1>
+        <table>
+            <tr>
+                <td>
+                    <h2>
+                        HTML vs XHTML
+                    </h2>
+                    <hr>
+                    <p>
+                        HTML (HyperText Markup Language) and XHTML (eXtensible HyperText Markup Language) <br> are both markup languages for creating web pages, <br><br>
+                        but they have different rules and syntax. HTML is more forgiving and flexible, while XHTML follows stricter XML rules. <br>
+                        Modern web development typically uses HTML5, which combines the best of both.
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Key Differences:</b>
+                        <ul>
+                            <li><b>Syntax Rules:</b> HTML is case-insensitive and more lenient, while XHTML requires strict XML syntax</li>
+                            <li><b>Tag Closure:</b> HTML allows unclosed tags, XHTML requires all tags to be properly closed</li>
+                            <li><b>Attribute Values:</b> HTML allows unquoted attributes, XHTML requires all attributes in quotes</li>
+                            <li><b>Nesting:</b> HTML is more forgiving of improper nesting, XHTML enforces strict nesting rules</li>
+                            <li><b>Error Handling:</b> HTML browsers try to fix errors, XHTML browsers stop on syntax errors</li>
+                        </ul>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>HTML Characteristics:</b>
+                        <ul>
+                            <li>More forgiving syntax - browsers fix common errors automatically</li>
+                            <li>Case-insensitive tags and attributes</li>
+                            <li>Allows unclosed tags (e.g., <span class="colortext">&lt;br&gt;</span>, <span class="colortext">&lt;img&gt;</span>)</li>
+                            <li>Attributes don't always need quotes</li>
+                            <li>Better for rapid development and prototyping</li>
+                            <li>HTML5 is the current standard</li>
+                        </ul>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>XHTML Characteristics:</b>
+                        <ul>
+                            <li>Strict XML syntax - must be well-formed</li>
+                            <li>Case-sensitive - all tags must be lowercase</li>
+                            <li>All tags must be closed (e.g., <span class="colortext">&lt;br /&gt;</span>, <span class="colortext">&lt;img /&gt;</span>)</li>
+                            <li>All attributes must be quoted</li>
+                            <li>Stricter error handling - browsers stop on errors</li>
+                            <li>Better for XML processing and data exchange</li>
+                        </ul>
+                    </p>
+                    <hr>
+                    <p><b>Example - HTML Syntax (HTML5):</b></p>
+                    <pre>
+      <code style="font-size:140%;">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;HTML Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Welcome&lt;/h1&gt;
+  &lt;p&gt;This is a paragraph.&lt;br&gt;
+  Line break without closing tag.&lt;/p&gt;
+  &lt;img src="image.jpg" alt=Photo&gt;
+  &lt;p&gt;Another paragraph&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+      </code>
+    </pre>
+                    <hr>
+                    <img src="../images/html_example_output.png" alt="HTML Syntax Example Output">
+                    <hr>
+                    <p><b>Example - XHTML Syntax:</b></p>
+                    <pre>
+      <code style="font-size:140%;">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8" /&gt;
+  &lt;title&gt;XHTML Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Welcome&lt;/h1&gt;
+  &lt;p&gt;This is a paragraph.&lt;br /&gt;
+  Line break with self-closing tag.&lt;/p&gt;
+  &lt;img src="image.jpg" alt="Photo" /&gt;
+  &lt;p&gt;Another paragraph&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+      </code>
+    </pre>
+                    <hr>
+                    <img src="../images/xhtml_example_output.png" alt="XHTML Syntax Example Output">
+                    <hr>
+                    <p><b>Example - Comparison of Common Elements:</b></p>
+                    <pre>
+      <code style="font-size:140%;">
+&lt;!-- HTML --&gt;
+&lt;br&gt;
+&lt;img src="pic.jpg" alt=Image&gt;
+&lt;input type=text name=user&gt;
+&lt;p&gt;Some text&lt;/p&gt;
+
+&lt;!-- XHTML --&gt;
+&lt;br /&gt;
+&lt;img src="pic.jpg" alt="Image" /&gt;
+&lt;input type="text" name="user" /&gt;
+&lt;p&gt;Some text&lt;/p&gt;
+      </code>
+    </pre>
+                    <hr>
+                    <img src="../images/html_vs_xhtml_comparison_output.png" alt="HTML vs XHTML Comparison Output">
+                    <hr>
+                    <p>
+                        <b>When to Use HTML:</b>
+                        <ul>
+                            <li>Modern web development (HTML5 is the standard)</li>
+                            <li>General websites and web applications</li>
+                            <li>Rapid prototyping and development</li>
+                            <li>When you need browser error tolerance</li>
+                            <li>Most common use case today</li>
+                        </ul>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>When to Use XHTML:</b>
+                        <ul>
+                            <li>When strict XML compliance is required</li>
+                            <li>XML processing and data exchange</li>
+                            <li>When working with XML tools and parsers</li>
+                            <li>Document management systems</li>
+                            <li>Legacy projects that require XHTML</li>
+                        </ul>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>HTML5 - The Modern Standard:</b>
+                        <ul>
+                            <li>HTML5 combines HTML's flexibility with some XHTML principles</li>
+                            <li>Allows both HTML and XHTML syntax styles</li>
+                            <li>Self-closing tags are optional (e.g., <span class="colortext">&lt;br&gt;</span> or <span class="colortext">&lt;br /&gt;</span>)</li>
+                            <li>Recommended to use consistent syntax within a project</li>
+                            <li>Default standard for modern web development</li>
+                        </ul>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Best Practices:</b>
+                        <ul>
+                            <li>Use HTML5 for new projects (current standard)</li>
+                            <li>Always close tags properly for consistency</li>
+                            <li>Quote all attribute values for better compatibility</li>
+                            <li>Use lowercase for tags and attributes (good practice)</li>
+                            <li>Validate your HTML with W3C validators</li>
+                            <li>Follow consistent coding style throughout your project</li>
+                            <li>Ensure proper DOCTYPE declaration for browser compatibility</li>
+                        </ul>
+                    </p>
+                    <hr>
+                </td>
+            </tr>
+        </table>
+        <button class="np"><a href="Chharsets.html">Previous</a></button>
+        <button class="np"><a href="Html Introduction.html">Next</a></button>
+    </center>
+    <!-- JavaScript -->
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>

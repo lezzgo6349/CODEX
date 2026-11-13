@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEX | HTML Links & Images</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/navstyle.css" />
+    <link rel="stylesheet" href="../css/content.css" />
+    <link rel="icon" type="image/x-icon" href="../images/logo.png" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="logo" />
+                <h2>CODEX</h2>
+            </a>
+        </div>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../navhtml/tutorials.html">Tutorials</a></li>
+            <li><a href="../navhtml/quiz.html">Quiz</a></li>
+            <li><a href="../navhtml/contact.html">Contact Us</a></li>
+        </ul>
+        <a href="../Editor/EditCode.html" target="_blank" class="Editors"><b>Open Editor</b></a>
+        <button id="openEditorBtn" class="Editors" data-url="../Editor/PopUp.html"><b>Pop Up Editor</b></button>
+        <!-- Searchbar -->
+        <div class="searchbar">
+            <input type="text" id="search" placeholder="Search...">
+            <button id="searchIcon" title="search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="11" cy="11" r="7" stroke="#555" stroke-width="2" />
+                    <line x1="16" y1="16" x2="22" y2="22" stroke="#555" stroke-width="2" />
+                </svg>
+            </button>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+        <div class="login" id="loginArea">
+            <a href="../navhtml/login.html"><b>Sign In</b></a>
+        </div>
+    </nav>
+    <!--Content-->
+    <div class="div">
+        <ul>
+            <li>
+                <h3><b>HTML Tutorial</b></h3>
+            </li>
+            <br>
+            <li><a href="Html Introduction.html">HTML Introduction</a></li>
+            <li><a href="Html Editors.html">HTML Editors</a></li>
+            <li><a href="Basic Structure.html">HTML Basic Structure</a></li>
+            <li><a href="Elements.html">HTML Elements</a></li>
+            <li><a href="Attributes.html">HTML Attributes</a></li>
+            <li><a href="Headings.html">HTML Headings</a></li>
+            <li><a href="Paragraphs.html">HTML Paragraphs</a></li>
+            <li><a href="Text Formatting.html">HTML Text Formatting</a></li>
+            <li><a href="Quotations.html">HTML Quotations</a></li>
+            <li><a href="Comment.html">HTML Comment</a></li>
+            <li><a href="Links and Images.html">HTML Links and Images</a></li>
+            <li><a href="Html Lists.html">HTML Lists</a></li>
+            <li><a href="Html Tables.html">HTML Tables</a></li>
+            <li><a href="Html Forms.html">HTML Forms</a></li>
+            <li><a href="Html Media.html">HTML Media</a></li>
+            <li><a href="Html Styles.html">HTML Styles</a></li>
+            <li><a href="Html CSS.html">HTML CSS</a></li>
+            <li><a href="Html Div.html">HTML Div</a></li>
+            <li><a href="Classes Id.html">HTML Classes & Id</a></li>
+            <li><a href="Semantics.html">HTML Semantics</a></li>
+            <li><a href="Iframe.html">HTML Iframe</a></li>
+            <li><a href="Meta.html">HTML Meta</a></li>
+            <li><a href="Entities.html">HTML Entities</a></li>
+            <li><a href="Symbols.html">HTML Symbols</a></li>
+            <li><a href="Chharsets.html">HTML Charsets</a></li>
+            <li><a href="HvX.html">HTML vs XHTML</a></li>
+            <br>
+            <li><b>Taglists</b></li><br>
+            <li>
+            <li><a href="Html Alphabetical.html">Alphabetical</a></li>
+            </li>
+            <li>
+            <li><a href="Html Category.html">By Category</a></li>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- Content -->
+    <center>
+        <h1 id="title">Learning Web Structure with <span class="codex">HTML</span> </h1>
+        <table>
+            <tr>
+                <td>
+                    <h2>
+                        HTML Links - Hyperlinks
+                    </h2>
+                    <hr>
+                    <p>
+                        • HTML links are hyperlinks. <br>
+                        &nbsp; You can click on a link and jump to another document. <br><br>
+                        • When you move the mouse over a link, the mouse arrow will turn into a little hand.
+                    </p>
+                    <hr>
+                    <h2>
+                        HTML Links - Syntax
+                    </h2>
+                    <p>
+                        The HTML <span class="colortext">&lt;a&gt;</span> tag defines a hyperlink. It has the following syntax:
+                        <hr>
+                        <code style="font-size:150%;">
+                            <span class="colortext">&lt;a</span> <span class="colorentity">href</span>="<span class="colorurl">url</span>"
+                            <span class="colortext">&gt;</span> link text <span class="colortext">&lt;&sol;a&gt;</span>
+                        </code>
+                        <hr>
+                        The most important attribute of the <span class="colortext">&lt;a&gt;</span> element is the href attribute, which indicates the link's destination. <br>
+                        The link text is the part that will be visible to the reader. <br>
+                        Clicking on the link text, will send the reader to the specified URL address.
+                        <hr>
+                        By default, links will appear as follows in all browsers:<br><br>
+                        • An unvisited link is <u>underlined</u> and <span style="color:blue;">blue</span>.<br>
+                        • A visited link is <u>underlined</u> and <span style="color:purple;">purple</span>.<br>
+                        • An active link is <u>underlined</u> and <span style="color:red;">red</span>.
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>
+                        HTML Links - The target Attribute
+                    </h2>
+                    <p>
+                        The <span style="color:red;">target</span> attribute specifies where to open the linked document. <br>
+                        The <span style="color:red;">target</span> attribute can have one of the following values:
+                        <hr>
+                        • <span style="color:red;">"_self"</span> - Default. Opens the document in the same window/tab as it was clicked <br>
+                        • <span style="color:red;">"_blank"</span> - Opens the document in a new window or tab <br>
+                        • <span style="color:red;">"_parent"</span> - Opens the document in the parent frame <br>
+                        • <span style="color:red;">"_top"</span> - Opens the document in the full body of the window
+                        <hr>
+                        <code style="font-size:150%;">
+                            <span class="colortext">&lt;a</span>
+                            <span class="colorentity">href</span>
+                            ="<span class="colorurl">facebook.com</span>"
+                            <span class="colorentity">target</span>="
+                            <span class="colorurl">_blank</span>"
+                            <span class="colortext">&gt;</span> Go to Facebook! <span class="colortext">&lt;&sol;a&gt;</span>
+                        </code>
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>
+                        HTML Links - Use an Image as a Link
+                    </h2>
+                    <p>
+                        To use an image as a link, just put the <span class="colortext">&lt;img&gt;</span> tag inside the <span class="colortext">&lt;a&gt;</span> tag:
+                        <hr>
+                        <code style="font-size:150%;">
+                            <span class="colortext">&lt;a</span>
+                            <span class="colorentity">href</span>
+                            ="<span class="colorurl">youtube.com</span>"
+                            <span class="colortext">&gt;</span><br>
+                            <span class="colortext">&lt;img</span>
+                            <span class="colorentity">src</span>
+                            ="<span class="colorurl">smile.png</span>"
+                            <span class="colortext">&gt;</span><br>
+                            <span class="colortext">&lt;&sol;a&gt;</span>
+                        </code>
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>
+                        HTML Images
+                    </h2>
+                    <p>
+                        Images can improve the design and the appearance of a web page.
+                    </p>
+                    <img src="https://images.fineartamerica.com/images-medium-large-5/awesome-solitude-bess-hamiti.jpg" alt="Cherry Tree in a Meadow" height="400px" width="350px">
+                    <img src="https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/d0699f3a-3ce3-43c3-b129-9d1f3bdcc79c/photos-31.jpg" alt="Pink Trees in a Fog" height="400px" width="350px">
+                    <hr>
+                    <p>
+                        Example: <br><br>
+                        <code style="font-size:150%;">
+                            <span class="colortext">&lt;img</span>
+                            <span class="colorentity">src</span>
+                            ="<span class="colorurl">tree.png</span>"
+                            <span class="colorentity">alt</span>
+                            ="<span class="colorurl">Cherry Tree in a Meadow</span>"
+                            <span class="colortext">&gt;</span> <br> <br>
+                            <span class="colortext">&lt;img</span>
+                            <span class="colorentity">src</span>
+                            ="<span class="colorurl">Cherry.png</span>"
+                            <span class="colorentity">alt</span>
+                            ="<span class="colorurl">Pink Trees in a Fog</span>"
+                            <span class="colortext">&gt;</span>
+                        </code>
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>
+                        HTML Images Syntax
+                    </h2>
+                    <p>
+                        The HTML <span class="colortext">&lt;img&gt;</span> tag is used to embed an image in a web page. <br><br>
+                        The <span class="colortext">&lt;img&gt;</span> tag is empty, it contains attributes only, and does not have a closing tag.<br>
+                        The <span class="colortext">&lt;img&gt;</span> tag has two required attributes:
+                        <hr>
+                        • <span style="color:red;">"src"</span> - Specifies the path to the image <br>
+                        • <span style="color:red;">"alt"</span> - Specifies an alternate text for the image
+                        <hr>
+                        Syntax:
+                        <code style="font-size:150%;">
+                            <span class="colortext">&lt;img</span>
+                            <span class="colorentity">src</span>
+                            ="<span class="colorurl">url</span>"
+                            <span class="colorentity">alt</span>
+                            ="<span class="colorurl">alternate text</span>"
+                            <span class="colortext">&gt;</span>
+                        </code>
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>
+                        The src and alt Attributes
+                    </h2>
+                    <p>
+                        The required <span style="color:red;">src</span> attribute specifies the path (URL) to the image. <br><br>
+                        The required <span style="color:red;">alt</span> attribute provides an alternate text for an image, if the user for some reason cannot view it.
+                        <hr>
+                        <code style="font-size:150%;">
+                            <span class="colortext">&lt;img</span>
+                            <span class="colorentity">src</span>
+                            ="<span class="colorurl">WrongImage.png</span>"
+                            <span class="colorentity">alt</span>
+                            ="<span class="colorurl">Pink Trees in a Fog</span>"
+                            <span class="colortext">&gt;</span>
+                        </code>
+                        <hr>
+                        <img src="../images/alt output.png">
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>
+                        Image Size - Width and Height
+                    </h2>
+                    <p>
+                        The <span style="color:red;">width</span> and <span style="color:red;">height</span> attributes always define the width and height of the image in pixels.
+                        <br><br>
+                        You can use the <span style="color:red;">style</span> attribute to specify the width and height of an image.
+                        <hr>
+                        <code style="font-size:120%;">
+                            <span class="colortext">&lt;img</span>
+                            <span class="colorentity">src</span>
+                            ="<span class="colorurl">Tree.png</span>"&nbsp;
+                            <span class="colorentity">alt</span>
+                            ="<span class="colorurl">Cherry Tree in a Meadow</span>"&nbsp;
+                            <span class="colorentity">style</span>
+                            ="<span class="colorurl">width:500px;height:350px;</span>"&nbsp;
+                            <span class="colortext">&gt;</span>
+                        </code>
+                        <hr>
+                        Alternatively, you can use the <span style="color:red;">width</span> and <span style="color:red;">height</span> attributes:
+                        <hr>
+                        <code style="font-size:120%;">
+                            <span class="colortext">&lt;img</span>
+                            <span class="colorentity">src</span>
+                            ="<span class="colorurl">Tree.png</span>"&nbsp;
+                            <span class="colorentity">alt</span>
+                            ="<span class="colorurl">Cherry Tree in a Meadow</span>"&nbsp;
+                            <span class="colorentity">height</span>
+                            ="<span class="colorurl">400px</span>"&nbsp;
+                            <span class="colorentity">width</span>
+                            ="<span class="colorurl">350px</span>"&nbsp;
+                            <span class="colortext">&gt;</span>
+                        </code>
+                        <hr>
+                        <b>Note:</b> Always specify the width and height of an image. If width and height are not specified, <br>
+                        &nbsp; the web page might flicker while the image loads.
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <button class="np"><a href="Comment.html">Previous</a></button>
+        <button class="np"><a href="Html Lists.html">Next</a></button>
+    </center>
+    <!-- JavaScript -->
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>

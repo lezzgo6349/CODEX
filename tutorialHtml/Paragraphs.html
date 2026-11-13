@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEX | HTML Paragraphs</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/navstyle.css" />
+    <link rel="stylesheet" href="../css/content.css" />
+    <link rel="icon" type="image/x-icon" href="../images/logo.png" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="logo" />
+                <h2>CODEX</h2>
+            </a>
+        </div>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../navhtml/tutorials.html">Tutorials</a></li>
+            <li><a href="../navhtml/quiz.html">Quiz</a></li>
+            <li><a href="../navhtml/contact.html">Contact Us</a></li>
+        </ul>
+        <a href="../Editor/EditCode.html" target="_blank" class="Editors"><b>Open Editor</b></a>
+        <button id="openEditorBtn" class="Editors" data-url="../Editor/PopUp.html"><b>Pop Up Editor</b></button>
+        <!-- Searchbar -->
+        <div class="searchbar">
+            <input type="text" id="search" placeholder="Search...">
+            <button id="searchIcon" title="search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="11" cy="11" r="7" stroke="#555" stroke-width="2" />
+                    <line x1="16" y1="16" x2="22" y2="22" stroke="#555" stroke-width="2" />
+                </svg>
+            </button>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+        <div class="login" id="loginArea">
+            <a href="../navhtml/login.html"><b>Sign In</b></a>
+        </div>
+    </nav>
+    <!--Content-->
+    <div class="div">
+        <ul>
+            <li>
+                <h3><b>HTML Tutorial</b></h3>
+            </li>
+            <br>
+            <li><a href="Html Introduction.html">HTML Introduction</a></li>
+            <li><a href="Html Editors.html">HTML Editors</a></li>
+            <li><a href="Basic Structure.html">HTML Basic Structure</a></li>
+            <li><a href="Elements.html">HTML Elements</a></li>
+            <li><a href="Attributes.html">HTML Attributes</a></li>
+            <li><a href="Headings.html">HTML Headings</a></li>
+            <li><a href="Paragraphs.html">HTML Paragraphs</a></li>
+            <li><a href="Text Formatting.html">HTML Text Formatting</a></li>
+            <li><a href="Quotations.html">HTML Quotations</a></li>
+            <li><a href="Comment.html">HTML Comment</a></li>
+            <li><a href="Links and Images.html">HTML Links and Images</a></li>
+            <li><a href="Html Lists.html">HTML Lists</a></li>
+            <li><a href="Html Tables.html">HTML Tables</a></li>
+            <li><a href="Html Forms.html">HTML Forms</a></li>
+            <li><a href="Html Media.html">HTML Media</a></li>
+            <li><a href="Html Styles.html">HTML Styles</a></li>
+            <li><a href="Html CSS.html">HTML CSS</a></li>
+            <li><a href="Html Div.html">HTML Div</a></li>
+            <li><a href="Classes Id.html">HTML Classes & Id</a></li>
+            <li><a href="Semantics.html">HTML Semantics</a></li>
+            <li><a href="Iframe.html">HTML Iframe</a></li>
+            <li><a href="Meta.html">HTML Meta</a></li>
+            <li><a href="Entities.html">HTML Entities</a></li>
+            <li><a href="Symbols.html">HTML Symbols</a></li>
+            <li><a href="Chharsets.html">HTML Charsets</a></li>
+            <li><a href="HvX.html">HTML vs XHTML</a></li>
+            <br>
+            <li><b>Taglists</b></li><br>
+            <li>
+            <li><a href="Html Alphabetical.html">Alphabetical</a></li>
+            </li>
+            <li>
+            <li><a href="Html Category.html">By Category</a></li>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- Content -->
+    <center>
+        <h1 id="title">Learning Web Structure with <span class="codex">HTML</span> </h1>
+        <table>
+            <tr>
+                <td>
+                    <h2>HTML Paragraphs</h2>
+                    <hr>
+                    <p>
+                        A paragraph always starts on a new line, and is usually a block of text. <br><br>
+                        • The HTML <span class="colortext">&lt;p&gt;</span> element defines a paragraph. <br>
+                        • A paragraph always starts on a new line, and browsers automatically <br>
+                        &nbsp; add some white space (a margin) before and after a paragraph.
+                    </p>
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Example</h2>
+                    <p> <span class="colortext"> &lt;p&gt; </span> This is a paragraph. <span class="colortext"> &lt;&sol;p&gt; </span> <br>
+                        <span class="colortext"> &lt;p&gt; </span> This is another paragraph. <span class="colortext"> &lt;&sol;p&gt; </span> </p>
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2> HTML Display </h2>
+                    <p>
+                        • You cannot be sure how HTML will be displayed. <br><br>
+                        &nbsp; Large or small screens, and resized windows will create different results. <br> <br>
+                        • With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code. <br>
+                        &nbsp; The browser will automatically remove any extra spaces and lines when the page is displayed:<br>
+                        <hr>
+                        <code style="font-size:150%;">
+                            <span class="colortext"> &lt;p&gt; </span> <br>
+                            This paragraph contain <br>
+                            some lines in the source <br>
+                            but in the browser it ignores it.<br>
+                            <span class="colortext"> &lt;&sol;p&gt; </span> <br> <br>
+                            <span class="colortext"> &lt;p&gt; </span> <br>
+                            This &nbsp; &nbsp;paragraph contain <br>
+                            some &nbsp; &nbsp; &nbsp; spaces in &nbsp; &nbsp; the source <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;but browser still ignores it.<br>
+                            <span class="colortext"> &lt;&sol;p&gt; </span>
+                        </code>
+                    </p>
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>
+                        HTML Horizontal Rules
+                    </h2>
+                    <p>
+                        • The <span class="colortext"> &lt;hr&gt; </span> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule. <br>
+                        • The <span class="colortext"> &lt;hr&gt; </span> element is used to separate content (or define a change) in an HTML page:
+                        <h2> Example: </h2>
+                        <hr>
+                        <code style="font-size:150%;">
+                            <span class="colortext"> &lt;p&gt; </span>
+                            This is a paragraph 1
+                            <span class="colortext"> &lt;&sol;p&gt; </span> <br> <br>
+                            <span class="colortext"> &lt;p&gt; </span>
+                            This is a paragraph 2
+                            <span class="colortext"> &lt;&sol;p&gt; </span> <br> <br>
+                            <span class="colortext"> &lt;hr&gt; </span> <br> <br>
+                            <span class="colortext"> &lt;p&gt; </span>
+                            This is a paragraph 3
+                            <span class="colortext"> &lt;&sol;p&gt; </span><br> <br>
+                            <span class="colortext"> &lt;p&gt; </span>
+                            This is a paragraph 4
+                            <span class="colortext"> &lt;&sol;p&gt; </span>
+                        </code>
+                        <hr>
+                        <img src="../images/hr_output.png">
+                        <hr>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>
+                        HTML Line Breaks
+                    </h2>
+                    <p>
+                        • The HTML <span class="colortext"> &lt;br&gt; </span> element defines a line break. <br><br>
+                        • Use <span class="colortext"> &lt;br&gt; </span> if you want a line break (a new line) without starting a new paragraph:
+                        <hr>
+                        <code style="font-size:150%;">
+                            <span class="colortext"> &lt;p&gt; </span>
+                            This is
+                            <span class="colortext"> &lt;br&gt; </span>
+                            a paragraph with a
+                            <span class="colortext"> &lt;br&gt; </span>
+                            line break tag.
+                            <span class="colortext"> &lt;&sol;p&gt; </span>
+                        </code>
+                        <hr>
+                    </p>
+                    <img src="../images/br_output.png">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>
+                        The HTML <span class="colortext"> &lt;pre&gt; </span> tag
+                    </h2>
+                    <p>
+                        • The HTML <span class="colortext"> &lt;pre&gt; </span> element defines preformatted text. <br><br>
+                        • The text inside a <span class="colortext"> &lt;pre&gt; </span> element is displayed in a fixed-width font (usually Courier), <br>
+                        &nbsp; and it preserves both spaces and line breaks:
+                        <hr>
+                        <code style="font-size:150%;">
+                            <span class="colortext"> &lt;pre&gt; </span> <br>
+                            This is an example <br><br>
+                            of preformatted text. <br><br>
+                            It preserves all the spaces <br><br>
+                            and line breaks. <br>
+                            <span class="colortext"> &lt;&sol;pre&gt; </span>
+                        </code>
+                        <hr>
+                    </p>
+                    <img src="../images/pre_output.png">
+                    <hr>
+                </td>
+            </tr>
+        </table>
+        <button class="np"><a href="Headings.html">Previous</a></button>
+        <button class="np"><a href="Text Formatting.html">Next</a></button>
+    </center>
+    <!-- JavaScript -->
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>

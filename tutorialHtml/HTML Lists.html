@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEX | HTML Lists</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/navstyle.css" />
+    <link rel="stylesheet" href="../css/content.css" />
+    <link rel="icon" type="image/x-icon" href="../images/logo.png" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="logo" />
+                <h2>CODEX</h2>
+            </a>
+        </div>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../navhtml/tutorials.html">Tutorials</a></li>
+            <li><a href="../navhtml/quiz.html">Quiz</a></li>
+            <li><a href="../navhtml/contact.html">Contact Us</a></li>
+        </ul>
+        <a href="../Editor/EditCode.html" target="_blank" class="Editors"><b>Open Editor</b></a>
+        <button id="openEditorBtn" class="Editors" data-url="../Editor/PopUp.html"><b>Pop Up Editor</b></button>
+        <!-- Searchbar -->
+        <div class="searchbar">
+            <input type="text" id="search" placeholder="Search...">
+            <button id="searchIcon" title="search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="11" cy="11" r="7" stroke="#555" stroke-width="2" />
+                    <line x1="16" y1="16" x2="22" y2="22" stroke="#555" stroke-width="2" />
+                </svg>
+            </button>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+        <div class="login" id="loginArea">
+            <a href="../navhtml/login.html"><b>Sign In</b></a>
+        </div>
+    </nav>
+    <!--Content-->
+    <div class="div">
+        <ul>
+            <li>
+                <h3><b>HTML Tutorial</b></h3>
+            </li>
+            <br>
+            <li><a href="Html Introduction.html">HTML Introduction</a></li>
+            <li><a href="Html Editors.html">HTML Editors</a></li>
+            <li><a href="Basic Structure.html">HTML Basic Structure</a></li>
+            <li><a href="Elements.html">HTML Elements</a></li>
+            <li><a href="Attributes.html">HTML Attributes</a></li>
+            <li><a href="Headings.html">HTML Headings</a></li>
+            <li><a href="Paragraphs.html">HTML Paragraphs</a></li>
+            <li><a href="Text Formatting.html">HTML Text Formatting</a></li>
+            <li><a href="Quotations.html">HTML Quotations</a></li>
+            <li><a href="Comment.html">HTML Comment</a></li>
+            <li><a href="Links and Images.html">HTML Links and Images</a></li>
+            <li><a href="Html Lists.html">HTML Lists</a></li>
+            <li><a href="Html Tables.html">HTML Tables</a></li>
+            <li><a href="Html Forms.html">HTML Forms</a></li>
+            <li><a href="Html Media.html">HTML Media</a></li>
+            <li><a href="Html Styles.html">HTML Styles</a></li>
+            <li><a href="Html CSS.html">HTML CSS</a></li>
+            <li><a href="Html Div.html">HTML Div</a></li>
+            <li><a href="Classes Id.html">HTML Classes & Id</a></li>
+            <li><a href="Semantics.html">HTML Semantics</a></li>
+            <li><a href="Iframe.html">HTML Iframe</a></li>
+            <li><a href="Meta.html">HTML Meta</a></li>
+            <li><a href="Entities.html">HTML Entities</a></li>
+            <li><a href="Symbols.html">HTML Symbols</a></li>
+            <li><a href="Chharsets.html">HTML Charsets</a></li>
+            <li><a href="HvX.html">HTML vs XHTML</a></li>
+            <br>
+            <li><b>Taglists</b></li> <br>
+            <li>
+            <li><a href="Html Alphabetical.html">Alphabetical</a></li>
+            </li>
+            <li>
+            <li><a href="Html Category.html">By Category</a></li>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- Content -->
+    <center>
+        <h1 id="title">Learning Web Structure with <span class="codex">HTML</span> </h1>
+        <table>
+            <tr>
+                <td>
+                    <h2>
+                        HTML Lists
+                    </h2>
+                    <p>
+                        HTML lists allow web developers to group a set of related items in lists.
+                        <hr>
+                    </p>
+                    <img src="../images/ul_ol_examples.png">
+                    <hr>
+                    <h2>
+                        Unordered HTML List
+                    </h2>
+                    <p>
+                        An unordered list starts with the <span class="colortext">&lt;ul&gt;</span> tag. Each list item starts with the <span class="colortext">&lt;li&gt;</span> tag.<br><br>
+                        The list items will be marked with bullets (small black circles) by default:
+                        <hr>
+                        <code style="font-size:150%;">
+                            <span class="colortext">&lt;ul&gt;</span><br>
+                            <span class="colortext">&lt;li&gt;</span>Apple<span class="colortext">&lt;&sol;li&gt;</span><br>
+                            <span class="colortext">&lt;li&gt;</span>Orange<span class="colortext">&lt;&sol;li&gt;</span><br>
+                            <span class="colortext">&lt;li&gt;</span>Banana<span class="colortext">&lt;&sol;li&gt;</span><br>
+                            <span class="colortext">&lt;&sol;ul&gt;</span>
+                        </code>
+                        <hr>
+                    </p>
+                    <img src="../images/ul_output.png">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>
+                        Ordered HTML List
+                    </h2>
+                    <p>
+                        An ordered list starts with the <span class="colortext">&lt;ol&gt;</span> tag. Each list item starts with the <span class="colortext">&lt;li&gt;</span> tag. <br><br>
+                        The list items will be marked with numbers by default:
+                        <hr>
+                        <code style="font-size:150%;">
+                            <span class="colortext">&lt;ol&gt;</span><br>
+                            <span class="colortext">&lt;li&gt;</span>Apple<span class="colortext">&lt;&sol;li&gt;</span><br>
+                            <span class="colortext">&lt;li&gt;</span>Orange<span class="colortext">&lt;&sol;li&gt;</span><br>
+                            <span class="colortext">&lt;li&gt;</span>Banana<span class="colortext">&lt;&sol;li&gt;</span><br>
+                            <span class="colortext">&lt;&sol;ol&gt;</span>
+                        </code>
+                        <hr>
+                    </p>
+                    <img src="../images/ol_output.png">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>
+                        HTML Description Lists
+                    </h2>
+                    <p>
+                        A description list is a list of terms, with a description of each term. <br><br>
+                        The <span class="colortext">&lt;dl&gt;</span> tag defines the description list, the <span class="colortext">&lt;dt&gt;</span> tag defines the term (name)<br>
+                        &nbsp; and the <span class="colortext">&lt;dd&gt;</span> tag describes each term:
+                        <hr>
+                        <code style="font-size:150%;">
+                            <span class="colortext">&lt;dl&gt;</span><br>
+                            <span class="colortext">&lt;dt&gt;</span>Apple<span class="colortext">&lt;&sol;dt&gt;</span><br>
+                            <span class="colortext">&lt;dd&gt;</span>- Rich in Fiber <span class="colortext">&lt;&sol;dd&gt;</span><br>
+                            <span class="colortext">&lt;dt&gt;</span>Banana<span class="colortext">&lt;&sol;dt&gt;</span><br>
+                            <span class="colortext">&lt;dd&gt;</span>- Rich in Potassium <span class="colortext">&lt;&sol;dd&gt;</span><br>
+                            <span class="colortext">&lt;&sol;dl&gt;</span>
+                        </code>
+                        <hr>
+                    </p>
+                    <img src="../images/dl_output.png">
+                    <hr>
+                </td>
+            </tr>
+        </table>
+        <button class="np"><a href="Links and Images.html">Previous</a></button>
+        <button class="np"><a href="Html Tables.html">Next</a></button>
+    </center>
+    <!-- JavaScript -->
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>

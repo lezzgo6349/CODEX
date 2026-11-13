@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEX | HTML Media</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/navstyle.css" />
+    <link rel="stylesheet" href="../css/content.css" />
+    <link rel="icon" type="image/x-icon" href="../images/logo.png" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="logo" />
+                <h2>CODEX</h2>
+            </a>
+        </div>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../navhtml/tutorials.html">Tutorials</a></li>
+            <li><a href="../navhtml/quiz.html">Quiz</a></li>
+            <li><a href="../navhtml/contact.html">Contact Us</a></li>
+        </ul>
+        <a href="../Editor/EditCode.html" target="_blank" class="Editors"><b>Open Editor</b></a>
+        <button id="openEditorBtn" class="Editors" data-url="../Editor/PopUp.html"><b>Pop Up Editor</b></button>
+        <!-- Searchbar -->
+        <div class="searchbar">
+            <input type="text" id="search" placeholder="Search...">
+            <button id="searchIcon" title="search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="11" cy="11" r="7" stroke="#555" stroke-width="2" />
+                    <line x1="16" y1="16" x2="22" y2="22" stroke="#555" stroke-width="2" />
+                </svg>
+            </button>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+        <div class="login" id="loginArea">
+            <a href="../navhtml/login.html"><b>Sign In</b></a>
+        </div>
+    </nav>
+    <!--Content-->
+    <div class="div">
+        <ul>
+            <li>
+                <h3><b>HTML Tutorial</b></h3>
+            </li>
+            <br>
+            <li><a href="Html Introduction.html">HTML Introduction</a></li>
+            <li><a href="Html Editors.html">HTML Editors</a></li>
+            <li><a href="Basic Structure.html">HTML Basic Structure</a></li>
+            <li><a href="Elements.html">HTML Elements</a></li>
+            <li><a href="Attributes.html">HTML Attributes</a></li>
+            <li><a href="Headings.html">HTML Headings</a></li>
+            <li><a href="Paragraphs.html">HTML Paragraphs</a></li>
+            <li><a href="Text Formatting.html">HTML Text Formatting</a></li>
+            <li><a href="Quotations.html">HTML Quotations</a></li>
+            <li><a href="Comment.html">HTML Comment</a></li>
+            <li><a href="Links and Images.html">HTML Links and Images</a></li>
+            <li><a href="Html Lists.html">HTML Lists</a></li>
+            <li><a href="Html Tables.html">HTML Tables</a></li>
+            <li><a href="Html Forms.html">HTML Forms</a></li>
+            <li><a href="Html Media.html">HTML Media</a></li>
+            <li><a href="Html Styles.html">HTML Styles</a></li>
+            <li><a href="Html CSS.html">HTML CSS</a></li>
+            <li><a href="Html Div.html">HTML Div</a></li>
+            <li><a href="Classes Id.html">HTML Classes & Id</a></li>
+            <li><a href="Semantics.html">HTML Semantics</a></li>
+            <li><a href="Iframe.html">HTML Iframe</a></li>
+            <li><a href="Meta.html">HTML Meta</a></li>
+            <li><a href="Entities.html">HTML Entities</a></li>
+            <li><a href="Symbols.html">HTML Symbols</a></li>
+            <li><a href="Chharsets.html">HTML Charsets</a></li>
+            <li><a href="HvX.html">HTML vs XHTML</a></li>
+            <br>
+            <li><b>Taglists</b></li><br>
+            <li>
+            <li><a href="Html Alphabetical.html">Alphabetical</a></li>
+            </li>
+            <li>
+            <li><a href="Html Category.html">By Category</a></li>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- Content -->
+    <center>
+        <h1 id="title">Learning Web Structure with <span class="codex">HTML</span> </h1>
+        <table>
+            <tr>
+                <td>
+                    <h2>
+                        HTML Media
+                    </h2>
+                    <hr>
+                    <p>
+                        <span class="colortext">HTML Media</span> refers to multimedia elements that can be embedded in web pages, such as images, audio, and video. <br><br>
+                        These elements help to enhance the user experience and deliver richer content.
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Main HTML Media Tags:</b>
+                        <ul>
+                            <li><span class="colortext">&lt;img&gt;</span>: Embeds images</li>
+                            <li><span class="colortext">&lt;audio&gt;</span>: Embeds sound/audio files</li>
+                            <li><span class="colortext">&lt;video&gt;</span>: Embeds video files</li>
+                            <li><span class="colortext">&lt;source&gt;</span>: Specifies media sources for <span class="colortext">&lt;audio&gt;</span> and <span class="colortext">&lt;video&gt;</span></li>
+                            <li><span class="colortext">&lt;track&gt;</span>: Defines text tracks (like subtitles) for <span class="colortext">&lt;video&gt;</span></li>
+                        </ul>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Common Attributes:</b>
+                        <ul>
+                            <li><span class="colortext">src</span>: Specifies the media file path</li>
+                            <li><span class="colortext">alt</span>: Provides alternative text for <span class="colortext">&lt;img&gt;</span></li>
+                            <li><span class="colortext">controls</span>: Adds play/pause controls for <span class="colortext">&lt;audio&gt;</span> and <span class="colortext">&lt;video&gt;</span></li>
+                            <li><span class="colortext">autoplay</span>: Starts playing media automatically</li>
+                            <li><span class="colortext">loop</span>: Repeats the media content</li>
+                            <li><span class="colortext">muted</span>: Mutes audio by default</li>
+                            <li><span class="colortext">width</span> / <span class="colortext">height</span>: Sets the size for images and videos</li>
+                            <li><span class="colortext">poster</span>: Specifies an image to show before a video plays</li>
+                        </ul>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Basic Media Examples:</b>
+                    </p>
+                    <pre>
+      <code style="font-size:150%;">
+&lt;img src="cat.jpg" alt="A cute cat" width="200"&gt;
+
+&lt;audio src="music.mp3" controls&gt;&lt;/audio&gt;
+
+&lt;video width="320" height="240" controls&gt;
+    &lt;source src="movie.mp4" type="video/mp4"&gt;
+    &lt;source src="movie.ogg" type="video/ogg"&gt;
+    Your browser does not support the video tag.
+&lt;/video&gt;
+      </code>
+    </pre>
+                    <hr>
+                    <img src="../images/cat.png" alt="A cute cat" width="200">
+                    <audio src="../images/music.mp3" controls></audio>
+                    <video width="320" height="240" controls>
+                        <source src="../images/movie.mp4" type="video/mp4">
+                        <source src="../images/movie.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
+                    <hr>
+                    <p>
+                        <b>Tips & Best Practices:</b>
+                        <ul>
+                            <li>Always use <span class="colortext">alt</span> text for images (for accessibility).</li>
+                            <li>Provide multiple <span class="colortext">&lt;source&gt;</span> files for better browser compatibility.</li>
+                            <li>Use <span class="colortext">controls</span> for user-friendly playback.</li>
+                            <li>Keep media file sizes optimized for faster loading.</li>
+                            <li>Consider subtitles and captions for video accessibility using <span class="colortext">&lt;track&gt;</span>.</li>
+                        </ul>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Sample Video Tag with Track:</b>
+                    </p>
+                    <pre>
+      <code style="font-size:150%;">
+&lt;video width="420" height="340" controls&gt;
+    &lt;source src="sample.mp4" type="video/mp4"&gt;
+    &lt;track src="captions_en.vtt" kind="subtitles" srclang="en" label="English"&gt;
+&lt;/video&gt;
+      </code>
+    </pre>
+                    <hr>
+                    <video width="420" height="340" controls>
+                        <source src="../images/sample.mp4" type="video/mp4">
+                        <track src="../images/captions_en.vtt" kind="subtitles" srclang="en" label="English">
+                    </video>
+                    <hr>
+                </td>
+            </tr>
+        </table>
+        <button class="np"><a href="HTML Forms.html">Previous</a></button>
+        <button class="np"><a href="Html Styles.html">Next</a></button>
+    </center>
+    <!-- JavaScript -->
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>

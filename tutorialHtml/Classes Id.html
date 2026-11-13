@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEX | HTML Classes & Id</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/navstyle.css" />
+    <link rel="stylesheet" href="../css/content.css" />
+    <link rel="icon" type="image/x-icon" href="../images/logo.png" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="logo" />
+                <h2>CODEX</h2>
+            </a>
+        </div>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../navhtml/tutorials.html">Tutorials</a></li>
+            <li><a href="../navhtml/quiz.html">Quiz</a></li>
+            <li><a href="../navhtml/contact.html">Contact Us</a></li>
+        </ul>
+        <a href="../Editor/EditCode.html" target="_blank" class="Editors"><b>Open Editor</b></a>
+        <button id="openEditorBtn" class="Editors" data-url="../Editor/PopUp.html"><b>Pop Up Editor</b></button>
+        <!-- Searchbar -->
+        <div class="searchbar">
+            <input type="text" id="search" placeholder="Search...">
+            <button id="searchIcon" title="search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="11" cy="11" r="7" stroke="#555" stroke-width="2" />
+                    <line x1="16" y1="16" x2="22" y2="22" stroke="#555" stroke-width="2" />
+                </svg>
+            </button>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+        <div class="login" id="loginArea">
+            <a href="../navhtml/login.html"><b>Sign In</b></a>
+        </div>
+    </nav>
+    <!--Content-->
+    <div class="div">
+        <ul>
+            <li>
+                <h3><b>HTML Tutorial</b></h3>
+            </li>
+            <br>
+            <li><a href="Html Introduction.html">HTML Introduction</a></li>
+            <li><a href="Html Editors.html">HTML Editors</a></li>
+            <li><a href="Basic Structure.html">HTML Basic Structure</a></li>
+            <li><a href="Elements.html">HTML Elements</a></li>
+            <li><a href="Attributes.html">HTML Attributes</a></li>
+            <li><a href="Headings.html">HTML Headings</a></li>
+            <li><a href="Paragraphs.html">HTML Paragraphs</a></li>
+            <li><a href="Text Formatting.html">HTML Text Formatting</a></li>
+            <li><a href="Quotations.html">HTML Quotations</a></li>
+            <li><a href="Comment.html">HTML Comment</a></li>
+            <li><a href="Links and Images.html">HTML Links and Images</a></li>
+            <li><a href="Html Lists.html">HTML Lists</a></li>
+            <li><a href="Html Tables.html">HTML Tables</a></li>
+            <li><a href="Html Forms.html">HTML Forms</a></li>
+            <li><a href="Html Media.html">HTML Media</a></li>
+            <li><a href="Html Styles.html">HTML Styles</a></li>
+            <li><a href="Html CSS.html">HTML CSS</a></li>
+            <li><a href="Html Div.html">HTML Div</a></li>
+            <li><a href="Classes Id.html">HTML Classes & Id</a></li>
+            <li><a href="Semantics.html">HTML Semantics</a></li>
+            <li><a href="Iframe.html">HTML Iframe</a></li>
+            <li><a href="Meta.html">HTML Meta</a></li>
+            <li><a href="Entities.html">HTML Entities</a></li>
+            <li><a href="Symbols.html">HTML Symbols</a></li>
+            <li><a href="Chharsets.html">HTML Charsets</a></li>
+            <li><a href="HvX.html">HTML vs XHTML</a></li>
+            <br>
+            <li><b>Taglists</b></li><br>
+            <li>
+            <li><a href="Html Alphabetical.html">Alphabetical</a></li>
+            </li>
+            <li>
+            <li><a href="Html Category.html">By Category</a></li>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- Content -->
+    <center>
+        <h1 id="title">Learning Web Structure with <span class="codex">HTML</span> </h1>
+        <table>
+            <tr>
+                <td>
+                    <h2>
+                        Classes and IDs in HTML
+                    </h2>
+                    <hr>
+                    <p>
+                        <span class="colortext">class</span> and <span class="colortext">id</span> are attributes used to identify and style HTML elements. <br><br>
+                        They help you target specific elements with CSS and JavaScript, making your web pages more organized and interactive.
+                    </p>
+                    <hr>
+                    <p>
+                        <b>What is <span class="colortext">class</span>?</b>
+                        <ul>
+                            <li>The <span class="colortext">class</span> attribute can be used on multiple elements</li>
+                            <li>Multiple classes can be applied to a single element (separated by spaces)</li>
+                            <li>Used for styling groups of similar elements</li>
+                            <li>Identified in CSS with a dot (.) prefix</li>
+                        </ul>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>What is <span class="colortext">id</span>?</b>
+                        <ul>
+                            <li>The <span class="colortext">id</span> attribute must be unique on each page</li>
+                            <li>Only one element can have a specific id value per page</li>
+                            <li>Used for targeting single, specific elements</li>
+                            <li>Identified in CSS with a hash (#) prefix</li>
+                        </ul>
+                    </p>
+                    <hr>
+                    <p><b>Example - Using Classes:</b></p>
+                    <pre>
+      <code style="font-size:140%;">
+&lt;p class="highlight important"&gt;This paragraph has two classes!&lt;/p&gt;
+&lt;p class="highlight"&gt;This paragraph has one class.&lt;/p&gt;
+&lt;div class="highlight"&gt;This div shares the same class.&lt;/div&gt;
+
+&lt;style&gt;
+  .highlight {
+    background-color: yellow;
+  }
+  .important {
+    font-weight: bold;
+  }
+&lt;/style&gt;
+      </code>
+    </pre>
+                    <hr>
+                    <img src="../images/classes_output.png" alt="Classes Example Output">
+                    <hr>
+                    <p><b>Example - Using IDs:</b></p>
+                    <pre>
+      <code style="font-size:140%;">
+&lt;div id="header"&gt;This is the header section&lt;/div&gt;
+&lt;div id="main-content"&gt;This is the main content&lt;/div&gt;
+&lt;button id="submitBtn"&gt;Submit&lt;/button&gt;
+
+&lt;style&gt;
+  #header {
+    background-color: #333;
+    color: white;
+  }
+  #main-content {
+    padding: 20px;
+  }
+&lt;/style&gt;
+      </code>
+    </pre>
+                    <hr>
+                    <img src="../images/ids_output.png" alt="IDs Example Output">
+                    <hr>
+                    <p><b>Combining Classes and IDs:</b></p>
+                    <pre>
+      <code style="font-size:140%;">
+&lt;div id="container" class="wrapper box"&gt;
+  &lt;p class="text" id="intro-text"&gt;Welcome to our website!&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+    #container {
+      background-color: #838181;
+      padding: 25px;
+      width: 400px;
+    }
+    .wrapper {
+      background-color: #f9f9f9;
+      padding: 18px;
+    }
+    .box {
+      box-shadow: #353434;
+      padding: 18px;
+    }
+    .text {
+      color: #050505;
+    }
+    #intro-text {
+      text-decoration: underline;
+    }
+  &lt;/style&gt;
+      </code>
+    </pre>
+                    <hr>
+                    <img src="../images/classes_ids_combined_output.png" alt="Combined Classes and IDs Example Output">
+                    <hr>
+                    <p>
+                        <b>Key Differences:</b>
+                        <ul>
+                            <li><span class="colortext">class</span> is reusable—multiple elements can share the same class</li>
+                            <li><span class="colortext">id</span> is unique—only one element per page can have a specific id</li>
+                            <li>Use <span class="colortext">class</span> for styling similar elements together</li>
+                            <li>Use <span class="colortext">id</span> for JavaScript targeting and anchor links</li>
+                            <li>An element can have multiple classes but only one id</li>
+                        </ul>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Best Practices:</b>
+                        <ul>
+                            <li>Use descriptive names that indicate purpose (e.g., <span class="colortext">class="button-primary"</span> not <span class="colortext">class="blue"</span>)</li>
+                            <li>Keep id values unique across your entire page</li>
+                            <li>Prefer classes for styling unless you specifically need an id</li>
+                            <li>Use kebab-case (hyphens) for naming: <span class="colortext">class="main-header"</span> instead of <span class="colortext">class="mainHeader"</span></li>
+                            <li>IDs can be used for anchor links (e.g., <span class="colortext">#section1</span> in URLs)</li>
+                        </ul>
+                    </p>
+                    <hr>
+                </td>
+            </tr>
+        </table>
+        <button class="np"><a href="Html Div.html">Previous</a></button>
+        <button class="np"><a href="Semantics.html">Next</a></button>
+    </center>
+    <!-- JavaScript -->
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>

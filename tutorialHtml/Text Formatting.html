@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEX | HTML Text Formatting</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/navstyle.css" />
+    <link rel="stylesheet" href="../css/content.css" />
+    <link rel="icon" type="image/x-icon" href="../images/logo.png" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="logo" />
+                <h2>CODEX</h2>
+            </a>
+        </div>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../navhtml/tutorials.html">Tutorials</a></li>
+            <li><a href="../navhtml/quiz.html">Quiz</a></li>
+            <li><a href="../navhtml/contact.html">Contact Us</a></li>
+        </ul>
+        <a href="../Editor/EditCode.html" target="_blank" class="Editors"><b>Open Editor</b></a>
+        <button id="openEditorBtn" class="Editors" data-url="../Editor/PopUp.html"><b>Pop Up Editor</b></button>
+        <!-- Searchbar -->
+        <div class="searchbar">
+            <input type="text" id="search" placeholder="Search...">
+            <button id="searchIcon" title="search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="11" cy="11" r="7" stroke="#555" stroke-width="2" />
+                    <line x1="16" y1="16" x2="22" y2="22" stroke="#555" stroke-width="2" />
+                </svg>
+            </button>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+        <div class="login" id="loginArea">
+            <a href="../navhtml/login.html"><b>Sign In</b></a>
+        </div>
+    </nav>
+    <!--Content-->
+    <div class="div">
+        <ul>
+            <li>
+                <h3><b>HTML Tutorial</b></h3>
+            </li>
+            <br>
+            <li><a href="Html Introduction.html">HTML Introduction</a></li>
+            <li><a href="Html Editors.html">HTML Editors</a></li>
+            <li><a href="Basic Structure.html">HTML Basic Structure</a></li>
+            <li><a href="Elements.html">HTML Elements</a></li>
+            <li><a href="Attributes.html">HTML Attributes</a></li>
+            <li><a href="Headings.html">HTML Headings</a></li>
+            <li><a href="Paragraphs.html">HTML Paragraphs</a></li>
+            <li><a href="Text Formatting.html">HTML Text Formatting</a></li>
+            <li><a href="Quotations.html">HTML Quotations</a></li>
+            <li><a href="Comment.html">HTML Comment</a></li>
+            <li><a href="Links and Images.html">HTML Links and Images</a></li>
+            <li><a href="Html Lists.html">HTML Lists</a></li>
+            <li><a href="Html Tables.html">HTML Tables</a></li>
+            <li><a href="Html Forms.html">HTML Forms</a></li>
+            <li><a href="Html Media.html">HTML Media</a></li>
+            <li><a href="Html Styles.html">HTML Styles</a></li>
+            <li><a href="Html CSS.html">HTML CSS</a></li>
+            <li><a href="Html Div.html">HTML Div</a></li>
+            <li><a href="Classes Id.html">HTML Classes & Id</a></li>
+            <li><a href="Semantics.html">HTML Semantics</a></li>
+            <li><a href="Iframe.html">HTML Iframe</a></li>
+            <li><a href="Meta.html">HTML Meta</a></li>
+            <li><a href="Entities.html">HTML Entities</a></li>
+            <li><a href="Symbols.html">HTML Symbols</a></li>
+            <li><a href="Chharsets.html">HTML Charsets</a></li>
+            <li><a href="HvX.html">HTML vs XHTML</a></li>
+            <br>
+            <li><b>Taglists</b></li> <br>
+            <li>
+            <li><a href="Html Alphabetical.html">Alphabetical</a></li>
+            </li>
+            <li>
+            <li><a href="Html Category.html">By Category</a></li>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- Content -->
+    <center>
+        <h1 id="title">Learning Web Structure with <span class="codex">HTML</span> </h1>
+        <table>
+            <tr>
+                <td>
+                    <h2>
+                        Text Formatting
+                    </h2>
+                    <p>
+                        • HTML contains several elements for defining text with a special meaning.
+                        <hr>
+                        <b>This text is bold</b> <br><br>
+                        <i>This text is italic</i> <br><br>
+                        <small> This text is small sized. </small> <br><br>
+                        This is <sub>subscript</sub> and <sup>superscript</sup>
+                    </p>
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>
+                        HTML Formatting Elements
+                    </h2>
+                    <p>
+                        Formatting elements were designed to display special types of text: <br><br>
+                        <code style="font-size:150%;">
+                            • <span class="colortext">&lt;b&gt;</span> - Bold text <br>
+                            • <span class="colortext">&lt;strong&gt;</span> - Important text <br>
+                            • <span class="colortext">&lt;i&gt;</span> - Italic text <br>
+                            • <span class="colortext">&lt;em&gt;</span> - Emphasized text <br>
+                            • <span class="colortext">&lt;mark&gt;</span> - Marked text <br>
+                            • <span class="colortext">&lt;small&gt;</span> - Smaller text <br>
+                            • <span class="colortext">&lt;del&gt;</span> - Deleted text <br>
+                            • <span class="colortext">&lt;ins&gt;</span> - Inserted text <br>
+                            • <span class="colortext">&lt;sub&gt;</span> - Subscript text <br>
+                            • <span class="colortext">&lt;sup&gt;</span> - Superscript text <br>
+                        </code>
+                    </p>
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>
+                        HTML <span class="colortext">&lt;b&gt;</span> and <span class="colortext">&lt;strong&gt;</span> Elements
+                    </h2>
+                    <p>
+                        • The HTML <span class="colortext">&lt;b&gt;</span> element defines bold text, without any extra importance. <br> <br>
+                        • The HTML <span class="colortext">&lt;strong&gt;</span> element defines text with strong importance. The content inside is typically <br>
+                        &nbsp; displayed in bold.
+                        <hr>
+                        <code style="font-size:150%;">
+                            <span class="colortext">&lt;b&gt;</span>
+                            This text is bold
+                            <span class="colortext">&lt;&sol;b&gt;</span> <br><br>
+                            <span class="colortext">&lt;strong&gt;</span>
+                            This text is important!
+                            <span class="colortext">&lt;&sol;strong&gt;</span>
+                        </code>
+                        <hr>
+                    </p>
+                    <img src="../images/b_strong_output.png">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>
+                        HTML <span class="colortext">&lt;i&gt;</span> and <span class="colortext">&lt;em &gt;</span> Elements
+                    </h2>
+                    <p>
+                        • The HTML <span class="colortext">&lt;i&gt;</span> element defines a part of text in an alternate voice or mood. <br>
+                        &nbsp; The content inside is typically displayed in italic. <br><br>
+                        • The HTML <span class="colortext">&lt;em&gt;</span> element defines emphasized text. The content inside is typically displayed in italic.
+                        <hr>
+                        <code style="font-size:150%;">
+                            <span class="colortext">&lt;i&gt;</span>
+                            This text is italic
+                            <span class="colortext">&lt;&sol;i&gt;</span> <br><br>
+                            <span class="colortext">&lt;em&gt;</span>
+                            This text is emphasized
+                            <span class="colortext">&lt;&sol;em&gt;</span>
+                        </code>
+                        <hr>
+                        <img src="../images/i_em_output.png">
+                        <hr>
+                        Tip: The
+                        <span class="colortext">&lt;i&gt;</span>
+                        tag is often used to indicate a technical term, a phrase from another language, a thought, <br> a ship name, etc. while <span class="colortext">&lt;em&gt;</span>
+                        a screen reader will pronounce the words in <span class="colortext">&lt;em&gt;</span> with an emphasis, <br>
+                        using verbal stress.
+                    </p>
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>
+                        HTML <span class="colortext">&lt;small&gt;</span> and <span class="colortext">&lt;mark&gt;</span> Elements
+                    </h2>
+                    <p>
+                        • The HTML <span class="colortext">&lt;small&gt;</span> element defines smaller text. <br><br>
+                        • The HTML <span class="colortext">&lt;mark&gt;</span> element defines text that should be marked or highlighted.
+                        <hr>
+                        <code style="font-size:150%;">
+                            <span class="colortext">&lt;small&gt;</span>
+                            This text is smaller than usual.
+                            <span class="colortext">&lt;&sol;small&gt;</span> <br><br>
+                            <span class="colortext">&lt;mark&gt;</span>
+                            This text is marked/highlighted.
+                            <span class="colortext">&lt;&sol;mark&gt;</span>
+                        </code>
+                        <hr>
+                    </p>
+                    <img src="../images/small_mark_output.png">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>
+                        HTML <span class="colortext">&lt;del&gt;</span> and <span class="colortext">&lt;ins&gt;</span> Elements
+                    </h2>
+                    <p>
+                        • The HTML <span class="colortext">&lt;del&gt;</span> element defines text that has been deleted from a document. <br><br>
+                        • The HTML <span class="colortext">&lt;ins&gt;</span> element defines a text that has been inserted into a document. <br><br>
+                        • The <span class="colortext">&lt;del&gt;</span> strikes a line through a deleted text, while <span class="colortext">&lt;ins&gt;</span>
+                        underlines the inserted text.
+                        <hr>
+                        <code style="font-size:150%;">
+                            <span class="colortext">&lt;p&gt;</span>
+                            This text has
+                            <span class="colortext">&lt;del&gt;</span>deleted<span class="colortext">&lt;&sol;del&gt;</span>
+                            and
+                            <span class="colortext">&lt;ins&gt;</span>inserted<span class="colortext">&lt;&sol;ins&gt;</span>
+                            formats.
+                            <span class="colortext">&lt;&sol;p&gt;</span>
+                        </code>
+                        <hr>
+                    </p>
+                    <img src="../images/del_ins_output.png">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>
+                        HTML <span class="colortext">&lt;sub&gt;</span> and <span class="colortext">&lt;sup&gt;</span> Elements
+                    </h2>
+                    <p>
+                        • The HTML <span class="colortext">&lt;sub&gt;</span> element defines subscript text. Subscript text appears half a character below <br>
+                        &nbsp; the normal line and is sometimes rendered in a smaller font. <br>
+                        • Subscript text can be used for chemical formulas, like H<sub>2</sub>O. <br><br>
+                        • The HTML <span class="colortext">&lt;sup&gt;</span> element defines superscript text. Superscript text appears half a character above <br>
+                        &nbsp; the normal line and is sometimes rendered in a smaller font. <br>
+                        • Superscript text can be used for footnotes, like law<sup>1</sup>.
+                        <hr>
+                        <code style="font-size:150%;">
+                            <span class="colortext">&lt;p&gt;</span>
+                            This text can be
+                            <span class="colortext">&lt;sub&gt;</span>subscripted<span class="colortext">&lt;&sol;sub&gt;</span>
+                            and
+                            <span class="colortext">&lt;sup&gt;</span>superscripted<span class="colortext">&lt;&sol;sup&gt;</span>
+                            <span class="colortext">&lt;&sol;p&gt;</span>
+                        </code>
+                        <hr>
+                    </p>
+                    <img src="../images/sub_sup_output.png">
+                    <hr>
+                </td>
+            </tr>
+        </table>
+        <button class="np"><a href="Paragraphs.html">Previous</a></button>
+        <button class="np"><a href="Quotations.html">Next</a></button>
+    </center>
+    <!-- JavaScript -->
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>
