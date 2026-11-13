@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CODEX | Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/navstyle.css">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html"><img src="../images/logo.png" alt="logo">
+                <h2>CODEX</h2>
+            </a>
+        </div>
+        <!-- Menu -->
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="tutorials.html">Tutorials</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <!-- Searchbar -->
+        <div class="searchbar">
+            <input type="text" id="search" placeholder="Search...">
+            <button id="searchIcon" title="search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="11" cy="11" r="7" stroke="#555" stroke-width="2" />
+                    <line x1="16" y1="16" x2="22" y2="22" stroke="#555" stroke-width="2" />
+                </svg>
+            </button>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+        <!-- SignIn Area -->
+        <div class="login" id="loginArea">
+            <a href="login.html"><b>Sign In</b></a>
+        </div>
+    </nav>
+    <!-- Content -->
+    <div class="feedback">
+        <h1>Feedback</h1>
+        <p>We’d love to hear from you! Fill out the form below or reach us via email or phone.</p>
+        <form id="feedbackForm">
+            <input type="text" placeholder="Username" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Your Comment" required></textarea>
+            <button id="send" type="submit">Send</button>
+        </form>
+    </div>
+    <!-- Contact Info -->
+    <div class="contact">
+        <p>Have any inquiries? Contact us at:</p>
+        <a href="mailto:Codex@gmail.com">Codex@gmail.com</a>
+        <hr>
+        <a href="tel:+69123456789">+69 #########</a>
+    </div>
+    <!-- Scripts -->
+    <script src="../scripts/main.js"></script>
+   <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const username = localStorage.getItem("username");
+    const feedbackForm = document.getElementById("feedbackForm");
+
+    if (feedbackForm) {
+        feedbackForm.addEventListener("submit", function(e) {
+            if (!username || username.trim() === "") {
+                e.preventDefault(); // Stop submission
+                alert("You must be logged in to send feedback!");
+                window.location.href = "../navhtml/login.html"; // Redirect to login
+                return;
+            }
+
+            // If logged in, proceed as normal
+            e.preventDefault();
+            alert("Thank you for your feedback!");
+            feedbackForm.reset();
+        });
+    }
+});
+</script>
+</body>
+
+</html>

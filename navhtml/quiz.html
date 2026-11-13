@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CODEX | Quiz</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/navstyle.css">
+    <link rel="stylesheet" href="../css/quiz.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html"><img src="../images/logo.png" alt="logo">
+                <h2>CODEX</h2>
+            </a>
+        </div>
+        <!-- Menu -->
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="tutorials.html">Tutorials</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <!-- Searchbar -->
+        <div class="searchbar">
+            <input type="text" id="search" placeholder="Search...">
+            <button id="searchIcon" title="search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="11" cy="11" r="7" stroke="#555" stroke-width="2" />
+                    <line x1="16" y1="16" x2="22" y2="22" stroke="#555" stroke-width="2" />
+                </svg>
+            </button>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+        <!-- SignIn Area -->
+        <div class="login" id="loginArea">
+            <a href="login.html"><b>Sign In</b></a>
+        </div>
+    </nav>
+    <!-- Content -->
+    <div class="wrapper">
+        <!-- HTML QUIZ -->
+        <div class="container">
+            <div>
+                <h1 class="H-anim">HTML Quizzes!</h1>
+                <p>Test your knowledge of HTML and strengthen your foundation in web development. <br>From basic tags to form
+                    elements, each quiz helps you master the structure of the web one step at a time!</p>
+                <a href="../quizzesHC/HTML Basics.html" class="cta-btn">Start HTML Quizes</a>
+            </div>
+        </div>
+        <!-- CSS QUIZ -->
+        <div class="container">
+            <div>
+                <h1 class="H-anim">CSS Quizzes!</h1>
+                <p>Enhance your web pages with style! These quizzes challenge your understanding of <br>colors, layouts, and
+                    animations—everything you need to make your websites visually stunning and responsive.</p>
+                <a href="../quizzesHC/CSS Basics.html" class="cta-btn">Start CSS Quizzes</a>
+            </div>
+        </div>
+        <!-- Slider controls -->
+        <button id="prev" class="arrw-btn">&lt;</button>
+        <button id="next" class="arrw-btn">&gt;</button>
+        <!-- Dots -->
+        <div class="indicator-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    <!-- EXTERNAL MAIN SCRIPT -->
+    <script src="../scripts/main.js"></script>
+    <!-- Scripts -->
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const username = localStorage.getItem("username");
+        const quizButtons = document.querySelectorAll(".cta-btn"); // HTML & CSS quiz buttons
+
+        quizButtons.forEach(btn => {
+            btn.addEventListener("click", (e) => {
+                if (!username || username.trim() === "") {
+                    e.preventDefault(); // stop the button from navigating
+                    alert("You must be logged in to access quizzes!");
+                    window.location.href = "../navhtml/login.html"; // redirect to login page
+                }
+            });
+        });
+    });
+    </script>
+</body>
+
+</html>
