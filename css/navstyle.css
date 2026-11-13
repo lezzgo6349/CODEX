@@ -1,0 +1,427 @@
+/* Navstyle */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg,
+        #e9faf2,
+        #e5f8ef,
+        #e2f6ea,
+        #e7f6e5,
+        #f1f6e4,
+        #f8f5e6,
+        #fdf3e8);
+    background-size: 300% 300%;
+    animation: movebackground 12s ease infinite;
+    overflow-y: scroll;
+}
+
+/*bganimation*/
+@keyframes movebackground {
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+/*nav*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    background-color: ghostwhite;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow: visible;
+}
+
+/* Active link highlight */
+.menu li a.active {
+    color: #04aa6d;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.logo img {
+    position: relative;
+    top: 20px;
+    width: 65px;
+    height: auto;
+}
+
+.logo h2 {
+    font-size: 2rem;
+}
+
+.menu {
+    color: grey;
+    gap: 30px;
+    list-style: none;
+    display: flex;
+}
+
+/*hover menu*/
+.menu li a {
+    position: relative;
+    padding: 5px 0px;
+    transition: color 0.3 ease;
+}
+
+.menu li a:hover {
+    color: #FF6D00;
+}
+
+.menu li a::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -2px;
+    width: 0px;
+    height: 2px;
+    background: linear-gradient(150deg, #27A133, #FF6D00);
+    transition: width 0.3s ease-in-out;
+}
+
+.menu li a:hover::after {
+    width: 100%;
+}
+
+/*LogIn*/
+.login {
+    border-radius: 18px;
+    padding: 10px;
+    width: 9%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(150deg, #00a970, #33b874, #e65a00, #ffb46a);
+    background-size: 200% 200%;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    overflow: visible !important;
+    position: relative;
+    z-index: 2000;
+}
+
+.login:hover {
+    transform: scale(1.05);
+    background-position: 100% 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+/*account*/
+.account {
+    position: relative;
+    display: inline-block;
+}
+
+#accountBtn {
+    background: none;
+    color: inherit;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+
+.account button {
+    background: linear-gradient(150deg, #00a970, #33b874, #e65a00, #ffb46a);
+    background-size: 200% 200%;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.account button:hover {
+    transform: scale(1.05);
+    background-position: 100% 50%;
+}
+
+/*dropdown*/
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    min-width: 150px;
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.2);
+    border-radius: 18px;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 10000;
+}
+
+.account .dropdown {
+    top: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10000;
+}
+
+.show {
+    display: block !important;
+    animation: fadeSlide 0.25s ease;
+}
+
+.dropdown p {
+    margin: 10px 0;
+    color: #333;
+    font-weight: 600;
+}
+
+/*dropdownbtn*/
+.dropdown button {
+    width: 80%;
+    margin: 8px auto;
+    display: block;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(150deg, #00a970, #33b874, #e65a00, #ffb46a);
+    background-size: 200% 200%;
+    transition: all 0.4s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown button:hover {
+    transform: scale(1.05);
+    background-position: 100% 50%;
+}
+
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+
+/*logo hover*/
+.navbar .logo a h2 {
+    display: inline-block;
+    font-weight: 700;
+    background: linear-gradient(150deg, #00a970, #33b874, #e65a00, #ffb46a);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.4s ease;
+}
+
+.navbar .logo a h2:hover {
+    transform: scale(1.1);
+    background-position: 100% 50%;
+}
+
+.logo a img {
+    transition: all 0.4s ease;
+    display: inline-block;
+    position: relative;
+}
+
+.logo a img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+
+/* Searchbar */
+.searchbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 200px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: white;
+}
+
+.searchbar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    min-width: 0;
+    padding-right: 40px;
+}
+
+/* Search button */
+#searchIcon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+#searchIcon svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+    transition: transform 0.2s ease, filter 0.3s ease;
+}
+
+/* Hover effect */
+#searchIcon svg:hover {
+    transform: scale(1.1);
+    filter: brightness(0) saturate(100%) invert(49%) sepia(93%) saturate(4262%) hue-rotate(6deg) brightness(105%) contrast(101%);
+}
+
+
+/* Search results */
+.search-results {
+    position: absolute;
+    top: 35px;
+
+    width: 284px;
+    max-height: 300px;
+    overflow-y: auto;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    display: none;
+    z-index: 100;
+}
+
+.result-item {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+    border-radius: 6px;
+}
+
+.result-item:hover {
+    background: #00a970;
+    color: white;
+}
+
+.no-results {
+    color: #999;
+    text-align: center;
+}
+
+/* Focus effect */
+.searchbar:focus-within {
+    box-shadow: 0 0 6px rgba(0, 169, 112, 0.6);
+    border-color: #00a970;
+}
+
+/* Responsive */
+@media screen and (min-width: 1200px) {
+    .wrapper {
+        height: auto;
+        padding: 26px 12px;
+    }
+}
+
+
+#editorPopup {
+    display: none;
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    width: 600px;
+    height: 400px;
+    min-width: 300px;
+    min-height: 200px;
+    border: 2px solid #00a970;
+    background: white;
+    z-index: 9999;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    resize: both;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+#editorHeader {
+    height: 30px;
+    background: #00a970;
+    color: white;
+    cursor: move;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 5px;
+}
+
+#editorHeader button {
+    background: #e65a00;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+#editorIframe {
+    flex: 1;
+    width: 100%;
+    border: none;
+}
+
+.Editors {
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: bold;
+    background-size: 200% 200%;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    margin: -20px;
+}
+
+/* Open Editor link */
+a.Editors {
+    background: linear-gradient(150deg, #00a970, #33b874);
+    color: white;
+    text-decoration: none;
+}
+
+/* Pop Up Editor button */
+button.Editors {
+    background: linear-gradient(150deg, #e65a00, #ffb46a);
+    color: white;
+    border: none;
+    outline: none;
+}
+
+/* Hover effects */
+a.Editors:hover,
+button.Editors:hover {
+    background-position: 100% 50%;
+    transform: scale(1.05);
+}
