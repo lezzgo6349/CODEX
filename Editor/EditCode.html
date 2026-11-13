@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CODEX | Editor</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/navstyle.css">
+    <link rel="stylesheet" href="../css/EditCode.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="../images/logo.png" alt="logo">
+                    <h2>CODEX</h2>
+                </a>
+            </div>
+            <!-- Menu -->
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../navhtml/tutorials.html">Tutorials</a></li>
+                <li><a href="../navhtml/quiz.html">Quiz</a></li>
+                <li><a href="../navhtml/contact.html">Contact Us</a></li>
+            </ul>
+            <!-- Searchbar -->
+            <div class="searchbar">
+                <input type="text" id="search" placeholder="Search...">
+                <button id="searchIcon" title="search">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <circle cx="11" cy="11" r="7" stroke="#555" stroke-width="2" />
+                        <line x1="16" y1="16" x2="22" y2="22" stroke="#555" stroke-width="2" />
+                    </svg>
+                </button>
+                <div id="searchResults" class="search-results"></div>
+            </div>
+            <!-- SignIn Area -->
+            <div class="login" id="loginArea">
+                <a href="../navhtml/login.html"><b>Sign In</b></a>
+            </div>
+        </nav>
+    </header>
+    <!-- Code Playground -->
+    <div class="code-playground" id="playground">
+        <div class="code-section">
+            <label><strong>HTML Code:</strong></label>
+            <textarea id="htmlCode" class="code-editor">&lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+    &lt;head&gt;
+      &lt;title&gt;My First Page&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;h1&gt;Hello, World!&lt;/h1&gt;
+      &lt;p&gt;This is my first HTML page!&lt;/p&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;</textarea>
+        </div>
+        <div class="drag-handle"></div>
+        <div class="preview-section">
+            <label><strong>Preview:</strong></label>
+            <iframe id="preview" class="preview-frame"></iframe>
+        </div>
+        <div class="resize-corner"></div>
+    </div>
+    <button id="resetBtn" class="reset-btn">↻ Reset</button>
+    <!-- Script -->
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const htmlCode = document.getElementById("htmlCode");
+        const preview = document.getElementById("preview");
+        const resetBtn = document.getElementById("resetBtn");
+        const dragHandle = document.querySelector(".drag-handle");
+        const codeSection = document.querySelector(".code-section");
+        const previewSection = document.querySelector(".preview-section");
+        const playground = document.getElementById("playground");
+        const resizeCorner = document.querySelector(".resize-corner");
+
+        const defaultTemplate = `<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Hello World</title>
+    </head>
+    <body>
+      <h1>Hello World</h1>
+    </body>
+  </html>`.trim();
+
+        // Load saved or default
+        const savedCode = localStorage.getItem("popupEditorContent");
+        htmlCode.value = savedCode || defaultTemplate;
+        updatePreview();
+
+        // Update as user types
+        htmlCode.addEventListener("input", () => {
+            const code = htmlCode.value;
+            localStorage.setItem("popupEditorContent", code);
+            updatePreview();
+        });
+
+        // Reset
+        resetBtn.addEventListener("click", () => {
+            if (confirm("Reset editor to default?")) {
+                htmlCode.value = defaultTemplate;
+                localStorage.setItem("popupEditorContent", defaultTemplate);
+                updatePreview();
+            }
+        });
+
+        // Update iframe preview
+        function updatePreview() {
+            preview.srcdoc = htmlCode.value;
+
+            // Wait until iframe loads before adding style
+            setTimeout(() => {
+                const iframeDoc = preview.contentDocument || preview.contentWindow.document;
+                const style = iframeDoc.createElement("style");
+                style.textContent = `
+      body {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
+        max-width: 100%;
+      }
+      html, body {
+        overflow-x: hidden;
+      }
+    `;
+                iframeDoc.head.appendChild(style);
+            }, 50);
+        }
+
+        // Horizontal resize between editor and preview
+        let isDragging = false;
+        dragHandle.addEventListener("mousedown", (e) => {
+            e.preventDefault();
+            isDragging = true;
+            document.body.style.cursor = "ew-resize";
+        });
+
+        document.addEventListener("mousemove", (e) => {
+            if (!isDragging) return;
+            const rect = playground.getBoundingClientRect();
+            const min = 200,
+                max = rect.width - 200;
+            let newWidth = e.clientX - rect.left;
+            newWidth = Math.max(min, Math.min(newWidth, max));
+            codeSection.style.flex = `0 0 ${newWidth}px`;
+            previewSection.style.flex = "1 1 auto";
+        });
+
+        document.addEventListener("mouseup", () => {
+            if (isDragging) {
+                isDragging = false;
+                document.body.style.cursor = "default";
+            }
+        });
+
+        // Full resize 
+        let resizing = false;
+        resizeCorner.addEventListener("mousedown", (e) => {
+            e.preventDefault();
+            resizing = true;
+            document.body.style.cursor = "nwse-resize";
+        });
+
+        document.addEventListener("mousemove", (e) => {
+            if (!resizing) return;
+            const rect = playground.getBoundingClientRect();
+            playground.style.width = e.clientX - rect.left + "px";
+            playground.style.height = e.clientY - rect.top + "px";
+        });
+
+        document.addEventListener("mouseup", () => {
+            if (resizing) {
+                resizing = false;
+                document.body.style.cursor = "default";
+            }
+        });
+    });
+    </script>
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>

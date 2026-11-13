@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CODEX | Pop Up Editor</title>
+    <link rel="stylesheet" type="text/css" href="../css/PopUp.css">
+    <link rel="icon" type="image/x-icon" href="../images/logo.png" />
+</head>
+
+<body>
+    <div class="code-playground">
+        <div class="code-section">
+            <label><strong>HTML Code:</strong></label>
+            <textarea id="htmlCode" class="code-editor"></textarea>
+        </div>
+        <div class="preview-section">
+            <label><strong>Preview:</strong></label>
+            <iframe id="outputFrame" class="preview-frame"></iframe>
+        </div>
+        <button id="resetBtn" class="reset-btn">↻ Reset</button>
+    </div>
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const htmlCode = document.getElementById("htmlCode");
+        const outputFrame = document.getElementById("outputFrame");
+        const resetBtn = document.getElementById("resetBtn");
+
+        const defaultTemplate = `
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Hello World</title>
+    </head>
+    <body>
+      <h1>Hello World</h1>
+    </body>
+  </html>`.trim();
+
+        const savedCode = localStorage.getItem("popupEditorContent");
+        htmlCode.value = savedCode || defaultTemplate;
+        updateOutput();
+
+        htmlCode.addEventListener("input", () => {
+            const code = htmlCode.value;
+            localStorage.setItem("popupEditorContent", code);
+            updateOutput();
+            window.parent.postMessage({ type: "SAVE_POPUP_CODE", code }, "*");
+        });
+
+        resetBtn.addEventListener("click", () => {
+            if (confirm("Reset editor to default?")) {
+                htmlCode.value = defaultTemplate;
+                localStorage.setItem("popupEditorContent", defaultTemplate);
+                updateOutput();
+            }
+        });
+
+        function updateOutput() {
+            const iframeDoc = outputFrame.contentDocument || outputFrame.contentWindow.document;
+            iframeDoc.open();
+            iframeDoc.write(htmlCode.value);
+            iframeDoc.close();
+            const style = iframeDoc.createElement("style");
+            style.textContent = `
+          body {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            white-space: normal;
+            max-width: 100%;
+          }
+          html, body {
+            overflow-x: hidden;
+          }
+        `;
+            iframeDoc.head.appendChild(style);
+        }
+    });
+    </script>
+</body>
+
+</html>
